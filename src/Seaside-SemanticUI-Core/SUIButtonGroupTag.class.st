@@ -13,15 +13,9 @@ SUIButtonGroupTag >> beIcon [
 	self class: 'icon'
 ]
 
-{ #category : #accessing }
+{ #category : #initialization }
 SUIButtonGroupTag >> initialize [
 
 	super initialize.
 	self class: 'buttons'
-]
-
-{ #category : #accessing }
-SUIButtonGroupTag >> tag [
-
-	^'div'
 ]

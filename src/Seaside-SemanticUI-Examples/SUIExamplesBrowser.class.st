@@ -4,7 +4,7 @@ Example browser
 Class {
 	#name : #SUIExamplesBrowser,
 	#superclass : #SUIComponent,
-	#category : #'Seaside-SemanticUI-Exampless-Support'
+	#category : #'Seaside-SemanticUI-Examples-Support'
 }
 
 { #category : #initialization }

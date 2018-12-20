@@ -30,3 +30,9 @@ SUIHtmlCanvas >> conditional [
 
 	^ self brush: SUIConditionalTag new
 ]
+
+{ #category : #other }
+SUIHtmlCanvas >> divider [
+
+	^self brush: SUIDividerTag new
+]

@@ -18,3 +18,9 @@ SUIGenericTag >> initialize [
 	super initialize.
 	self class: 'ui'
 ]
+
+{ #category : #accessing }
+SUIGenericTag >> tag [
+
+	^'div'
+]
