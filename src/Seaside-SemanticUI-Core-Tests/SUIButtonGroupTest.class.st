@@ -17,6 +17,15 @@ SUIButtonGroupTest >> testButtonGroup [
 ]
 
 { #category : #tests }
+SUIButtonGroupTest >> testButtonGroupIcon [
+	
+	self
+		assert: [:html | html buttonGroup beIcon ]
+		gives: '<div class="ui buttons icon"></div>'
+
+]
+
+{ #category : #tests }
 SUIButtonGroupTest >> testButtonGroupWithContent [
 	
 	self

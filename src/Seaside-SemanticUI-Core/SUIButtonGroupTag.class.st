@@ -3,15 +3,21 @@ A tag representing a Semantic UI button group
 "
 Class {
 	#name : #SUIButtonGroupTag,
-	#superclass : #WAGenericTag,
+	#superclass : #SUIGenericTag,
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
+
+{ #category : #styling }
+SUIButtonGroupTag >> beIcon [
+
+	self class: 'icon'
+]
 
 { #category : #accessing }
 SUIButtonGroupTag >> initialize [
 
 	super initialize.
-	self class: 'ui buttons'
+	self class: 'buttons'
 ]
 
 { #category : #accessing }
