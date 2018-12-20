@@ -1,3 +1,6 @@
+"
+Abstract superclass for Semantic UI canvas based brush tests
+"
 Class {
 	#name : #SUIAbstractCanvasBrushTest,
 	#superclass : #WAAbstractCanvasBrushTest,
