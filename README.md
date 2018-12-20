@@ -4,14 +4,32 @@ Seaside wrapper for https://semantic-ui.com/
 ## Installation
 First install [Pharo](http://www.pharo.org) on your machine. Pharo 7 onwards is recommended. Either using [PharoLauncher](https://github.com/pharo-project/pharo-launcher) or [Pharo ZeroConf](http://get.pharo.org/):
 
-## Load Pharo using ZeroConf 
+
+### Script installation
+
+## download.sh
+
+The file download.sh could be used to download the full package and run it.
+
+## start.sh
+
+This file starts the environment
+
+## clean.sh
+
+This file cleans the environment afterwards so a fresh download could be done
+
+
+### Loading independent
+
+#### Load Pharo using ZeroConf 
 
 ```
 wget -O- get.pharo.org/64/70+vm | bash
 ./pharo-ui Pharo.image
 ```
 
-## Load all in one
+#### Load all in one
 
 ```Smalltalk
   Metacello new
@@ -20,7 +38,7 @@ wget -O- get.pharo.org/64/70+vm | bash
       load
 ```
 
-## Load Seaside and then manually
+#### Load Seaside and then manually
 
 ```Smalltalk
 Metacello new
@@ -31,7 +49,7 @@ Metacello new
 
 and then load the packages you need using Iceberg
 
-## Run
+#### Run
 
 Start the web server for [Seaside](http://www.seaside.st) - for instance with Zinc evaluate
 ```Smalltalk
