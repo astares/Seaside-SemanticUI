@@ -22,5 +22,4 @@ SUIConditionalTest >> testConditionalDataText [
 	self
 		assert: [:html | html conditional dataText: 'ou' ]
 		gives: '<div class="or" data-text="ou"></div>'
-
 ]
