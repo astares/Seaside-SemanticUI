@@ -1,1 +1,1 @@
-Package { #name : #'Seaside-SemanticUI-Example' }
+Package { #name : #'Seaside-SemanticUI-Examples' }
