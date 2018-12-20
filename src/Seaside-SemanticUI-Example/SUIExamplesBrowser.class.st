@@ -3,7 +3,7 @@ Example browser
 "
 Class {
 	#name : #SUIExamplesBrowser,
-	#superclass : #WAComponent,
+	#superclass : #SUIComponent,
 	#category : #'Seaside-SemanticUI-Example-Support'
 }
 
@@ -18,15 +18,10 @@ SUIExamplesBrowser class >> initialize [
 
 { #category : #rendering }
 SUIExamplesBrowser >> renderContentOn: html [
-	html html: '<button class="ui button active">Following</button>'.
-	
-html button 	
-	class: 'ui primary button';
+	 html button
 		with: 'Hello World'.
 		
-	html button 	
-		class: 'ui secondary button';
-		with: 'Hello World'
+	 
 ]
 
 { #category : #updating }
