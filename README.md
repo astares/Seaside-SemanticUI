@@ -9,6 +9,12 @@ First install [Pharo](http://www.pharo.org) on your machine. Pharo 7 onwards is 
 
 ## download.sh
 
+```bash
+git clone https://github.com/astares/Seaside-SemanticUI.git
+cd Seaside-SemanticUI
+./download.sh
+```
+
 The file download.sh could be used to download the full package and run it.
 
 ## start.sh
