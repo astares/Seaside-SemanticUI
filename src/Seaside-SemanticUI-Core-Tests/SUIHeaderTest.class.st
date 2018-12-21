@@ -69,3 +69,12 @@ SUIHeaderTest >> testHeaderLevel6 [
 		gives: '<h6 class="ui header"></h6>'
 
 ]
+
+{ #category : #tests }
+SUIHeaderTest >> testHeaderWithContent [
+	
+	self
+		assert: [:html | html header: 'SemanticUI' ]
+		gives: '<h1 class="ui header">SemanticUI</h1>'
+
+]

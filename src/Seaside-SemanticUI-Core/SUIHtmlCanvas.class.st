@@ -25,32 +25,50 @@ SUIHtmlCanvas >> buttonGroup: anObject [
 	^ self buttonGroup with: anObject
 ]
 
+{ #category : #'layout - divider' }
+SUIHtmlCanvas >> clearingDivider [
+
+	^self divider beClearing 
+]
+
 { #category : #'form - conditionals' }
 SUIHtmlCanvas >> conditional [
 
 	^ self brush: SUIConditionalTag new
 ]
 
-{ #category : #other }
+{ #category : #'layout - divider' }
 SUIHtmlCanvas >> divider [
 
 	^self brush: SUIDividerTag new
 ]
 
-{ #category : #other }
+{ #category : #'layout - divider' }
 SUIHtmlCanvas >> divider: aBlockOrString [
 
 	^self divider with: aBlockOrString
 ]
 
-{ #category : #other }
+{ #category : #internationalization }
+SUIHtmlCanvas >> flag [
+
+	^self brush: SUIFlagTag new
+]
+
+{ #category : #'layout - other' }
 SUIHtmlCanvas >> header [
 
 	^self brush: SUIHeaderTag new 
 ]
 
-{ #category : #other }
+{ #category : #'layout - other' }
 SUIHtmlCanvas >> header: aBlockOrString [
 
 	^self header with: aBlockOrString
+]
+
+{ #category : #'layout - divider' }
+SUIHtmlCanvas >> sectionDivider [
+
+	^self divider beSection 
 ]
