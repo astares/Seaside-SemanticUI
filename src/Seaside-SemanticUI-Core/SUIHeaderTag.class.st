@@ -7,10 +7,22 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
+{ #category : #layout }
+SUIHeaderTag >> beAttached [
+
+	self class: 'attached'
+]
+
 { #category : #options }
 SUIHeaderTag >> beBlock [
 
 	self class: 'block'
+]
+
+{ #category : #layout }
+SUIHeaderTag >> beBottom [
+
+	self class: 'bottom'
 ]
 
 { #category : #enablement }
@@ -71,6 +83,12 @@ SUIHeaderTag >> beSubheader [
 SUIHeaderTag >> beTiny [
 
 	self class: 'tiny'
+]
+
+{ #category : #layout }
+SUIHeaderTag >> beTop [ 
+
+	self class: 'top'
 ]
 
 { #category : #initialization }

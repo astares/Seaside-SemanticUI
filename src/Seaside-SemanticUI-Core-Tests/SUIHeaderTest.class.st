@@ -7,6 +7,42 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testAttachedHeader [
+	
+	self
+		assert: [:html | html attachedHeader ]
+		gives: '<h1 class="ui header attached"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testAttachedHeaderBottom [
+	
+	self
+		assert: [:html | html attachedHeader beBottom ]
+		gives: '<h1 class="ui header attached bottom"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testAttachedHeaderTop [
+	
+	self
+		assert: [:html | html attachedHeader beTop ]
+		gives: '<h1 class="ui header attached top"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testAttachedHeaderWithContent [
+	
+	self
+		assert: [:html | html attachedHeader: 'SemanticUI' ]
+		gives: '<h1 class="ui header attached">SemanticUI</h1>'
+
+]
+
 { #category : #'tests - divider' }
 SUIHeaderTest >> testBlockHeader [
 	
@@ -49,6 +85,15 @@ SUIHeaderTest >> testHeader [
 	self
 		assert: [:html | html header ]
 		gives: '<h1 class="ui header"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testHeaderAttached [
+	
+	self
+		assert: [:html | html header beAttached ]
+		gives: '<h1 class="ui header attached"></h1>'
 
 ]
 

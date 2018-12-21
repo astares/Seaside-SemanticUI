@@ -8,6 +8,20 @@ Class {
 }
 
 { #category : #'layout - header' }
+SUIHtmlCanvas >> attachedHeader [
+
+	^self header 
+				beAttached;
+				yourself
+]
+
+{ #category : #'layout - header' }
+SUIHtmlCanvas >> attachedHeader: aBlockOrString [
+
+	^self attachedHeader with: aBlockOrString 
+]
+
+{ #category : #'layout - header' }
 SUIHtmlCanvas >> blockHeader [
 
 	^self header 
