@@ -10,10 +10,36 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
+{ #category : #'private - utilities' }
+SUIFlagTag class >> convertToValidSelector: aString [
+ 
+	^(aString asLowercase copyReplaceAll: ' ' with: '')
+			copyReplaceAll: '-' with: ''
+		
+]
+
 { #category : #'private - accessing' }
 SUIFlagTag class >> countryMap [
 	<script: 'self countryMap inspect'>
 	^CountryMap ifNil: [ self initializeCountryMap ]
+]
+
+{ #category : #utilities }
+SUIFlagTag class >> generateFlagsFromISO [
+	<script>
+	self isoCodes do: [ :each | self generateMethodFromKey: each categorizedAs: 'generated - iso - codes' ].
+	self isoNames do: [ :each | self generateMethodFromKey: each categorizedAs: 'generated - iso - names' ]
+]
+
+{ #category : #'private - utilities' }
+SUIFlagTag class >> generateMethodFromKey: aKey categorizedAs: categoryName [
+
+	|source|
+	source := '{1}
+	
+	self class: ''{2}''' format: {(self convertToValidSelector: aKey). aKey asString}.
+
+	self compile: source classified: categoryName
 ]
 
 { #category : #'class initialization' }
