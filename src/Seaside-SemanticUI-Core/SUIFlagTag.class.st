@@ -10,13 +10,6 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
-{ #category : #'private - utilities' }
-SUIFlagTag class >> convertToValidSelector: aString [
- 
-	^(aString copyReplaceAll: ' ' with: '') asValidSelector 
-		
-]
-
 { #category : #'private - accessing' }
 SUIFlagTag class >> countryMap [
 	<script: 'self countryMap inspect'>
@@ -27,7 +20,7 @@ SUIFlagTag class >> countryMap [
 SUIFlagTag class >> generateFlagsFromISO [
 	<script>
 	self isoCodes do: [ :each | self generateMethodFromKey: each asLowercase categorizedAs: 'generated - iso - codes' ].
-	self isoNames do: [ :each | self generateMethodFromKey: each asLowercase categorizedAs: 'generated - iso - names' ]
+	self isoNames do: [ :each | self generateMethodFromKey: each categorizedAs: 'generated - iso - names' ]
 ]
 
 { #category : #'private - utilities' }
@@ -36,7 +29,7 @@ SUIFlagTag class >> generateMethodFromKey: aKey categorizedAs: categoryName [
 	|source|
 	source := '{1}
 	
-	self class: ''{2}''' format: {(self convertToValidSelector: aKey). aKey asString}.
+	self class: ''{2}''' format: {(self validSelectorNameFor: aKey). aKey asLowercase asString}.
 
 	self compile: source classified: categoryName
 ]
@@ -69,6 +62,13 @@ SUIFlagTag class >> isoNames [
 	<script: 'self isoNames inspect'>
 	
 	^self countryMap keys asSet asSortedCollection 
+]
+
+{ #category : #accessing }
+SUIFlagTag class >> isoNamesSelectors [
+	<script: 'self isoNamesSelectors inspect'>
+	
+	^self isoNames collect: [:each | self validSelectorNameFor: each ]
 ]
 
 { #category : #'private - accessing' }
@@ -326,6 +326,13 @@ SUIFlagTag class >> isoPairs [
 	)
 ]
 
+{ #category : #'private - utilities' }
+SUIFlagTag class >> validSelectorNameFor: aString [
+ 
+	^(aString copyReplaceAll: ' ' with: '') asValidSelector 
+		
+]
+
 { #category : #'generated - iso - codes' }
 SUIFlagTag >> ad [
 	
@@ -369,7 +376,7 @@ SUIFlagTag >> al [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> alandislands [
+SUIFlagTag >> alandIslands [
 	
 	self class: 'aland islands'
 ]
@@ -399,7 +406,7 @@ SUIFlagTag >> america [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> americansamoa [
+SUIFlagTag >> americanSamoa [
 	
 	self class: 'american samoa'
 ]
@@ -669,7 +676,7 @@ SUIFlagTag >> botswana [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> bouvetisland [
+SUIFlagTag >> bouvetIsland [
 	
 	self class: 'bouvet island'
 ]
@@ -687,7 +694,7 @@ SUIFlagTag >> brazil [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> britishvirginislands [
+SUIFlagTag >> britishVirginIslands [
 	
 	self class: 'british virgin islands'
 ]
@@ -717,7 +724,7 @@ SUIFlagTag >> bulgaria [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> burkinafaso [
+SUIFlagTag >> burkinaFaso [
 	
 	self class: 'burkina faso'
 ]
@@ -765,7 +772,7 @@ SUIFlagTag >> ca [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> caicosislands [
+SUIFlagTag >> caicosIslands [
 	
 	self class: 'caicos islands'
 ]
@@ -789,13 +796,13 @@ SUIFlagTag >> canada [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> capeverde [
+SUIFlagTag >> capeVerde [
 	
 	self class: 'cape verde'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> caymanislands [
+SUIFlagTag >> caymanIslands [
 	
 	self class: 'cayman islands'
 ]
@@ -813,7 +820,7 @@ SUIFlagTag >> cd [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> centralafricanrepublic [
+SUIFlagTag >> centralAfricanRepublic [
 	
 	self class: 'central african republic'
 ]
@@ -855,7 +862,7 @@ SUIFlagTag >> china [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> christmasisland [
+SUIFlagTag >> christmasIsland [
 	
 	self class: 'christmas island'
 ]
@@ -897,7 +904,7 @@ SUIFlagTag >> co [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> cocosislands [
+SUIFlagTag >> cocosIslands [
 	
 	self class: 'cocos islands'
 ]
@@ -921,25 +928,25 @@ SUIFlagTag >> congo [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> congobrazzaville [
+SUIFlagTag >> congoBrazzaville [
 	
 	self class: 'congo brazzaville'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> cookislands [
+SUIFlagTag >> cookIslands [
 	
 	self class: 'cook islands'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> costarica [
+SUIFlagTag >> costaRica [
 	
 	self class: 'costa rica'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> cotedivoire [
+SUIFlagTag >> coteDivoire [
 	
 	self class: 'cote divoire'
 ]
@@ -999,7 +1006,7 @@ SUIFlagTag >> cz [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> czechrepublic [
+SUIFlagTag >> czechRepublic [
 	
 	self class: 'czech republic'
 ]
@@ -1053,7 +1060,7 @@ SUIFlagTag >> dominica [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> dominicanrepublic [
+SUIFlagTag >> dominicanRepublic [
 	
 	self class: 'dominican republic'
 ]
@@ -1101,7 +1108,7 @@ SUIFlagTag >> eh [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> elsalvador [
+SUIFlagTag >> elSalvador [
 	
 	self class: 'el salvador'
 ]
@@ -1113,7 +1120,7 @@ SUIFlagTag >> england [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> equatorialguinea [
+SUIFlagTag >> equatorialGuinea [
 	
 	self class: 'equatorial guinea'
 ]
@@ -1161,19 +1168,19 @@ SUIFlagTag >> eu [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> europeanunion [
+SUIFlagTag >> europeanUnion [
 	
 	self class: 'european union	'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> falklandislands [
+SUIFlagTag >> falklandIslands [
 	
 	self class: 'falkland islands'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> faroeislands [
+SUIFlagTag >> faroeIslands [
 	
 	self class: 'faroe islands'
 ]
@@ -1233,19 +1240,19 @@ SUIFlagTag >> france [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> frenchguiana [
+SUIFlagTag >> frenchGuiana [
 	
 	self class: 'french guiana'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> frenchpolynesia [
+SUIFlagTag >> frenchPolynesia [
 	
 	self class: 'french polynesia'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> frenchterritories [
+SUIFlagTag >> frenchTerritories [
 	
 	self class: 'french territories'
 ]
@@ -1473,7 +1480,7 @@ SUIFlagTag >> haiti [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> heardisland [
+SUIFlagTag >> heardIsland [
 	
 	self class: 'heard island'
 ]
@@ -1503,7 +1510,7 @@ SUIFlagTag >> honduras [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> hongkong [
+SUIFlagTag >> hongKong [
 	
 	self class: 'hong kong'
 ]
@@ -1569,7 +1576,7 @@ SUIFlagTag >> india [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> indianoceanterritory [
+SUIFlagTag >> indianOceanTerritory [
 	
 	self class: 'indian ocean territory'
 ]
@@ -1654,7 +1661,7 @@ SUIFlagTag >> jamaica [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> janmayen [
+SUIFlagTag >> janMayen [
 	
 	self class: 'jan mayen'
 ]
@@ -1960,7 +1967,7 @@ SUIFlagTag >> malta [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> marshallislands [
+SUIFlagTag >> marshallIslands [
 	
 	self class: 'marshall islands'
 ]
@@ -2218,25 +2225,25 @@ SUIFlagTag >> netherlands [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> netherlandsantilles [
+SUIFlagTag >> netherlandsAntilles [
 	
 	self class: 'netherlands antilles'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> newcaledonia [
+SUIFlagTag >> newCaledonia [
 	
 	self class: 'new caledonia'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> newguinea [
+SUIFlagTag >> newGuinea [
 	
 	self class: 'new guinea'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> newzealand [
+SUIFlagTag >> newZealand [
 	
 	self class: 'new zealand'
 ]
@@ -2296,21 +2303,21 @@ SUIFlagTag >> no [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> norfolkisland [
+SUIFlagTag >> norfolkIsland [
 	
 	self class: 'norfolk island'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> northernmarianaislands [
+SUIFlagTag >> northKorea [
 	
-	self class: 'northern mariana islands'
+	self class: 'north korea'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> northkorea [
+SUIFlagTag >> northernMarianaIslands [
 	
-	self class: 'north korea'
+	self class: 'northern mariana islands'
 ]
 
 { #category : #'generated - iso - names' }
@@ -2428,7 +2435,7 @@ SUIFlagTag >> philippines [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> pitcairnislands [
+SUIFlagTag >> pitcairnIslands [
 	
 	self class: 'pitcairn islands'
 ]
@@ -2488,7 +2495,7 @@ SUIFlagTag >> pt [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> puertorico [
+SUIFlagTag >> puertoRico [
 	
 	self class: 'puerto rico'
 ]
@@ -2578,31 +2585,31 @@ SUIFlagTag >> sa [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> sainthelena [
+SUIFlagTag >> saintHelena [
 	
 	self class: 'saint helena'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> saintkittsandnevis [
+SUIFlagTag >> saintKittsAndNevis [
 	
 	self class: 'saint kitts and nevis'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> saintlucia [
+SUIFlagTag >> saintLucia [
 	
 	self class: 'saint lucia'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> saintpierre [
+SUIFlagTag >> saintPierre [
 	
 	self class: 'saint pierre'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> saintvincent [
+SUIFlagTag >> saintVincent [
 	
 	self class: 'saint vincent'
 ]
@@ -2614,25 +2621,25 @@ SUIFlagTag >> samoa [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> sandwichislands [
-	
-	self class: 'sandwich islands'
-]
-
-{ #category : #'generated - iso - names' }
-SUIFlagTag >> sanmarino [
+SUIFlagTag >> sanMarino [
 	
 	self class: 'san marino'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> saotome [
+SUIFlagTag >> sandwichIslands [
+	
+	self class: 'sandwich islands'
+]
+
+{ #category : #'generated - iso - names' }
+SUIFlagTag >> saoTome [
 	
 	self class: 'sao tome'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> saudiarabia [
+SUIFlagTag >> saudiArabia [
 	
 	self class: 'saudi arabia'
 ]
@@ -2704,7 +2711,7 @@ SUIFlagTag >> si [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> sierraleone [
+SUIFlagTag >> sierraLeone [
 	
 	self class: 'sierra leone'
 ]
@@ -2764,7 +2771,7 @@ SUIFlagTag >> so [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> solomonislands [
+SUIFlagTag >> solomonIslands [
 	
 	self class: 'solomon islands'
 ]
@@ -2776,13 +2783,13 @@ SUIFlagTag >> somalia [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> southafrica [
+SUIFlagTag >> southAfrica [
 	
 	self class: 'south africa'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> southkorea [
+SUIFlagTag >> southKorea [
 	
 	self class: 'south korea'
 ]
@@ -2800,7 +2807,7 @@ SUIFlagTag >> sr [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> srilanka [
+SUIFlagTag >> sriLanka [
 	
 	self class: 'sri lanka'
 ]
@@ -3051,16 +3058,16 @@ SUIFlagTag >> tz [
 	self class: 'tz'
 ]
 
+{ #category : #'generated - iso - names' }
+SUIFlagTag >> uAE [
+	
+	self class: 'uae'
+]
+
 { #category : #'generated - iso - codes' }
 SUIFlagTag >> ua [
 	
 	self class: 'ua'
-]
-
-{ #category : #'generated - iso - names' }
-SUIFlagTag >> uae [
-	
-	self class: 'uae'
 ]
 
 { #category : #'generated - iso - codes' }
@@ -3088,13 +3095,13 @@ SUIFlagTag >> um [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> unitedkingdom [
+SUIFlagTag >> unitedKingdom [
 	
 	self class: 'united kingdom'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> unitedstates [
+SUIFlagTag >> unitedStates [
 	
 	self class: 'united states'
 ]
@@ -3112,13 +3119,13 @@ SUIFlagTag >> us [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> usminorislands [
+SUIFlagTag >> usMinorIslands [
 	
 	self class: 'us minor islands'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> usvirginislands [
+SUIFlagTag >> usVirginIslands [
 	
 	self class: 'us virgin islands'
 ]
@@ -3154,7 +3161,7 @@ SUIFlagTag >> vanuatu [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> vaticancity [
+SUIFlagTag >> vaticanCity [
 	
 	self class: 'vatican city'
 ]
@@ -3214,13 +3221,13 @@ SUIFlagTag >> wales [
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> wallisandfutuna [
+SUIFlagTag >> wallisAndFutuna [
 	
 	self class: 'wallis and futuna'
 ]
 
 { #category : #'generated - iso - names' }
-SUIFlagTag >> westernsahara [
+SUIFlagTag >> westernSahara [
 	
 	self class: 'western sahara'
 ]

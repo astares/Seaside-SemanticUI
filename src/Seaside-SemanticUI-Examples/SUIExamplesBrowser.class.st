@@ -23,6 +23,7 @@ SUIExamplesBrowser >> renderContentOn: html [
 		massive;
 		with: 'Hello World'.
 		
+		html flag lu
 	 
 ]
 
