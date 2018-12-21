@@ -7,6 +7,20 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Canvas'
 }
 
+{ #category : #'layout - header' }
+SUIHtmlCanvas >> blockHeader [
+
+	^self header 
+				beBlock;
+				yourself
+]
+
+{ #category : #'layout - header' }
+SUIHtmlCanvas >> blockHeader: aBlockOrString [
+
+	^self blockHeader with: aBlockOrString 
+]
+
 { #category : #'form - buttons' }
 SUIHtmlCanvas >> button [
 
@@ -47,6 +61,20 @@ SUIHtmlCanvas >> divider [
 SUIHtmlCanvas >> divider: aBlockOrString [
 
 	^self divider with: aBlockOrString
+]
+
+{ #category : #'layout - header' }
+SUIHtmlCanvas >> dividingHeader [
+
+	^self header 
+				beDividing;
+				yourself
+]
+
+{ #category : #'layout - header' }
+SUIHtmlCanvas >> dividingHeader: aBlockOrString [
+
+	^self dividingHeader with: aBlockOrString 
 ]
 
 { #category : #internationalization }

@@ -7,6 +7,12 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
+{ #category : #options }
+SUIHeaderTag >> beBlock [
+
+	self class: 'block'
+]
+
 { #category : #enablement }
 SUIHeaderTag >> beDisabled [
 
@@ -17,6 +23,12 @@ SUIHeaderTag >> beDisabled [
 SUIHeaderTag >> beDivider [
 
 	self class: 'horizontal divider'
+]
+
+{ #category : #options }
+SUIHeaderTag >> beDividing [
+
+	self class: 'dividing'
 ]
 
 { #category : #sizing }

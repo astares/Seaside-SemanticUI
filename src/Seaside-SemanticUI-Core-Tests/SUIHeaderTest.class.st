@@ -7,6 +7,42 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
+{ #category : #'tests - divider' }
+SUIHeaderTest >> testBlockHeader [
+	
+	self
+		assert: [:html | html blockHeader ]
+		gives: '<h1 class="ui header block"></h1>'
+
+]
+
+{ #category : #'tests - divider' }
+SUIHeaderTest >> testBlockHeaderWithContent [
+	
+	self
+		assert: [:html | html blockHeader: 'SemanticUI' ]
+		gives: '<h1 class="ui header block">SemanticUI</h1>'
+
+]
+
+{ #category : #'tests - divider' }
+SUIHeaderTest >> testDividingHeader [
+	
+	self
+		assert: [:html | html dividingHeader ]
+		gives: '<h1 class="ui header dividing"></h1>'
+
+]
+
+{ #category : #'tests - divider' }
+SUIHeaderTest >> testDividingHeaderWithContent [
+	
+	self
+		assert: [:html | html dividingHeader: 'SemanticUI' ]
+		gives: '<h1 class="ui header dividing">SemanticUI</h1>'
+
+]
+
 { #category : #tests }
 SUIHeaderTest >> testHeader [
 	
@@ -17,11 +53,20 @@ SUIHeaderTest >> testHeader [
 ]
 
 { #category : #'tests - divider' }
-SUIHeaderTest >> testHeaderDividier [
+SUIHeaderTest >> testHeaderDivider [
 	
 	self
 		assert: [:html | html header beDivider ]
 		gives: '<h1 class="ui header horizontal divider"></h1>'
+
+]
+
+{ #category : #'tests - divider' }
+SUIHeaderTest >> testHeaderDividing [
+	
+	self
+		assert: [:html | html header beDividing ]
+		gives: '<h1 class="ui header dividing"></h1>'
 
 ]
 
