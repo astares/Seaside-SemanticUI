@@ -4,7 +4,7 @@ Unit tests for Semantic UI dividers
 Class {
 	#name : #SUIDividerTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
-	#category : #'Seaside-SemanticUI-Core-Tests-Canvas'
+	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }

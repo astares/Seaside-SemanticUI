@@ -1,10 +1,10 @@
 "
-Unit tests for button groups
+Unit tests for Semantic UI button groups
 "
 Class {
 	#name : #SUIButtonGroupTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
-	#category : #'Seaside-SemanticUI-Core-Tests-Canvas'
+	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }

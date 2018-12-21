@@ -4,7 +4,7 @@ Unit test for Semantic UI conditionals (see SUIConditionalTag)
 Class {
 	#name : #SUIConditionalTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
-	#category : #'Seaside-SemanticUI-Core-Tests-Canvas'
+	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }

@@ -12,11 +12,17 @@ SUIGenericTag class >> isAbstract [
 	^true
 ]
 
+{ #category : #defaults }
+SUIGenericTag >> defaultStyleClass [
+
+	^'ui'
+]
+
 { #category : #initialization }
 SUIGenericTag >> initialize [
 
 	super initialize.
-	self class: 'ui'
+	self class: self defaultStyleClass
 ]
 
 { #category : #accessing }

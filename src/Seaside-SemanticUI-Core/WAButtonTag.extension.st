@@ -37,6 +37,12 @@ WAButtonTag >> beGooglePlus [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beHuge [
+
+	self class: 'huge'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
 WAButtonTag >> beIcon [
 
 	self class: 'icon'
@@ -67,6 +73,12 @@ WAButtonTag >> beLabeledIcon [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beLarge [
+
+	self class: 'large'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
 WAButtonTag >> beLinkedIn [
 
 	self class: 'linkedin'
@@ -76,6 +88,18 @@ WAButtonTag >> beLinkedIn [
 WAButtonTag >> beLoading [
 
 	self class: 'loading'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beMassive [
+
+	self class: 'massive'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beMedium [
+
+	self class: 'medium'
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
@@ -100,6 +124,18 @@ WAButtonTag >> bePrimary [
 WAButtonTag >> beSecondary [
 
 	self class: 'secondary'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beSmall [
+
+	self class: 'small'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beTiny [
+
+	self class: 'tiny'
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
@@ -157,30 +193,6 @@ WAButtonTag >> grey [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> huge [
-
-	self class: 'huge'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> large [
-
-	self class: 'large'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> massive [
-
-	self class: 'massive'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> medium [
-
-	self class: 'medium'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
 WAButtonTag >> mini [
 
 	self class: 'mini'
@@ -217,21 +229,9 @@ WAButtonTag >> red [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> small [
-
-	self class: 'small'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
 WAButtonTag >> teal [
 
 	self class: 'teal'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> tiny [
-
-	self class: 'tiny'
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }

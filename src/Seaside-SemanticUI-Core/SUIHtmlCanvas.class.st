@@ -55,20 +55,38 @@ SUIHtmlCanvas >> flag [
 	^self brush: SUIFlagTag new
 ]
 
-{ #category : #'layout - other' }
+{ #category : #'layout - header' }
 SUIHtmlCanvas >> header [
 
 	^self brush: SUIHeaderTag new 
 ]
 
-{ #category : #'layout - other' }
+{ #category : #'layout - header' }
 SUIHtmlCanvas >> header: aBlockOrString [
 
 	^self header with: aBlockOrString
+]
+
+{ #category : #'form - button groups' }
+SUIHtmlCanvas >> image [
+
+	^ self brush: SUIImageTag new
 ]
 
 { #category : #'layout - divider' }
 SUIHtmlCanvas >> sectionDivider [
 
 	^self divider beSection 
+]
+
+{ #category : #'layout - header' }
+SUIHtmlCanvas >> subheader [
+
+	^self brush: SUISubheaderTag new
+]
+
+{ #category : #'layout - header' }
+SUIHtmlCanvas >> subheader: aBlockOrString [
+
+	^self subheader with: aBlockOrString 
 ]

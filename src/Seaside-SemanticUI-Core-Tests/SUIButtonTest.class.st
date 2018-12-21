@@ -4,7 +4,7 @@ Unit tests for the Semantic UI brushes
 Class {
 	#name : #SUIButtonTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
-	#category : #'Seaside-SemanticUI-Core-Tests-Canvas'
+	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
@@ -128,7 +128,7 @@ SUIButtonTest >> testButtonGrey [
 SUIButtonTest >> testButtonHuge [
 	
 	self
-		assert: [:html | html button huge ]
+		assert: [:html | html button beHuge ]
 		gives: '<button class="ui button huge" type="submit"></button>'
 
 ]
@@ -182,7 +182,7 @@ SUIButtonTest >> testButtonLabeledIcon [
 SUIButtonTest >> testButtonLarge [
 	
 	self
-		assert: [:html | html button large ]
+		assert: [:html | html button beLarge ]
 		gives: '<button class="ui button large" type="submit"></button>'
 
 ]
@@ -209,7 +209,7 @@ SUIButtonTest >> testButtonLoading [
 SUIButtonTest >> testButtonMassive [
 	
 	self
-		assert: [:html | html button massive ]
+		assert: [:html | html button beMassive ]
 		gives: '<button class="ui button massive" type="submit"></button>'
 
 ]
@@ -218,7 +218,7 @@ SUIButtonTest >> testButtonMassive [
 SUIButtonTest >> testButtonMedium [
 	
 	self
-		assert: [:html | html button medium ]
+		assert: [:html | html button beMedium ]
 		gives: '<button class="ui button medium" type="submit"></button>'
 
 ]
@@ -317,7 +317,7 @@ SUIButtonTest >> testButtonSecondary [
 SUIButtonTest >> testButtonSmall [
 	
 	self
-		assert: [:html | html button small ]
+		assert: [:html | html button beSmall ]
 		gives: '<button class="ui button small" type="submit"></button>'
 
 ]
@@ -335,7 +335,7 @@ SUIButtonTest >> testButtonTeal [
 SUIButtonTest >> testButtonTiny [
 	
 	self
-		assert: [:html | html button tiny ]
+		assert: [:html | html button beTiny ]
 		gives: '<button class="ui button tiny" type="submit"></button>'
 
 ]

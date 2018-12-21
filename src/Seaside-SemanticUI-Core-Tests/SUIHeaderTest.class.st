@@ -4,7 +4,7 @@ Unit tests for Semantic UI headers
 Class {
 	#name : #SUIHeaderTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
-	#category : #'Seaside-SemanticUI-Core-Tests-Canvas'
+	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
@@ -22,6 +22,33 @@ SUIHeaderTest >> testHeaderDividier [
 	self
 		assert: [:html | html header beDivider ]
 		gives: '<h1 class="ui header horizontal divider"></h1>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIHeaderTest >> testHeaderHuge [
+	
+	self
+		assert: [:html | html header beHuge ]
+		gives: '<h1 class="ui header huge"></h1>'
+
+]
+
+{ #category : #'tests - styling' }
+SUIHeaderTest >> testHeaderIcon [
+	
+	self
+		assert: [:html | html header beIcon ]
+		gives: '<h1 class="ui header icon"></h1>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIHeaderTest >> testHeaderLarge [
+	
+	self
+		assert: [:html | html header beLarge ]
+		gives: '<h1 class="ui header large"></h1>'
 
 ]
 
@@ -67,6 +94,42 @@ SUIHeaderTest >> testHeaderLevel6 [
 	self
 		assert: [:html | html header level6 ]
 		gives: '<h6 class="ui header"></h6>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIHeaderTest >> testHeaderMedium [
+	
+	self
+		assert: [:html | html header beMedium ]
+		gives: '<h1 class="ui header medium"></h1>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIHeaderTest >> testHeaderSmall [
+	
+	self
+		assert: [:html | html header beSmall ]
+		gives: '<h1 class="ui header small"></h1>'
+
+]
+
+{ #category : #'tests - styling' }
+SUIHeaderTest >> testHeaderSub [
+	
+	self
+		assert: [:html | html header beSubheader ]
+		gives: '<h1 class="ui header sub"></h1>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIHeaderTest >> testHeaderTiny [
+	
+	self
+		assert: [:html | html header beTiny ]
+		gives: '<h1 class="ui header tiny"></h1>'
 
 ]
 

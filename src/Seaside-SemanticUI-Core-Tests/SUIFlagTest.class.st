@@ -4,7 +4,7 @@ Unit tests for Semantic UI flags
 Class {
 	#name : #SUIFlagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
-	#category : #'Seaside-SemanticUI-Core-Tests-Canvas'
+	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #utilities }

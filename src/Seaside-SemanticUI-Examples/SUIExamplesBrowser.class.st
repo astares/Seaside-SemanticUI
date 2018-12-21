@@ -20,7 +20,7 @@ SUIExamplesBrowser class >> initialize [
 SUIExamplesBrowser >> renderContentOn: html [
 	 html button
 		red;
-		massive;
+		beMassive;
 		with: 'Hello World'.
 		
 		html flag lu
