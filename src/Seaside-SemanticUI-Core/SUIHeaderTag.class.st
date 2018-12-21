@@ -25,6 +25,12 @@ SUIHeaderTag >> beBottom [
 	self class: 'bottom'
 ]
 
+{ #category : #layout }
+SUIHeaderTag >> beCenterAligned [
+
+	self class: 'center aligned'
+]
+
 { #category : #enablement }
 SUIHeaderTag >> beDisabled [
 
@@ -43,6 +49,12 @@ SUIHeaderTag >> beDividing [
 	self class: 'dividing'
 ]
 
+{ #category : #layout }
+SUIHeaderTag >> beFloating [
+
+	self class: 'floated'
+]
+
 { #category : #sizing }
 SUIHeaderTag >> beHuge [
 
@@ -55,16 +67,34 @@ SUIHeaderTag >> beIcon [
 	self class: 'icon'
 ]
 
+{ #category : #layout }
+SUIHeaderTag >> beJustified [ 
+
+	self class: 'justified'
+]
+
 { #category : #sizing }
 SUIHeaderTag >> beLarge [
 
 	self class: 'large'
 ]
 
+{ #category : #layout }
+SUIHeaderTag >> beLeft [
+
+	self class: 'left'
+]
+
 { #category : #sizing }
 SUIHeaderTag >> beMedium [
 
 	self class: 'medium'
+]
+
+{ #category : #layout }
+SUIHeaderTag >> beRight [
+
+	self class: 'right'
 ]
 
 { #category : #sizing }
@@ -96,4 +126,10 @@ SUIHeaderTag >> initialize [
 
 	super initialize.
 	self class: 'ui header' 
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> red [
+
+	self class: 'red'
 ]

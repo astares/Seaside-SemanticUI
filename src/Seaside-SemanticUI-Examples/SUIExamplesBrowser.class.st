@@ -19,7 +19,7 @@ SUIExamplesBrowser class >> initialize [
 { #category : #rendering }
 SUIExamplesBrowser >> renderContentOn: html [
 	 html button
-		red;
+		beRed;
 		beMassive;
 		with: 'Hello World'.
 		

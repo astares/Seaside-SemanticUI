@@ -19,6 +19,30 @@ WAButtonTag >> beBasic [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beBig [
+
+	self class: 'big'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beBlack [
+
+	self class: 'black'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beBlue [
+
+	self class: 'blue'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beBrown [
+
+	self class: 'brown'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
 WAButtonTag >> beDisabled [
 
 	self class: 'disabled'
@@ -34,6 +58,18 @@ WAButtonTag >> beFacebook [
 WAButtonTag >> beGooglePlus [
 
 	self class: 'google plus'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beGreen [
+
+	self class: 'green'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beGrey [
+
+	self class: 'grey'
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
@@ -103,9 +139,33 @@ WAButtonTag >> beMedium [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beMini [
+
+	self class: 'mini'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
 WAButtonTag >> beNegative [
 
 	self class: 'negative'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beOlive [
+
+	self class: 'olive'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beOrange [
+
+	self class: 'orange'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> bePink [
+
+	self class: 'pink'
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
@@ -121,6 +181,18 @@ WAButtonTag >> bePrimary [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> bePurple [
+
+	self class: 'purple'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beRed [
+
+	self class: 'red'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
 WAButtonTag >> beSecondary [
 
 	self class: 'secondary'
@@ -130,6 +202,12 @@ WAButtonTag >> beSecondary [
 WAButtonTag >> beSmall [
 
 	self class: 'small'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beTeal [
+
+	self class: 'teal'
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
@@ -151,97 +229,19 @@ WAButtonTag >> beVK [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> beYoutube [
-
-	self class: 'youtube'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> big [
-
-	self class: 'big'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> black [
-
-	self class: 'black'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> blue [
-
-	self class: 'blue'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> brown [
-
-	self class: 'brown'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> green [
-
-	self class: 'green'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> grey [
-
-	self class: 'grey'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> mini [
-
-	self class: 'mini'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> olive [
-
-	self class: 'olive'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> orange [
-
-	self class: 'orange'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> pink [
-
-	self class: 'pink'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> purple [
-
-	self class: 'purple'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> red [
-
-	self class: 'red'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> teal [
-
-	self class: 'teal'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> violet [
+WAButtonTag >> beViolet [
 
 	self class: 'violet'
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> yellow [
+WAButtonTag >> beYellow [
 
 	self class: 'yellow'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beYoutube [
+
+	self class: 'youtube'
 ]

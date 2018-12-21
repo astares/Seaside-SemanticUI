@@ -47,34 +47,34 @@ SUIButtonTest >> testButtonBasic [
 SUIButtonTest >> testButtonBig [
 	
 	self
-		assert: [:html | html button big ]
+		assert: [:html | html button beBig ]
 		gives: '<button class="ui button big" type="submit"></button>'
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonBlack [
 	
 	self
-		assert: [:html | html button black ]
+		assert: [:html | html button beBlack ]
 		gives: '<button class="ui button black" type="submit"></button>'
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonBlue [
 	
 	self
-		assert: [:html | html button blue ]
+		assert: [:html | html button beBlue ]
 		gives: '<button class="ui button blue" type="submit"></button>'
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonBrown [
 	
 	self
-		assert: [:html | html button brown ]
+		assert: [:html | html button beBrown ]
 		gives: '<button class="ui button brown" type="submit"></button>'
 
 ]
@@ -106,20 +106,20 @@ SUIButtonTest >> testButtonGooglePlus [
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonGreen [
 	
 	self
-		assert: [:html | html button green ]
+		assert: [:html | html button beGreen ]
 		gives: '<button class="ui button green" type="submit"></button>'
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonGrey [
 	
 	self
-		assert: [:html | html button grey ]
+		assert: [:html | html button beGrey ]
 		gives: '<button class="ui button grey" type="submit"></button>'
 
 ]
@@ -227,7 +227,7 @@ SUIButtonTest >> testButtonMedium [
 SUIButtonTest >> testButtonMini [
 	
 	self
-		assert: [:html | html button mini ]
+		assert: [:html | html button beMini ]
 		gives: '<button class="ui button mini" type="submit"></button>'
 
 ]
@@ -241,29 +241,29 @@ SUIButtonTest >> testButtonNegative [
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonOlive [
 	
 	self
-		assert: [:html | html button olive ]
+		assert: [:html | html button beOlive ]
 		gives: '<button class="ui button olive" type="submit"></button>'
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonOrange [
 	
 	self
-		assert: [:html | html button orange ]
+		assert: [:html | html button beOrange ]
 		gives: '<button class="ui button orange" type="submit"></button>'
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonPink [
 	
 	self
-		assert: [:html | html button pink ]
+		assert: [:html | html button bePink ]
 		gives: '<button class="ui button pink" type="submit"></button>'
 
 ]
@@ -286,20 +286,20 @@ SUIButtonTest >> testButtonPrimary [
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonPurple [
 	
 	self
-		assert: [:html | html button purple ]
+		assert: [:html | html button bePurple ]
 		gives: '<button class="ui button purple" type="submit"></button>'
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonRed [
 	
 	self
-		assert: [:html | html button red ]
+		assert: [:html | html button beRed ]
 		gives: '<button class="ui button red" type="submit"></button>'
 
 ]
@@ -322,11 +322,11 @@ SUIButtonTest >> testButtonSmall [
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonTeal [
 	
 	self
-		assert: [:html | html button teal ]
+		assert: [:html | html button beTeal ]
 		gives: '<button class="ui button teal" type="submit"></button>'
 
 ]
@@ -358,11 +358,11 @@ SUIButtonTest >> testButtonVK [
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonViolet [
 	
 	self
-		assert: [:html | html button violet ]
+		assert: [:html | html button beViolet ]
 		gives: '<button class="ui button violet" type="submit"></button>'
 
 ]
@@ -376,11 +376,11 @@ SUIButtonTest >> testButtonWithContent [
 
 ]
 
-{ #category : #'tests - colors' }
+{ #category : #'tests - coloring' }
 SUIButtonTest >> testButtonYellow [
 	
 	self
-		assert: [:html | html button yellow ]
+		assert: [:html | html button beYellow ]
 		gives: '<button class="ui button yellow" type="submit"></button>'
 
 ]

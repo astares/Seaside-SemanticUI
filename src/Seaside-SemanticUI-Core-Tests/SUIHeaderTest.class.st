@@ -79,6 +79,42 @@ SUIHeaderTest >> testDividingHeaderWithContent [
 
 ]
 
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testFloatingHeader [
+	
+	self
+		assert: [:html | html floatingHeader ]
+		gives: '<h1 class="ui header floated"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testFloatingHeaderLeft [
+	
+	self
+		assert: [:html | html floatingHeader beLeft ]
+		gives: '<h1 class="ui header floated left"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testFloatingHeaderRight [
+	
+	self
+		assert: [:html | html floatingHeader beRight ]
+		gives: '<h1 class="ui header floated right"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testFloatingHeaderWithContent [
+	
+	self
+		assert: [:html | html floatingHeader: 'SemanticUI' ]
+		gives: '<h1 class="ui header floated">SemanticUI</h1>'
+
+]
+
 { #category : #tests }
 SUIHeaderTest >> testHeader [
 	
@@ -94,6 +130,15 @@ SUIHeaderTest >> testHeaderAttached [
 	self
 		assert: [:html | html header beAttached ]
 		gives: '<h1 class="ui header attached"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testHeaderCenterAligned [
+	
+	self
+		assert: [:html | html header beCenterAligned  ]
+		gives: '<h1 class="ui header center aligned"></h1>'
 
 ]
 
@@ -115,6 +160,15 @@ SUIHeaderTest >> testHeaderDividing [
 
 ]
 
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testHeaderFloating [
+	
+	self
+		assert: [:html | html header beFloating ]
+		gives: '<h1 class="ui header floated"></h1>'
+
+]
+
 { #category : #'tests - sizing' }
 SUIHeaderTest >> testHeaderHuge [
 	
@@ -133,12 +187,30 @@ SUIHeaderTest >> testHeaderIcon [
 
 ]
 
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testHeaderJustified [
+	
+	self
+		assert: [:html | html header beJustified ]
+		gives: '<h1 class="ui header justified"></h1>'
+
+]
+
 { #category : #'tests - sizing' }
 SUIHeaderTest >> testHeaderLarge [
 	
 	self
 		assert: [:html | html header beLarge ]
 		gives: '<h1 class="ui header large"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testHeaderLeft [
+	
+	self
+		assert: [:html | html header beLeft ]
+		gives: '<h1 class="ui header left"></h1>'
 
 ]
 
@@ -193,6 +265,24 @@ SUIHeaderTest >> testHeaderMedium [
 	self
 		assert: [:html | html header beMedium ]
 		gives: '<h1 class="ui header medium"></h1>'
+
+]
+
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderRed [
+	
+	self
+		assert: [:html | html header red ]
+		gives: '<h1 class="ui header red"></h1>'
+
+]
+
+{ #category : #'tests - layout' }
+SUIHeaderTest >> testHeaderRight [
+	
+	self
+		assert: [:html | html header beRight ]
+		gives: '<h1 class="ui header right"></h1>'
 
 ]
 
