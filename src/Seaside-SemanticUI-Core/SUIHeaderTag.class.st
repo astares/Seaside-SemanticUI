@@ -19,10 +19,22 @@ SUIHeaderTag >> beBlock [
 	self class: 'block'
 ]
 
+{ #category : #coloring }
+SUIHeaderTag >> beBlue [
+
+	self class: 'blue'
+]
+
 { #category : #layout }
 SUIHeaderTag >> beBottom [
 
 	self class: 'bottom'
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> beBrown [
+
+	self class: 'brown'
 ]
 
 { #category : #layout }
@@ -53,6 +65,18 @@ SUIHeaderTag >> beDividing [
 SUIHeaderTag >> beFloating [
 
 	self class: 'floated'
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> beGreen [
+
+	self class: 'green'
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> beGrey [
+
+	self class: 'grey'
 ]
 
 { #category : #sizing }
@@ -91,6 +115,36 @@ SUIHeaderTag >> beMedium [
 	self class: 'medium'
 ]
 
+{ #category : #coloring }
+SUIHeaderTag >> beOlive [
+
+	self class: 'olive'
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> beOrange [
+
+	self class: 'orange'
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> bePink [
+
+	self class: 'pink'
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> bePurple [
+
+	self class: 'purple'
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> beRed [
+
+	self class: 'red'
+]
+
 { #category : #layout }
 SUIHeaderTag >> beRight [
 
@@ -109,6 +163,12 @@ SUIHeaderTag >> beSubheader [
 	self class: 'sub'
 ]
 
+{ #category : #coloring }
+SUIHeaderTag >> beTeal [
+
+	self class: 'teal'
+]
+
 { #category : #sizing }
 SUIHeaderTag >> beTiny [
 
@@ -121,15 +181,21 @@ SUIHeaderTag >> beTop [
 	self class: 'top'
 ]
 
+{ #category : #coloring }
+SUIHeaderTag >> beViolet [
+
+	self class: 'violet'
+]
+
+{ #category : #coloring }
+SUIHeaderTag >> beYellow [
+
+	self class: 'yellow'
+]
+
 { #category : #initialization }
 SUIHeaderTag >> initialize [ 
 
 	super initialize.
 	self class: 'ui header' 
-]
-
-{ #category : #coloring }
-SUIHeaderTag >> red [
-
-	self class: 'red'
 ]

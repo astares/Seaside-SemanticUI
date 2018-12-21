@@ -133,6 +133,24 @@ SUIHeaderTest >> testHeaderAttached [
 
 ]
 
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderBlue [
+	
+	self
+		assert: [:html | html header beBlue ]
+		gives: '<h1 class="ui header blue"></h1>'
+
+]
+
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderBrown [
+	
+	self
+		assert: [:html | html header beBrown ]
+		gives: '<h1 class="ui header brown"></h1>'
+
+]
+
 { #category : #'tests - layout' }
 SUIHeaderTest >> testHeaderCenterAligned [
 	
@@ -166,6 +184,24 @@ SUIHeaderTest >> testHeaderFloating [
 	self
 		assert: [:html | html header beFloating ]
 		gives: '<h1 class="ui header floated"></h1>'
+
+]
+
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderGreen [
+	
+	self
+		assert: [:html | html header beGreen ]
+		gives: '<h1 class="ui header green"></h1>'
+
+]
+
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderGrey [
+	
+	self
+		assert: [:html | html header beGrey ]
+		gives: '<h1 class="ui header grey"></h1>'
 
 ]
 
@@ -269,10 +305,46 @@ SUIHeaderTest >> testHeaderMedium [
 ]
 
 { #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderOlive [
+	
+	self
+		assert: [:html | html header beOlive ]
+		gives: '<h1 class="ui header olive"></h1>'
+
+]
+
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderOrange [
+	
+	self
+		assert: [:html | html header beOrange ]
+		gives: '<h1 class="ui header orange"></h1>'
+
+]
+
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderPink [
+	
+	self
+		assert: [:html | html header bePink ]
+		gives: '<h1 class="ui header pink"></h1>'
+
+]
+
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderPurple [
+	
+	self
+		assert: [:html | html header bePurple ]
+		gives: '<h1 class="ui header purple"></h1>'
+
+]
+
+{ #category : #'tests - coloring' }
 SUIHeaderTest >> testHeaderRed [
 	
 	self
-		assert: [:html | html header red ]
+		assert: [:html | html header beRed ]
 		gives: '<h1 class="ui header red"></h1>'
 
 ]
@@ -304,6 +376,15 @@ SUIHeaderTest >> testHeaderSub [
 
 ]
 
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderTeal [
+	
+	self
+		assert: [:html | html header beTeal ]
+		gives: '<h1 class="ui header teal"></h1>'
+
+]
+
 { #category : #'tests - sizing' }
 SUIHeaderTest >> testHeaderTiny [
 	
@@ -313,11 +394,29 @@ SUIHeaderTest >> testHeaderTiny [
 
 ]
 
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderViolet [
+	
+	self
+		assert: [:html | html header beViolet ]
+		gives: '<h1 class="ui header violet"></h1>'
+
+]
+
 { #category : #tests }
 SUIHeaderTest >> testHeaderWithContent [
 	
 	self
 		assert: [:html | html header: 'SemanticUI' ]
 		gives: '<h1 class="ui header">SemanticUI</h1>'
+
+]
+
+{ #category : #'tests - coloring' }
+SUIHeaderTest >> testHeaderYellow [
+	
+	self
+		assert: [:html | html header beYellow ]
+		gives: '<h1 class="ui header yellow"></h1>'
 
 ]
