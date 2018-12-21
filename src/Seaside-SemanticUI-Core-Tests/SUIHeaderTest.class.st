@@ -80,37 +80,37 @@ SUIHeaderTest >> testDividingHeaderWithContent [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testFloatingHeader [
+SUIHeaderTest >> testFloatedHeader [
 	
 	self
-		assert: [:html | html floatingHeader ]
+		assert: [:html | html floatedHeader ]
 		gives: '<h1 class="ui header floated"></h1>'
 
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testFloatingHeaderLeft [
+SUIHeaderTest >> testFloatedHeaderLeft [
 	
 	self
-		assert: [:html | html floatingHeader beLeft ]
+		assert: [:html | html floatedHeader beLeft ]
 		gives: '<h1 class="ui header floated left"></h1>'
 
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testFloatingHeaderRight [
+SUIHeaderTest >> testFloatedHeaderRight [
 	
 	self
-		assert: [:html | html floatingHeader beRight ]
+		assert: [:html | html floatedHeader beRight ]
 		gives: '<h1 class="ui header floated right"></h1>'
 
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testFloatingHeaderWithContent [
+SUIHeaderTest >> testFloatedHeaderWithContent [
 	
 	self
-		assert: [:html | html floatingHeader: 'SemanticUI' ]
+		assert: [:html | html floatedHeader: 'SemanticUI' ]
 		gives: '<h1 class="ui header floated">SemanticUI</h1>'
 
 ]
@@ -182,7 +182,7 @@ SUIHeaderTest >> testHeaderDividing [
 SUIHeaderTest >> testHeaderFloating [
 	
 	self
-		assert: [:html | html header beFloating ]
+		assert: [:html | html header beFloated ]
 		gives: '<h1 class="ui header floated"></h1>'
 
 ]

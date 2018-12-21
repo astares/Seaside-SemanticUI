@@ -4,8 +4,8 @@ Semantic UI image
 Class {
 	#name : #SUIImageTag,
 	#superclass : #WAImageTag,
-	#traits : 'SUISized',
-	#classTraits : 'SUISized classTrait',
+	#traits : 'SUISized + SUIFloatable',
+	#classTraits : 'SUISized classTrait + SUIFloatable classTrait',
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 

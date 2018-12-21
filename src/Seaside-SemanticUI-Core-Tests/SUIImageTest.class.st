@@ -33,6 +33,14 @@ SUIImageTest >> testImageCircular [
 
 ]
 
+{ #category : #'tests - layouting' }
+SUIImageTest >> testImageFloated [
+	
+	self
+		assert: [:html | html image beFloated ]
+		gives: '<img alt="" class="ui image floated"/>'
+]
+
 { #category : #'tests - sizing' }
 SUIImageTest >> testImageHuge [
 	
@@ -47,6 +55,14 @@ SUIImageTest >> testImageLarge [
 	self
 		assert: [:html | html image beLarge ]
 		gives: '<img alt="" class="ui image large"/>'
+]
+
+{ #category : #'tests - layouting' }
+SUIImageTest >> testImageLeft [
+	
+	self
+		assert: [:html | html image beLeft ]
+		gives: '<img alt="" class="ui image left"/>'
 ]
 
 { #category : #'tests - sizing' }
@@ -71,6 +87,14 @@ SUIImageTest >> testImageMini [
 	self
 		assert: [:html | html image beMini ]
 		gives: '<img alt="" class="ui image mini"/>'
+]
+
+{ #category : #'tests - layouting' }
+SUIImageTest >> testImageRight [
+	
+	self
+		assert: [:html | html image beRight ]
+		gives: '<img alt="" class="ui image right"/>'
 ]
 
 { #category : #'tests - sizing' }

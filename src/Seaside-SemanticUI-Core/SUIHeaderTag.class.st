@@ -4,6 +4,8 @@ A tag to provide SemanticUI headers
 Class {
 	#name : #SUIHeaderTag,
 	#superclass : #WAHeadingTag,
+	#traits : 'SUIFloatable',
+	#classTraits : 'SUIFloatable classTrait',
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
@@ -61,12 +63,6 @@ SUIHeaderTag >> beDividing [
 	self class: 'dividing'
 ]
 
-{ #category : #layout }
-SUIHeaderTag >> beFloating [
-
-	self class: 'floated'
-]
-
 { #category : #coloring }
 SUIHeaderTag >> beGreen [
 
@@ -103,12 +99,6 @@ SUIHeaderTag >> beLarge [
 	self class: 'large'
 ]
 
-{ #category : #layout }
-SUIHeaderTag >> beLeft [
-
-	self class: 'left'
-]
-
 { #category : #sizing }
 SUIHeaderTag >> beMedium [
 
@@ -143,12 +133,6 @@ SUIHeaderTag >> bePurple [
 SUIHeaderTag >> beRed [
 
 	self class: 'red'
-]
-
-{ #category : #layout }
-SUIHeaderTag >> beRight [
-
-	self class: 'right'
 ]
 
 { #category : #sizing }

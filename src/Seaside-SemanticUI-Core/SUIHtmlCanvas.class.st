@@ -98,17 +98,17 @@ SUIHtmlCanvas >> flag [
 ]
 
 { #category : #'layout - header' }
-SUIHtmlCanvas >> floatingHeader [
+SUIHtmlCanvas >> floatedHeader [
 
 	^self header 
-				beFloating;
+				beFloated;
 				yourself
 ]
 
 { #category : #'layout - header' }
-SUIHtmlCanvas >> floatingHeader: aBlockOrString [
+SUIHtmlCanvas >> floatedHeader: aBlockOrString [
 
-	^self floatingHeader with: aBlockOrString 
+	^self floatedHeader with: aBlockOrString 
 ]
 
 { #category : #'layout - header' }
