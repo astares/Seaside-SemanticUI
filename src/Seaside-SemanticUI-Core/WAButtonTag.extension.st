@@ -49,6 +49,12 @@ WAButtonTag >> beInstagram [
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }
+WAButtonTag >> beInverted [
+
+	self class: 'inverted'
+]
+
+{ #category : #'*Seaside-SemanticUI-Core' }
 WAButtonTag >> beLabeled [
 
 	self class: 'labeled'
@@ -154,12 +160,6 @@ WAButtonTag >> grey [
 WAButtonTag >> huge [
 
 	self class: 'huge'
-]
-
-{ #category : #'*Seaside-SemanticUI-Core' }
-WAButtonTag >> inverted [
-
-	self class: 'inverted'
 ]
 
 { #category : #'*Seaside-SemanticUI-Core' }

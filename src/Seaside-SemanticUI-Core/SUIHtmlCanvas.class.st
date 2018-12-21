@@ -36,3 +36,21 @@ SUIHtmlCanvas >> divider [
 
 	^self brush: SUIDividerTag new
 ]
+
+{ #category : #other }
+SUIHtmlCanvas >> divider: aBlockOrString [
+
+	^self divider with: aBlockOrString
+]
+
+{ #category : #other }
+SUIHtmlCanvas >> header [
+
+	^self brush: SUIHeaderTag new 
+]
+
+{ #category : #other }
+SUIHtmlCanvas >> header: aBlockOrString [
+
+	^self header with: aBlockOrString
+]

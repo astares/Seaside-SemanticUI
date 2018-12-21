@@ -155,7 +155,7 @@ SUIButtonTest >> testButtonInstagram [
 SUIButtonTest >> testButtonInverted [
 	
 	self
-		assert: [:html | html button inverted ]
+		assert: [:html | html button beInverted ]
 		gives: '<button class="ui button inverted" type="submit"></button>'
 
 ]
