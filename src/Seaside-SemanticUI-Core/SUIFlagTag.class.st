@@ -13,8 +13,7 @@ Class {
 { #category : #'private - utilities' }
 SUIFlagTag class >> convertToValidSelector: aString [
  
-	^(aString asLowercase copyReplaceAll: ' ' with: '')
-			copyReplaceAll: '-' with: ''
+	^(aString copyReplaceAll: ' ' with: '') asValidSelector 
 		
 ]
 
@@ -27,8 +26,8 @@ SUIFlagTag class >> countryMap [
 { #category : #utilities }
 SUIFlagTag class >> generateFlagsFromISO [
 	<script>
-	self isoCodes do: [ :each | self generateMethodFromKey: each categorizedAs: 'generated - iso - codes' ].
-	self isoNames do: [ :each | self generateMethodFromKey: each categorizedAs: 'generated - iso - names' ]
+	self isoCodes do: [ :each | self generateMethodFromKey: each asLowercase categorizedAs: 'generated - iso - codes' ].
+	self isoNames do: [ :each | self generateMethodFromKey: each asLowercase categorizedAs: 'generated - iso - names' ]
 ]
 
 { #category : #'private - utilities' }
