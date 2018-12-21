@@ -21,7 +21,10 @@ SUIExamplesBrowser >> renderContentOn: html [
 	 html button
 		beRed;
 		beMassive;
-		with: 'Hello World'.
+		with: [
+			
+			html icon: 'archive'.
+			html text: 'Hello World'].
 		
 		html flag lu
 	 

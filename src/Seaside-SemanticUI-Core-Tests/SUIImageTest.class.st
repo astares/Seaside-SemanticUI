@@ -16,6 +16,14 @@ SUIImageTest >> testImage [
 
 ]
 
+{ #category : #'tests - sizing' }
+SUIImageTest >> testImageBig [
+	
+	self
+		assert: [:html | html image beBig ]
+		gives: '<img alt="" class="ui image big"/>'
+]
+
 { #category : #tests }
 SUIImageTest >> testImageCircular [
 	
@@ -23,4 +31,60 @@ SUIImageTest >> testImageCircular [
 		assert: [:html | html image beCircular ]
 		gives: '<img alt="" class="ui image circular"/>'
 
+]
+
+{ #category : #'tests - sizing' }
+SUIImageTest >> testImageHuge [
+	
+	self
+		assert: [:html | html image beHuge ]
+		gives: '<img alt="" class="ui image huge"/>'
+]
+
+{ #category : #'tests - sizing' }
+SUIImageTest >> testImageLarge [
+	
+	self
+		assert: [:html | html image beLarge ]
+		gives: '<img alt="" class="ui image large"/>'
+]
+
+{ #category : #'tests - sizing' }
+SUIImageTest >> testImageMassive [
+	
+	self
+		assert: [:html | html image beMassive ]
+		gives: '<img alt="" class="ui image massive"/>'
+]
+
+{ #category : #'tests - sizing' }
+SUIImageTest >> testImageMedium [
+	
+	self
+		assert: [:html | html image beMedium ]
+		gives: '<img alt="" class="ui image medium"/>'
+]
+
+{ #category : #'tests - sizing' }
+SUIImageTest >> testImageMini [
+	
+	self
+		assert: [:html | html image beMini ]
+		gives: '<img alt="" class="ui image mini"/>'
+]
+
+{ #category : #'tests - sizing' }
+SUIImageTest >> testImageSmall [
+	
+	self
+		assert: [:html | html image beSmall ]
+		gives: '<img alt="" class="ui image small"/>'
+]
+
+{ #category : #'tests - sizing' }
+SUIImageTest >> testImageTiny [
+	
+	self
+		assert: [:html | html image beTiny ]
+		gives: '<img alt="" class="ui image tiny"/>'
 ]

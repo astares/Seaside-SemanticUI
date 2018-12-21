@@ -123,6 +123,20 @@ SUIHtmlCanvas >> header: aBlockOrString [
 	^self header with: aBlockOrString
 ]
 
+{ #category : #'styling - icons' }
+SUIHtmlCanvas >> icon [ 
+
+	^self brush: SUIIconTag new
+]
+
+{ #category : #'styling - icons' }
+SUIHtmlCanvas >> icon: anIconID [
+
+	^self icon 	
+		class: anIconID;
+		yourself
+]
+
 { #category : #'form - button groups' }
 SUIHtmlCanvas >> image [
 
