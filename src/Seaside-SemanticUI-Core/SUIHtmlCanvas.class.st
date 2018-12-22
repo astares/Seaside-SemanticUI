@@ -155,6 +155,12 @@ SUIHtmlCanvas >> sectionDivider [
 	^self divider beSection 
 ]
 
+{ #category : #'form - input' }
+SUIHtmlCanvas >> standardInput [
+
+	^self brush: SUIStandardInputTag new
+]
+
 { #category : #'layout - header' }
 SUIHtmlCanvas >> subheader [
 
