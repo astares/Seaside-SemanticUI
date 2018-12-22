@@ -16,6 +16,15 @@ SUIImageTest >> testImage [
 
 ]
 
+{ #category : #'tests - styling' }
+SUIImageTest >> testImageAvatar [
+	
+	self
+		assert: [:html | html image beAvatar ]
+		gives: '<img alt="" class="ui image avatar"/>'
+
+]
+
 { #category : #'tests - sizing' }
 SUIImageTest >> testImageBig [
 	
@@ -24,12 +33,39 @@ SUIImageTest >> testImageBig [
 		gives: '<img alt="" class="ui image big"/>'
 ]
 
-{ #category : #tests }
+{ #category : #'tests - styling' }
+SUIImageTest >> testImageBordered [
+	
+	self
+		assert: [:html | html image beBordered ]
+		gives: '<img alt="" class="ui image bordered"/>'
+
+]
+
+{ #category : #'tests - alignment' }
+SUIImageTest >> testImageBottomAligned [
+	
+	self
+		assert: [:html | html image beBottomAligned ]
+		gives: '<img alt="" class="ui image bottom aligned"/>'
+
+]
+
+{ #category : #'tests - styling' }
 SUIImageTest >> testImageCircular [
 	
 	self
 		assert: [:html | html image beCircular ]
 		gives: '<img alt="" class="ui image circular"/>'
+
+]
+
+{ #category : #'tests - enablement' }
+SUIImageTest >> testImageDisabled [
+	
+	self
+		assert: [:html | html image beDisabled ]
+		gives: '<img alt="" class="ui image disabled"/>'
 
 ]
 
@@ -39,6 +75,24 @@ SUIImageTest >> testImageFloated [
 	self
 		assert: [:html | html image beFloated ]
 		gives: '<img alt="" class="ui image floated"/>'
+]
+
+{ #category : #'tests - styling' }
+SUIImageTest >> testImageFluid [
+	
+	self
+		assert: [:html | html image beFluid ]
+		gives: '<img alt="" class="ui image fluid"/>'
+
+]
+
+{ #category : #'tests - enablement' }
+SUIImageTest >> testImageHidden [
+	
+	self
+		assert: [:html | html image beHidden ]
+		gives: '<img alt="" class="ui image hidden"/>'
+
 ]
 
 { #category : #'tests - sizing' }
@@ -81,6 +135,15 @@ SUIImageTest >> testImageMedium [
 		gives: '<img alt="" class="ui image medium"/>'
 ]
 
+{ #category : #'tests - alignment' }
+SUIImageTest >> testImageMiddleAligned [
+	
+	self
+		assert: [:html | html image beMiddleAligned ]
+		gives: '<img alt="" class="ui image middle aligned"/>'
+
+]
+
 { #category : #'tests - sizing' }
 SUIImageTest >> testImageMini [
 	
@@ -97,6 +160,15 @@ SUIImageTest >> testImageRight [
 		gives: '<img alt="" class="ui image right"/>'
 ]
 
+{ #category : #'tests - styling' }
+SUIImageTest >> testImageRounded [
+	
+	self
+		assert: [:html | html image beRounded ]
+		gives: '<img alt="" class="ui image rounded"/>'
+
+]
+
 { #category : #'tests - sizing' }
 SUIImageTest >> testImageSmall [
 	
@@ -111,4 +183,13 @@ SUIImageTest >> testImageTiny [
 	self
 		assert: [:html | html image beTiny ]
 		gives: '<img alt="" class="ui image tiny"/>'
+]
+
+{ #category : #'tests - alignment' }
+SUIImageTest >> testImageTopAligned [
+	
+	self
+		assert: [:html | html image beTopAligned ]
+		gives: '<img alt="" class="ui image top aligned"/>'
+
 ]
