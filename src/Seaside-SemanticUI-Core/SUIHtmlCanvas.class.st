@@ -137,10 +137,16 @@ SUIHtmlCanvas >> icon: anIconID [
 		yourself
 ]
 
-{ #category : #'form - button groups' }
+{ #category : #images }
 SUIHtmlCanvas >> image [
 
 	^ self brush: SUIImageTag new
+]
+
+{ #category : #images }
+SUIHtmlCanvas >> imageGroup [
+
+	^self brush: SUIImageGroupTag new
 ]
 
 { #category : #'layout - divider' }

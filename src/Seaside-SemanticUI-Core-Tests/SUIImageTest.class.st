@@ -52,6 +52,15 @@ SUIImageTest >> testImageBottomAligned [
 ]
 
 { #category : #'tests - styling' }
+SUIImageTest >> testImageCentered [
+	
+	self
+		assert: [:html | html image beCentered ]
+		gives: '<img alt="" class="ui image centered"/>'
+
+]
+
+{ #category : #'tests - styling' }
 SUIImageTest >> testImageCircular [
 	
 	self
@@ -175,6 +184,15 @@ SUIImageTest >> testImageSmall [
 	self
 		assert: [:html | html image beSmall ]
 		gives: '<img alt="" class="ui image small"/>'
+]
+
+{ #category : #'tests - styling' }
+SUIImageTest >> testImageSpaced [
+	
+	self
+		assert: [:html | html image beSpaced ]
+		gives: '<img alt="" class="ui image spaced"/>'
+
 ]
 
 { #category : #'tests - sizing' }

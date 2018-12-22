@@ -22,6 +22,12 @@ SUIImageTag >> beBordered [
 ]
 
 { #category : #styling }
+SUIImageTag >> beCentered [
+
+	self class: 'centered'
+]
+
+{ #category : #styling }
 SUIImageTag >> beCircular [
 
 	self class: 'circular'
@@ -37,6 +43,12 @@ SUIImageTag >> beFluid [
 SUIImageTag >> beRounded [
 
 	self class: 'rounded'
+]
+
+{ #category : #styling }
+SUIImageTag >> beSpaced [
+
+	self class: 'spaced'
 ]
 
 { #category : #initialization }
