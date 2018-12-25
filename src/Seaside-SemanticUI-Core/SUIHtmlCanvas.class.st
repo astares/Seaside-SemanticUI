@@ -149,10 +149,34 @@ SUIHtmlCanvas >> imageGroup [
 	^self brush: SUIImageGroupTag new
 ]
 
+{ #category : #'form - label' }
+SUIHtmlCanvas >> pointingLabel [
+
+	^self semanticLabel bePointing 
+]
+
+{ #category : #'form - label' }
+SUIHtmlCanvas >> pointingLabel: aBlockOrString [
+
+	^self pointingLabel with: aBlockOrString
+]
+
 { #category : #'layout - divider' }
 SUIHtmlCanvas >> sectionDivider [
 
 	^self divider beSection 
+]
+
+{ #category : #'form - label' }
+SUIHtmlCanvas >> semanticLabel [
+
+	^self brush: SUILabelTag new
+]
+
+{ #category : #'form - label' }
+SUIHtmlCanvas >> semanticLabel: aStringOrBlock [
+
+	^self semanticLabel with: aStringOrBlock
 ]
 
 { #category : #'form - input' }
