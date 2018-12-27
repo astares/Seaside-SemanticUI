@@ -2,13 +2,13 @@
 Unit tests for Semantic UI images
 "
 Class {
-	#name : #SUIImageTest,
+	#name : #SUIImageTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUIImageTest >> testImage [
+SUIImageTagTest >> testImage [
 	
 	self
 		assert: [:html | html image ]
@@ -17,7 +17,7 @@ SUIImageTest >> testImage [
 ]
 
 { #category : #'tests - styling' }
-SUIImageTest >> testImageAvatar [
+SUIImageTagTest >> testImageAvatar [
 	
 	self
 		assert: [:html | html image beAvatar ]
@@ -26,7 +26,7 @@ SUIImageTest >> testImageAvatar [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageTest >> testImageBig [
+SUIImageTagTest >> testImageBig [
 	
 	self
 		assert: [:html | html image beBig ]
@@ -34,7 +34,7 @@ SUIImageTest >> testImageBig [
 ]
 
 { #category : #'tests - styling' }
-SUIImageTest >> testImageBordered [
+SUIImageTagTest >> testImageBordered [
 	
 	self
 		assert: [:html | html image beBordered ]
@@ -43,7 +43,7 @@ SUIImageTest >> testImageBordered [
 ]
 
 { #category : #'tests - alignment' }
-SUIImageTest >> testImageBottomAligned [
+SUIImageTagTest >> testImageBottomAligned [
 	
 	self
 		assert: [:html | html image beBottomAligned ]
@@ -52,7 +52,7 @@ SUIImageTest >> testImageBottomAligned [
 ]
 
 { #category : #'tests - styling' }
-SUIImageTest >> testImageCentered [
+SUIImageTagTest >> testImageCentered [
 	
 	self
 		assert: [:html | html image beCentered ]
@@ -61,7 +61,7 @@ SUIImageTest >> testImageCentered [
 ]
 
 { #category : #'tests - styling' }
-SUIImageTest >> testImageCircular [
+SUIImageTagTest >> testImageCircular [
 	
 	self
 		assert: [:html | html image beCircular ]
@@ -70,7 +70,7 @@ SUIImageTest >> testImageCircular [
 ]
 
 { #category : #'tests - enablement' }
-SUIImageTest >> testImageDisabled [
+SUIImageTagTest >> testImageDisabled [
 	
 	self
 		assert: [:html | html image beDisabled ]
@@ -79,7 +79,7 @@ SUIImageTest >> testImageDisabled [
 ]
 
 { #category : #'tests - layouting' }
-SUIImageTest >> testImageFloated [
+SUIImageTagTest >> testImageFloated [
 	
 	self
 		assert: [:html | html image beFloated ]
@@ -87,7 +87,7 @@ SUIImageTest >> testImageFloated [
 ]
 
 { #category : #'tests - styling' }
-SUIImageTest >> testImageFluid [
+SUIImageTagTest >> testImageFluid [
 	
 	self
 		assert: [:html | html image beFluid ]
@@ -96,7 +96,7 @@ SUIImageTest >> testImageFluid [
 ]
 
 { #category : #'tests - enablement' }
-SUIImageTest >> testImageHidden [
+SUIImageTagTest >> testImageHidden [
 	
 	self
 		assert: [:html | html image beHidden ]
@@ -105,7 +105,7 @@ SUIImageTest >> testImageHidden [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageTest >> testImageHuge [
+SUIImageTagTest >> testImageHuge [
 	
 	self
 		assert: [:html | html image beHuge ]
@@ -113,7 +113,7 @@ SUIImageTest >> testImageHuge [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageTest >> testImageLarge [
+SUIImageTagTest >> testImageLarge [
 	
 	self
 		assert: [:html | html image beLarge ]
@@ -121,7 +121,7 @@ SUIImageTest >> testImageLarge [
 ]
 
 { #category : #'tests - layouting' }
-SUIImageTest >> testImageLeft [
+SUIImageTagTest >> testImageLeft [
 	
 	self
 		assert: [:html | html image beLeft ]
@@ -129,7 +129,7 @@ SUIImageTest >> testImageLeft [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageTest >> testImageMassive [
+SUIImageTagTest >> testImageMassive [
 	
 	self
 		assert: [:html | html image beMassive ]
@@ -137,7 +137,7 @@ SUIImageTest >> testImageMassive [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageTest >> testImageMedium [
+SUIImageTagTest >> testImageMedium [
 	
 	self
 		assert: [:html | html image beMedium ]
@@ -145,7 +145,7 @@ SUIImageTest >> testImageMedium [
 ]
 
 { #category : #'tests - alignment' }
-SUIImageTest >> testImageMiddleAligned [
+SUIImageTagTest >> testImageMiddleAligned [
 	
 	self
 		assert: [:html | html image beMiddleAligned ]
@@ -154,7 +154,7 @@ SUIImageTest >> testImageMiddleAligned [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageTest >> testImageMini [
+SUIImageTagTest >> testImageMini [
 	
 	self
 		assert: [:html | html image beMini ]
@@ -162,7 +162,7 @@ SUIImageTest >> testImageMini [
 ]
 
 { #category : #'tests - layouting' }
-SUIImageTest >> testImageRight [
+SUIImageTagTest >> testImageRight [
 	
 	self
 		assert: [:html | html image beRight ]
@@ -170,7 +170,7 @@ SUIImageTest >> testImageRight [
 ]
 
 { #category : #'tests - styling' }
-SUIImageTest >> testImageRounded [
+SUIImageTagTest >> testImageRounded [
 	
 	self
 		assert: [:html | html image beRounded ]
@@ -179,7 +179,7 @@ SUIImageTest >> testImageRounded [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageTest >> testImageSmall [
+SUIImageTagTest >> testImageSmall [
 	
 	self
 		assert: [:html | html image beSmall ]
@@ -187,7 +187,7 @@ SUIImageTest >> testImageSmall [
 ]
 
 { #category : #'tests - styling' }
-SUIImageTest >> testImageSpaced [
+SUIImageTagTest >> testImageSpaced [
 	
 	self
 		assert: [:html | html image beSpaced ]
@@ -196,7 +196,7 @@ SUIImageTest >> testImageSpaced [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageTest >> testImageTiny [
+SUIImageTagTest >> testImageTiny [
 	
 	self
 		assert: [:html | html image beTiny ]
@@ -204,7 +204,7 @@ SUIImageTest >> testImageTiny [
 ]
 
 { #category : #'tests - alignment' }
-SUIImageTest >> testImageTopAligned [
+SUIImageTagTest >> testImageTopAligned [
 	
 	self
 		assert: [:html | html image beTopAligned ]

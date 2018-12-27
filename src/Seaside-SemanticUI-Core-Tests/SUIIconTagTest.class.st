@@ -2,13 +2,13 @@
 Unit test for Semantic UI icons
 "
 Class {
-	#name : #SUIIconTest,
+	#name : #SUIIconTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUIIconTest >> testIcon [
+SUIIconTagTest >> testIcon [
 	
 	self
 		assert: [:html | html icon ]
@@ -17,7 +17,7 @@ SUIIconTest >> testIcon [
 ]
 
 { #category : #tests }
-SUIIconTest >> testIconFoo [
+SUIIconTagTest >> testIconFoo [
 	
 	self
 		assert: [:html | html icon: 'foo' ]

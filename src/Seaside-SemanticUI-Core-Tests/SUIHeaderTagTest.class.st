@@ -2,13 +2,13 @@
 Unit tests for Semantic UI headers
 "
 Class {
-	#name : #SUIHeaderTest,
+	#name : #SUIHeaderTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testAttachedHeader [
+SUIHeaderTagTest >> testAttachedHeader [
 	
 	self
 		assert: [:html | html attachedHeader ]
@@ -17,7 +17,7 @@ SUIHeaderTest >> testAttachedHeader [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testAttachedHeaderBottom [
+SUIHeaderTagTest >> testAttachedHeaderBottom [
 	
 	self
 		assert: [:html | html attachedHeader beBottom ]
@@ -26,7 +26,7 @@ SUIHeaderTest >> testAttachedHeaderBottom [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testAttachedHeaderTop [
+SUIHeaderTagTest >> testAttachedHeaderTop [
 	
 	self
 		assert: [:html | html attachedHeader beTop ]
@@ -35,7 +35,7 @@ SUIHeaderTest >> testAttachedHeaderTop [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testAttachedHeaderWithContent [
+SUIHeaderTagTest >> testAttachedHeaderWithContent [
 	
 	self
 		assert: [:html | html attachedHeader: 'SemanticUI' ]
@@ -44,7 +44,7 @@ SUIHeaderTest >> testAttachedHeaderWithContent [
 ]
 
 { #category : #'tests - divider' }
-SUIHeaderTest >> testBlockHeader [
+SUIHeaderTagTest >> testBlockHeader [
 	
 	self
 		assert: [:html | html blockHeader ]
@@ -53,7 +53,7 @@ SUIHeaderTest >> testBlockHeader [
 ]
 
 { #category : #'tests - divider' }
-SUIHeaderTest >> testBlockHeaderWithContent [
+SUIHeaderTagTest >> testBlockHeaderWithContent [
 	
 	self
 		assert: [:html | html blockHeader: 'SemanticUI' ]
@@ -62,7 +62,7 @@ SUIHeaderTest >> testBlockHeaderWithContent [
 ]
 
 { #category : #'tests - divider' }
-SUIHeaderTest >> testDividingHeader [
+SUIHeaderTagTest >> testDividingHeader [
 	
 	self
 		assert: [:html | html dividingHeader ]
@@ -71,7 +71,7 @@ SUIHeaderTest >> testDividingHeader [
 ]
 
 { #category : #'tests - divider' }
-SUIHeaderTest >> testDividingHeaderWithContent [
+SUIHeaderTagTest >> testDividingHeaderWithContent [
 	
 	self
 		assert: [:html | html dividingHeader: 'SemanticUI' ]
@@ -80,7 +80,7 @@ SUIHeaderTest >> testDividingHeaderWithContent [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testFloatedHeader [
+SUIHeaderTagTest >> testFloatedHeader [
 	
 	self
 		assert: [:html | html floatedHeader ]
@@ -89,7 +89,7 @@ SUIHeaderTest >> testFloatedHeader [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testFloatedHeaderLeft [
+SUIHeaderTagTest >> testFloatedHeaderLeft [
 	
 	self
 		assert: [:html | html floatedHeader beLeft ]
@@ -98,7 +98,7 @@ SUIHeaderTest >> testFloatedHeaderLeft [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testFloatedHeaderRight [
+SUIHeaderTagTest >> testFloatedHeaderRight [
 	
 	self
 		assert: [:html | html floatedHeader beRight ]
@@ -107,7 +107,7 @@ SUIHeaderTest >> testFloatedHeaderRight [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testFloatedHeaderWithContent [
+SUIHeaderTagTest >> testFloatedHeaderWithContent [
 	
 	self
 		assert: [:html | html floatedHeader: 'SemanticUI' ]
@@ -116,7 +116,7 @@ SUIHeaderTest >> testFloatedHeaderWithContent [
 ]
 
 { #category : #tests }
-SUIHeaderTest >> testHeader [
+SUIHeaderTagTest >> testHeader [
 	
 	self
 		assert: [:html | html header ]
@@ -125,7 +125,7 @@ SUIHeaderTest >> testHeader [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testHeaderAttached [
+SUIHeaderTagTest >> testHeaderAttached [
 	
 	self
 		assert: [:html | html header beAttached ]
@@ -134,7 +134,7 @@ SUIHeaderTest >> testHeaderAttached [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderBlue [
+SUIHeaderTagTest >> testHeaderBlue [
 	
 	self
 		assert: [:html | html header beBlue ]
@@ -143,7 +143,7 @@ SUIHeaderTest >> testHeaderBlue [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderBrown [
+SUIHeaderTagTest >> testHeaderBrown [
 	
 	self
 		assert: [:html | html header beBrown ]
@@ -152,7 +152,7 @@ SUIHeaderTest >> testHeaderBrown [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testHeaderCenterAligned [
+SUIHeaderTagTest >> testHeaderCenterAligned [
 	
 	self
 		assert: [:html | html header beCenterAligned  ]
@@ -161,7 +161,7 @@ SUIHeaderTest >> testHeaderCenterAligned [
 ]
 
 { #category : #'tests - divider' }
-SUIHeaderTest >> testHeaderDivider [
+SUIHeaderTagTest >> testHeaderDivider [
 	
 	self
 		assert: [:html | html header beDivider ]
@@ -170,7 +170,7 @@ SUIHeaderTest >> testHeaderDivider [
 ]
 
 { #category : #'tests - divider' }
-SUIHeaderTest >> testHeaderDividing [
+SUIHeaderTagTest >> testHeaderDividing [
 	
 	self
 		assert: [:html | html header beDividing ]
@@ -179,7 +179,7 @@ SUIHeaderTest >> testHeaderDividing [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testHeaderFloating [
+SUIHeaderTagTest >> testHeaderFloating [
 	
 	self
 		assert: [:html | html header beFloated ]
@@ -188,7 +188,7 @@ SUIHeaderTest >> testHeaderFloating [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderGreen [
+SUIHeaderTagTest >> testHeaderGreen [
 	
 	self
 		assert: [:html | html header beGreen ]
@@ -197,7 +197,7 @@ SUIHeaderTest >> testHeaderGreen [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderGrey [
+SUIHeaderTagTest >> testHeaderGrey [
 	
 	self
 		assert: [:html | html header beGrey ]
@@ -206,7 +206,7 @@ SUIHeaderTest >> testHeaderGrey [
 ]
 
 { #category : #'tests - sizing' }
-SUIHeaderTest >> testHeaderHuge [
+SUIHeaderTagTest >> testHeaderHuge [
 	
 	self
 		assert: [:html | html header beHuge ]
@@ -215,7 +215,7 @@ SUIHeaderTest >> testHeaderHuge [
 ]
 
 { #category : #'tests - styling' }
-SUIHeaderTest >> testHeaderIcon [
+SUIHeaderTagTest >> testHeaderIcon [
 	
 	self
 		assert: [:html | html header beIcon ]
@@ -224,7 +224,7 @@ SUIHeaderTest >> testHeaderIcon [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testHeaderJustified [
+SUIHeaderTagTest >> testHeaderJustified [
 	
 	self
 		assert: [:html | html header beJustified ]
@@ -233,7 +233,7 @@ SUIHeaderTest >> testHeaderJustified [
 ]
 
 { #category : #'tests - sizing' }
-SUIHeaderTest >> testHeaderLarge [
+SUIHeaderTagTest >> testHeaderLarge [
 	
 	self
 		assert: [:html | html header beLarge ]
@@ -242,7 +242,7 @@ SUIHeaderTest >> testHeaderLarge [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testHeaderLeft [
+SUIHeaderTagTest >> testHeaderLeft [
 	
 	self
 		assert: [:html | html header beLeft ]
@@ -251,7 +251,7 @@ SUIHeaderTest >> testHeaderLeft [
 ]
 
 { #category : #tests }
-SUIHeaderTest >> testHeaderLevel2 [
+SUIHeaderTagTest >> testHeaderLevel2 [
 	
 	self
 		assert: [:html | html header level2 ]
@@ -260,7 +260,7 @@ SUIHeaderTest >> testHeaderLevel2 [
 ]
 
 { #category : #tests }
-SUIHeaderTest >> testHeaderLevel3 [
+SUIHeaderTagTest >> testHeaderLevel3 [
 	
 	self
 		assert: [:html | html header level3 ]
@@ -269,7 +269,7 @@ SUIHeaderTest >> testHeaderLevel3 [
 ]
 
 { #category : #tests }
-SUIHeaderTest >> testHeaderLevel4 [
+SUIHeaderTagTest >> testHeaderLevel4 [
 	
 	self
 		assert: [:html | html header level4 ]
@@ -278,7 +278,7 @@ SUIHeaderTest >> testHeaderLevel4 [
 ]
 
 { #category : #tests }
-SUIHeaderTest >> testHeaderLevel5 [
+SUIHeaderTagTest >> testHeaderLevel5 [
 	
 	self
 		assert: [:html | html header level5 ]
@@ -287,7 +287,7 @@ SUIHeaderTest >> testHeaderLevel5 [
 ]
 
 { #category : #tests }
-SUIHeaderTest >> testHeaderLevel6 [
+SUIHeaderTagTest >> testHeaderLevel6 [
 	
 	self
 		assert: [:html | html header level6 ]
@@ -296,7 +296,7 @@ SUIHeaderTest >> testHeaderLevel6 [
 ]
 
 { #category : #'tests - sizing' }
-SUIHeaderTest >> testHeaderMedium [
+SUIHeaderTagTest >> testHeaderMedium [
 	
 	self
 		assert: [:html | html header beMedium ]
@@ -305,7 +305,7 @@ SUIHeaderTest >> testHeaderMedium [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderOlive [
+SUIHeaderTagTest >> testHeaderOlive [
 	
 	self
 		assert: [:html | html header beOlive ]
@@ -314,7 +314,7 @@ SUIHeaderTest >> testHeaderOlive [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderOrange [
+SUIHeaderTagTest >> testHeaderOrange [
 	
 	self
 		assert: [:html | html header beOrange ]
@@ -323,7 +323,7 @@ SUIHeaderTest >> testHeaderOrange [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderPink [
+SUIHeaderTagTest >> testHeaderPink [
 	
 	self
 		assert: [:html | html header bePink ]
@@ -332,7 +332,7 @@ SUIHeaderTest >> testHeaderPink [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderPurple [
+SUIHeaderTagTest >> testHeaderPurple [
 	
 	self
 		assert: [:html | html header bePurple ]
@@ -341,7 +341,7 @@ SUIHeaderTest >> testHeaderPurple [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderRed [
+SUIHeaderTagTest >> testHeaderRed [
 	
 	self
 		assert: [:html | html header beRed ]
@@ -350,7 +350,7 @@ SUIHeaderTest >> testHeaderRed [
 ]
 
 { #category : #'tests - layout' }
-SUIHeaderTest >> testHeaderRight [
+SUIHeaderTagTest >> testHeaderRight [
 	
 	self
 		assert: [:html | html header beRight ]
@@ -359,7 +359,7 @@ SUIHeaderTest >> testHeaderRight [
 ]
 
 { #category : #'tests - sizing' }
-SUIHeaderTest >> testHeaderSmall [
+SUIHeaderTagTest >> testHeaderSmall [
 	
 	self
 		assert: [:html | html header beSmall ]
@@ -368,7 +368,7 @@ SUIHeaderTest >> testHeaderSmall [
 ]
 
 { #category : #'tests - styling' }
-SUIHeaderTest >> testHeaderSub [
+SUIHeaderTagTest >> testHeaderSub [
 	
 	self
 		assert: [:html | html header beSubheader ]
@@ -377,7 +377,7 @@ SUIHeaderTest >> testHeaderSub [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderTeal [
+SUIHeaderTagTest >> testHeaderTeal [
 	
 	self
 		assert: [:html | html header beTeal ]
@@ -386,7 +386,7 @@ SUIHeaderTest >> testHeaderTeal [
 ]
 
 { #category : #'tests - sizing' }
-SUIHeaderTest >> testHeaderTiny [
+SUIHeaderTagTest >> testHeaderTiny [
 	
 	self
 		assert: [:html | html header beTiny ]
@@ -395,7 +395,7 @@ SUIHeaderTest >> testHeaderTiny [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderViolet [
+SUIHeaderTagTest >> testHeaderViolet [
 	
 	self
 		assert: [:html | html header beViolet ]
@@ -404,7 +404,7 @@ SUIHeaderTest >> testHeaderViolet [
 ]
 
 { #category : #tests }
-SUIHeaderTest >> testHeaderWithContent [
+SUIHeaderTagTest >> testHeaderWithContent [
 	
 	self
 		assert: [:html | html header: 'SemanticUI' ]
@@ -413,7 +413,7 @@ SUIHeaderTest >> testHeaderWithContent [
 ]
 
 { #category : #'tests - coloring' }
-SUIHeaderTest >> testHeaderYellow [
+SUIHeaderTagTest >> testHeaderYellow [
 	
 	self
 		assert: [:html | html header beYellow ]

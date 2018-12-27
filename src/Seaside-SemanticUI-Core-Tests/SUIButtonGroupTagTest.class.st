@@ -2,13 +2,13 @@
 Unit tests for Semantic UI button groups
 "
 Class {
-	#name : #SUIButtonGroupTest,
+	#name : #SUIButtonGroupTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUIButtonGroupTest >> testButtonGroup [ 
+SUIButtonGroupTagTest >> testButtonGroup [ 
 	
 	self
 		assert: [:html | html buttonGroup ]
@@ -17,7 +17,7 @@ SUIButtonGroupTest >> testButtonGroup [
 ]
 
 { #category : #tests }
-SUIButtonGroupTest >> testButtonGroupIcon [
+SUIButtonGroupTagTest >> testButtonGroupIcon [
 	
 	self
 		assert: [:html | html buttonGroup beIcon ]
@@ -26,7 +26,7 @@ SUIButtonGroupTest >> testButtonGroupIcon [
 ]
 
 { #category : #tests }
-SUIButtonGroupTest >> testButtonGroupWithContent [
+SUIButtonGroupTagTest >> testButtonGroupWithContent [
 	
 	self
 		assert: [:html | html buttonGroup: 'SemanticUI' ]

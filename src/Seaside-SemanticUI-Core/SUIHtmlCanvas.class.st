@@ -7,6 +7,18 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Canvas'
 }
 
+{ #category : #'form - label' }
+SUIHtmlCanvas >> anchorLabel [
+
+	^self brush: SUIAnchorLabelTag new
+]
+
+{ #category : #'form - label' }
+SUIHtmlCanvas >> anchorLabel: aBlockOrString [
+
+	^self anchorLabel with: aBlockOrString
+]
+
 { #category : #'layout - header' }
 SUIHtmlCanvas >> attachedHeader [
 
@@ -63,6 +75,18 @@ SUIHtmlCanvas >> clearingDivider [
 SUIHtmlCanvas >> conditional [
 
 	^ self brush: SUIConditionalTag new
+]
+
+{ #category : #'styling - icons' }
+SUIHtmlCanvas >> detail [
+
+	^self div class: 'detail'
+]
+
+{ #category : #'styling - icons' }
+SUIHtmlCanvas >> detail: aBlockOrString [
+
+	^self detail with: aBlockOrString
 ]
 
 { #category : #'layout - divider' }

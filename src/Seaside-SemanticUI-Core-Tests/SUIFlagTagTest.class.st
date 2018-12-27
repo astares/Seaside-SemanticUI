@@ -2,13 +2,13 @@
 Unit tests for Semantic UI flags
 "
 Class {
-	#name : #SUIFlagTest,
+	#name : #SUIFlagTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #utilities }
-SUIFlagTest class >> generateTestMethodFromCodeKey: aKey categorizedAs: categoryName [
+SUIFlagTagTest class >> generateTestMethodFromCodeKey: aKey categorizedAs: categoryName [
 
 	| source modKey   |
 	modKey := (SUIFlagTag validSelectorNameFor: aKey) asString. 
@@ -23,7 +23,7 @@ SUIFlagTest class >> generateTestMethodFromCodeKey: aKey categorizedAs: category
 ]
 
 { #category : #utilities }
-SUIFlagTest class >> generateTestMethodFromNameKey: aKey categorizedAs: categoryName [
+SUIFlagTagTest class >> generateTestMethodFromNameKey: aKey categorizedAs: categoryName [
 
 	| source modKey upKey |
 	modKey := SUIFlagTag validSelectorNameFor: aKey. 
@@ -39,7 +39,7 @@ SUIFlagTest class >> generateTestMethodFromNameKey: aKey categorizedAs: category
 ]
 
 { #category : #utilities }
-SUIFlagTest class >> generateTestsFromISO [
+SUIFlagTagTest class >> generateTestsFromISO [
 	<script>
 	
 	SUIFlagTag isoCodes do: [ :each | self generateTestMethodFromCodeKey: each categorizedAs: 'tests - iso - codes' ].	 
@@ -48,7 +48,7 @@ SUIFlagTest class >> generateTestsFromISO [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAfghanistan [
+SUIFlagTagTest >> testAfghanistan [
 	
 		self
 			assert: [:html | html flag afghanistan ]
@@ -56,7 +56,7 @@ SUIFlagTest >> testAfghanistan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAlandIslands [
+SUIFlagTagTest >> testAlandIslands [
 	
 		self
 			assert: [:html | html flag alandIslands ]
@@ -64,7 +64,7 @@ SUIFlagTest >> testAlandIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAlbania [
+SUIFlagTagTest >> testAlbania [
 	
 		self
 			assert: [:html | html flag albania ]
@@ -72,7 +72,7 @@ SUIFlagTest >> testAlbania [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAlgeria [
+SUIFlagTagTest >> testAlgeria [
 	
 		self
 			assert: [:html | html flag algeria ]
@@ -80,7 +80,7 @@ SUIFlagTest >> testAlgeria [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAmerica [
+SUIFlagTagTest >> testAmerica [
 	
 		self
 			assert: [:html | html flag america ]
@@ -88,7 +88,7 @@ SUIFlagTest >> testAmerica [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAmericanSamoa [
+SUIFlagTagTest >> testAmericanSamoa [
 	
 		self
 			assert: [:html | html flag americanSamoa ]
@@ -96,7 +96,7 @@ SUIFlagTest >> testAmericanSamoa [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAndorra [
+SUIFlagTagTest >> testAndorra [
 	
 		self
 			assert: [:html | html flag andorra ]
@@ -104,7 +104,7 @@ SUIFlagTest >> testAndorra [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAngola [
+SUIFlagTagTest >> testAngola [
 	
 		self
 			assert: [:html | html flag angola ]
@@ -112,7 +112,7 @@ SUIFlagTest >> testAngola [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAnguilla [
+SUIFlagTagTest >> testAnguilla [
 	
 		self
 			assert: [:html | html flag anguilla ]
@@ -120,7 +120,7 @@ SUIFlagTest >> testAnguilla [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAntigua [
+SUIFlagTagTest >> testAntigua [
 	
 		self
 			assert: [:html | html flag antigua ]
@@ -128,7 +128,7 @@ SUIFlagTest >> testAntigua [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testArgentina [
+SUIFlagTagTest >> testArgentina [
 	
 		self
 			assert: [:html | html flag argentina ]
@@ -136,7 +136,7 @@ SUIFlagTest >> testArgentina [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testArmenia [
+SUIFlagTagTest >> testArmenia [
 	
 		self
 			assert: [:html | html flag armenia ]
@@ -144,7 +144,7 @@ SUIFlagTest >> testArmenia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAruba [
+SUIFlagTagTest >> testAruba [
 	
 		self
 			assert: [:html | html flag aruba ]
@@ -152,7 +152,7 @@ SUIFlagTest >> testAruba [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAustralia [
+SUIFlagTagTest >> testAustralia [
 	
 		self
 			assert: [:html | html flag australia ]
@@ -160,7 +160,7 @@ SUIFlagTest >> testAustralia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAustria [
+SUIFlagTagTest >> testAustria [
 	
 		self
 			assert: [:html | html flag austria ]
@@ -168,7 +168,7 @@ SUIFlagTest >> testAustria [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testAzerbaijan [
+SUIFlagTagTest >> testAzerbaijan [
 	
 		self
 			assert: [:html | html flag azerbaijan ]
@@ -176,7 +176,7 @@ SUIFlagTest >> testAzerbaijan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBahamas [
+SUIFlagTagTest >> testBahamas [
 	
 		self
 			assert: [:html | html flag bahamas ]
@@ -184,7 +184,7 @@ SUIFlagTest >> testBahamas [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBahrain [
+SUIFlagTagTest >> testBahrain [
 	
 		self
 			assert: [:html | html flag bahrain ]
@@ -192,7 +192,7 @@ SUIFlagTest >> testBahrain [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBangladesh [
+SUIFlagTagTest >> testBangladesh [
 	
 		self
 			assert: [:html | html flag bangladesh ]
@@ -200,7 +200,7 @@ SUIFlagTest >> testBangladesh [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBarbados [
+SUIFlagTagTest >> testBarbados [
 	
 		self
 			assert: [:html | html flag barbados ]
@@ -208,7 +208,7 @@ SUIFlagTest >> testBarbados [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBelarus [
+SUIFlagTagTest >> testBelarus [
 	
 		self
 			assert: [:html | html flag belarus ]
@@ -216,7 +216,7 @@ SUIFlagTest >> testBelarus [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBelgium [
+SUIFlagTagTest >> testBelgium [
 	
 		self
 			assert: [:html | html flag belgium ]
@@ -224,7 +224,7 @@ SUIFlagTest >> testBelgium [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBelize [
+SUIFlagTagTest >> testBelize [
 	
 		self
 			assert: [:html | html flag belize ]
@@ -232,7 +232,7 @@ SUIFlagTest >> testBelize [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBenin [
+SUIFlagTagTest >> testBenin [
 	
 		self
 			assert: [:html | html flag benin ]
@@ -240,7 +240,7 @@ SUIFlagTest >> testBenin [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBermuda [
+SUIFlagTagTest >> testBermuda [
 	
 		self
 			assert: [:html | html flag bermuda ]
@@ -248,7 +248,7 @@ SUIFlagTest >> testBermuda [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBhutan [
+SUIFlagTagTest >> testBhutan [
 	
 		self
 			assert: [:html | html flag bhutan ]
@@ -256,7 +256,7 @@ SUIFlagTest >> testBhutan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBolivia [
+SUIFlagTagTest >> testBolivia [
 	
 		self
 			assert: [:html | html flag bolivia ]
@@ -264,7 +264,7 @@ SUIFlagTest >> testBolivia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBosnia [
+SUIFlagTagTest >> testBosnia [
 	
 		self
 			assert: [:html | html flag bosnia ]
@@ -272,7 +272,7 @@ SUIFlagTest >> testBosnia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBotswana [
+SUIFlagTagTest >> testBotswana [
 	
 		self
 			assert: [:html | html flag botswana ]
@@ -280,7 +280,7 @@ SUIFlagTest >> testBotswana [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBouvetIsland [
+SUIFlagTagTest >> testBouvetIsland [
 	
 		self
 			assert: [:html | html flag bouvetIsland ]
@@ -288,7 +288,7 @@ SUIFlagTest >> testBouvetIsland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBrazil [
+SUIFlagTagTest >> testBrazil [
 	
 		self
 			assert: [:html | html flag brazil ]
@@ -296,7 +296,7 @@ SUIFlagTest >> testBrazil [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBritishVirginIslands [
+SUIFlagTagTest >> testBritishVirginIslands [
 	
 		self
 			assert: [:html | html flag britishVirginIslands ]
@@ -304,7 +304,7 @@ SUIFlagTest >> testBritishVirginIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBrunei [
+SUIFlagTagTest >> testBrunei [
 	
 		self
 			assert: [:html | html flag brunei ]
@@ -312,7 +312,7 @@ SUIFlagTest >> testBrunei [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBulgaria [
+SUIFlagTagTest >> testBulgaria [
 	
 		self
 			assert: [:html | html flag bulgaria ]
@@ -320,7 +320,7 @@ SUIFlagTest >> testBulgaria [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBurkinaFaso [
+SUIFlagTagTest >> testBurkinaFaso [
 	
 		self
 			assert: [:html | html flag burkinaFaso ]
@@ -328,7 +328,7 @@ SUIFlagTest >> testBurkinaFaso [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBurma [
+SUIFlagTagTest >> testBurma [
 	
 		self
 			assert: [:html | html flag burma ]
@@ -336,7 +336,7 @@ SUIFlagTest >> testBurma [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testBurundi [
+SUIFlagTagTest >> testBurundi [
 	
 		self
 			assert: [:html | html flag burundi ]
@@ -344,7 +344,7 @@ SUIFlagTest >> testBurundi [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCaicosIslands [
+SUIFlagTagTest >> testCaicosIslands [
 	
 		self
 			assert: [:html | html flag caicosIslands ]
@@ -352,7 +352,7 @@ SUIFlagTest >> testCaicosIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCambodia [
+SUIFlagTagTest >> testCambodia [
 	
 		self
 			assert: [:html | html flag cambodia ]
@@ -360,7 +360,7 @@ SUIFlagTest >> testCambodia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCameroon [
+SUIFlagTagTest >> testCameroon [
 	
 		self
 			assert: [:html | html flag cameroon ]
@@ -368,7 +368,7 @@ SUIFlagTest >> testCameroon [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCanada [
+SUIFlagTagTest >> testCanada [
 	
 		self
 			assert: [:html | html flag canada ]
@@ -376,7 +376,7 @@ SUIFlagTest >> testCanada [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCapeVerde [
+SUIFlagTagTest >> testCapeVerde [
 	
 		self
 			assert: [:html | html flag capeVerde ]
@@ -384,7 +384,7 @@ SUIFlagTest >> testCapeVerde [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCaymanIslands [
+SUIFlagTagTest >> testCaymanIslands [
 	
 		self
 			assert: [:html | html flag caymanIslands ]
@@ -392,7 +392,7 @@ SUIFlagTest >> testCaymanIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCentralAfricanRepublic [
+SUIFlagTagTest >> testCentralAfricanRepublic [
 	
 		self
 			assert: [:html | html flag centralAfricanRepublic ]
@@ -400,7 +400,7 @@ SUIFlagTest >> testCentralAfricanRepublic [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testChad [
+SUIFlagTagTest >> testChad [
 	
 		self
 			assert: [:html | html flag chad ]
@@ -408,7 +408,7 @@ SUIFlagTest >> testChad [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testChile [
+SUIFlagTagTest >> testChile [
 	
 		self
 			assert: [:html | html flag chile ]
@@ -416,7 +416,7 @@ SUIFlagTest >> testChile [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testChina [
+SUIFlagTagTest >> testChina [
 	
 		self
 			assert: [:html | html flag china ]
@@ -424,7 +424,7 @@ SUIFlagTest >> testChina [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testChristmasIsland [
+SUIFlagTagTest >> testChristmasIsland [
 	
 		self
 			assert: [:html | html flag christmasIsland ]
@@ -432,7 +432,7 @@ SUIFlagTest >> testChristmasIsland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCocosIslands [
+SUIFlagTagTest >> testCocosIslands [
 	
 		self
 			assert: [:html | html flag cocosIslands ]
@@ -440,7 +440,7 @@ SUIFlagTest >> testCocosIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testColombia [
+SUIFlagTagTest >> testColombia [
 	
 		self
 			assert: [:html | html flag colombia ]
@@ -448,7 +448,7 @@ SUIFlagTest >> testColombia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testComoros [
+SUIFlagTagTest >> testComoros [
 	
 		self
 			assert: [:html | html flag comoros ]
@@ -456,7 +456,7 @@ SUIFlagTest >> testComoros [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCongo [
+SUIFlagTagTest >> testCongo [
 	
 		self
 			assert: [:html | html flag congo ]
@@ -464,7 +464,7 @@ SUIFlagTest >> testCongo [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCongoBrazzaville [
+SUIFlagTagTest >> testCongoBrazzaville [
 	
 		self
 			assert: [:html | html flag congoBrazzaville ]
@@ -472,7 +472,7 @@ SUIFlagTest >> testCongoBrazzaville [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCookIslands [
+SUIFlagTagTest >> testCookIslands [
 	
 		self
 			assert: [:html | html flag cookIslands ]
@@ -480,7 +480,7 @@ SUIFlagTest >> testCookIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCostaRica [
+SUIFlagTagTest >> testCostaRica [
 	
 		self
 			assert: [:html | html flag costaRica ]
@@ -488,7 +488,7 @@ SUIFlagTest >> testCostaRica [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCoteDivoire [
+SUIFlagTagTest >> testCoteDivoire [
 	
 		self
 			assert: [:html | html flag coteDivoire ]
@@ -496,7 +496,7 @@ SUIFlagTest >> testCoteDivoire [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCroatia [
+SUIFlagTagTest >> testCroatia [
 	
 		self
 			assert: [:html | html flag croatia ]
@@ -504,7 +504,7 @@ SUIFlagTest >> testCroatia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCuba [
+SUIFlagTagTest >> testCuba [
 	
 		self
 			assert: [:html | html flag cuba ]
@@ -512,7 +512,7 @@ SUIFlagTest >> testCuba [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCyprus [
+SUIFlagTagTest >> testCyprus [
 	
 		self
 			assert: [:html | html flag cyprus ]
@@ -520,7 +520,7 @@ SUIFlagTest >> testCyprus [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testCzechRepublic [
+SUIFlagTagTest >> testCzechRepublic [
 	
 		self
 			assert: [:html | html flag czechRepublic ]
@@ -528,7 +528,7 @@ SUIFlagTest >> testCzechRepublic [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testDenmark [
+SUIFlagTagTest >> testDenmark [
 	
 		self
 			assert: [:html | html flag denmark ]
@@ -536,7 +536,7 @@ SUIFlagTest >> testDenmark [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testDjibouti [
+SUIFlagTagTest >> testDjibouti [
 	
 		self
 			assert: [:html | html flag djibouti ]
@@ -544,7 +544,7 @@ SUIFlagTest >> testDjibouti [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testDominica [
+SUIFlagTagTest >> testDominica [
 	
 		self
 			assert: [:html | html flag dominica ]
@@ -552,7 +552,7 @@ SUIFlagTest >> testDominica [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testDominicanRepublic [
+SUIFlagTagTest >> testDominicanRepublic [
 	
 		self
 			assert: [:html | html flag dominicanRepublic ]
@@ -560,7 +560,7 @@ SUIFlagTest >> testDominicanRepublic [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testEcuador [
+SUIFlagTagTest >> testEcuador [
 	
 		self
 			assert: [:html | html flag ecuador ]
@@ -568,7 +568,7 @@ SUIFlagTest >> testEcuador [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testEgypt [
+SUIFlagTagTest >> testEgypt [
 	
 		self
 			assert: [:html | html flag egypt ]
@@ -576,7 +576,7 @@ SUIFlagTest >> testEgypt [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testElSalvador [
+SUIFlagTagTest >> testElSalvador [
 	
 		self
 			assert: [:html | html flag elSalvador ]
@@ -584,7 +584,7 @@ SUIFlagTest >> testElSalvador [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testEngland [
+SUIFlagTagTest >> testEngland [
 	
 		self
 			assert: [:html | html flag england ]
@@ -592,7 +592,7 @@ SUIFlagTest >> testEngland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testEquatorialGuinea [
+SUIFlagTagTest >> testEquatorialGuinea [
 	
 		self
 			assert: [:html | html flag equatorialGuinea ]
@@ -600,7 +600,7 @@ SUIFlagTest >> testEquatorialGuinea [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testEritrea [
+SUIFlagTagTest >> testEritrea [
 	
 		self
 			assert: [:html | html flag eritrea ]
@@ -608,7 +608,7 @@ SUIFlagTest >> testEritrea [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testEstonia [
+SUIFlagTagTest >> testEstonia [
 	
 		self
 			assert: [:html | html flag estonia ]
@@ -616,7 +616,7 @@ SUIFlagTest >> testEstonia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testEthiopia [
+SUIFlagTagTest >> testEthiopia [
 	
 		self
 			assert: [:html | html flag ethiopia ]
@@ -624,7 +624,7 @@ SUIFlagTest >> testEthiopia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testEuropeanUnion [
+SUIFlagTagTest >> testEuropeanUnion [
 	
 		self
 			assert: [:html | html flag europeanUnion ]
@@ -632,7 +632,7 @@ SUIFlagTest >> testEuropeanUnion [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testFalklandIslands [
+SUIFlagTagTest >> testFalklandIslands [
 	
 		self
 			assert: [:html | html flag falklandIslands ]
@@ -640,7 +640,7 @@ SUIFlagTest >> testFalklandIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testFaroeIslands [
+SUIFlagTagTest >> testFaroeIslands [
 	
 		self
 			assert: [:html | html flag faroeIslands ]
@@ -648,7 +648,7 @@ SUIFlagTest >> testFaroeIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testFiji [
+SUIFlagTagTest >> testFiji [
 	
 		self
 			assert: [:html | html flag fiji ]
@@ -656,7 +656,7 @@ SUIFlagTest >> testFiji [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testFinland [
+SUIFlagTagTest >> testFinland [
 	
 		self
 			assert: [:html | html flag finland ]
@@ -664,7 +664,7 @@ SUIFlagTest >> testFinland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testFrance [
+SUIFlagTagTest >> testFrance [
 	
 		self
 			assert: [:html | html flag france ]
@@ -672,7 +672,7 @@ SUIFlagTest >> testFrance [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testFrenchGuiana [
+SUIFlagTagTest >> testFrenchGuiana [
 	
 		self
 			assert: [:html | html flag frenchGuiana ]
@@ -680,7 +680,7 @@ SUIFlagTest >> testFrenchGuiana [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testFrenchPolynesia [
+SUIFlagTagTest >> testFrenchPolynesia [
 	
 		self
 			assert: [:html | html flag frenchPolynesia ]
@@ -688,7 +688,7 @@ SUIFlagTest >> testFrenchPolynesia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testFrenchTerritories [
+SUIFlagTagTest >> testFrenchTerritories [
 	
 		self
 			assert: [:html | html flag frenchTerritories ]
@@ -696,7 +696,7 @@ SUIFlagTest >> testFrenchTerritories [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGabon [
+SUIFlagTagTest >> testGabon [
 	
 		self
 			assert: [:html | html flag gabon ]
@@ -704,7 +704,7 @@ SUIFlagTest >> testGabon [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGambia [
+SUIFlagTagTest >> testGambia [
 	
 		self
 			assert: [:html | html flag gambia ]
@@ -712,7 +712,7 @@ SUIFlagTest >> testGambia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGeorgia [
+SUIFlagTagTest >> testGeorgia [
 	
 		self
 			assert: [:html | html flag georgia ]
@@ -720,7 +720,7 @@ SUIFlagTest >> testGeorgia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGermany [
+SUIFlagTagTest >> testGermany [
 	
 		self
 			assert: [:html | html flag germany ]
@@ -728,7 +728,7 @@ SUIFlagTest >> testGermany [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGhana [
+SUIFlagTagTest >> testGhana [
 	
 		self
 			assert: [:html | html flag ghana ]
@@ -736,7 +736,7 @@ SUIFlagTest >> testGhana [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGibraltar [
+SUIFlagTagTest >> testGibraltar [
 	
 		self
 			assert: [:html | html flag gibraltar ]
@@ -744,7 +744,7 @@ SUIFlagTest >> testGibraltar [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGreece [
+SUIFlagTagTest >> testGreece [
 	
 		self
 			assert: [:html | html flag greece ]
@@ -752,7 +752,7 @@ SUIFlagTest >> testGreece [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGreenland [
+SUIFlagTagTest >> testGreenland [
 	
 		self
 			assert: [:html | html flag greenland ]
@@ -760,7 +760,7 @@ SUIFlagTest >> testGreenland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGrenada [
+SUIFlagTagTest >> testGrenada [
 	
 		self
 			assert: [:html | html flag grenada ]
@@ -768,7 +768,7 @@ SUIFlagTest >> testGrenada [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGuadeloupe [
+SUIFlagTagTest >> testGuadeloupe [
 	
 		self
 			assert: [:html | html flag guadeloupe ]
@@ -776,7 +776,7 @@ SUIFlagTest >> testGuadeloupe [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGuam [
+SUIFlagTagTest >> testGuam [
 	
 		self
 			assert: [:html | html flag guam ]
@@ -784,7 +784,7 @@ SUIFlagTest >> testGuam [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGuatemala [
+SUIFlagTagTest >> testGuatemala [
 	
 		self
 			assert: [:html | html flag guatemala ]
@@ -792,7 +792,7 @@ SUIFlagTest >> testGuatemala [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGuinea [
+SUIFlagTagTest >> testGuinea [
 	
 		self
 			assert: [:html | html flag guinea ]
@@ -800,7 +800,7 @@ SUIFlagTest >> testGuinea [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGuineabissau [
+SUIFlagTagTest >> testGuineabissau [
 	
 		self
 			assert: [:html | html flag guineabissau ]
@@ -808,7 +808,7 @@ SUIFlagTest >> testGuineabissau [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testGuyana [
+SUIFlagTagTest >> testGuyana [
 	
 		self
 			assert: [:html | html flag guyana ]
@@ -816,7 +816,7 @@ SUIFlagTest >> testGuyana [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testHaiti [
+SUIFlagTagTest >> testHaiti [
 	
 		self
 			assert: [:html | html flag haiti ]
@@ -824,7 +824,7 @@ SUIFlagTest >> testHaiti [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testHeardIsland [
+SUIFlagTagTest >> testHeardIsland [
 	
 		self
 			assert: [:html | html flag heardIsland ]
@@ -832,7 +832,7 @@ SUIFlagTest >> testHeardIsland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testHonduras [
+SUIFlagTagTest >> testHonduras [
 	
 		self
 			assert: [:html | html flag honduras ]
@@ -840,7 +840,7 @@ SUIFlagTest >> testHonduras [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testHongKong [
+SUIFlagTagTest >> testHongKong [
 	
 		self
 			assert: [:html | html flag hongKong ]
@@ -848,7 +848,7 @@ SUIFlagTest >> testHongKong [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testHungary [
+SUIFlagTagTest >> testHungary [
 	
 		self
 			assert: [:html | html flag hungary ]
@@ -856,7 +856,7 @@ SUIFlagTest >> testHungary [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testIceland [
+SUIFlagTagTest >> testIceland [
 	
 		self
 			assert: [:html | html flag iceland ]
@@ -864,7 +864,7 @@ SUIFlagTest >> testIceland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testIndia [
+SUIFlagTagTest >> testIndia [
 	
 		self
 			assert: [:html | html flag india ]
@@ -872,7 +872,7 @@ SUIFlagTest >> testIndia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testIndianOceanTerritory [
+SUIFlagTagTest >> testIndianOceanTerritory [
 	
 		self
 			assert: [:html | html flag indianOceanTerritory ]
@@ -880,7 +880,7 @@ SUIFlagTest >> testIndianOceanTerritory [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testIndonesia [
+SUIFlagTagTest >> testIndonesia [
 	
 		self
 			assert: [:html | html flag indonesia ]
@@ -888,7 +888,7 @@ SUIFlagTest >> testIndonesia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testIran [
+SUIFlagTagTest >> testIran [
 	
 		self
 			assert: [:html | html flag iran ]
@@ -896,7 +896,7 @@ SUIFlagTest >> testIran [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testIraq [
+SUIFlagTagTest >> testIraq [
 	
 		self
 			assert: [:html | html flag iraq ]
@@ -904,7 +904,7 @@ SUIFlagTest >> testIraq [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testIreland [
+SUIFlagTagTest >> testIreland [
 	
 		self
 			assert: [:html | html flag ireland ]
@@ -912,7 +912,7 @@ SUIFlagTest >> testIreland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testIsrael [
+SUIFlagTagTest >> testIsrael [
 	
 		self
 			assert: [:html | html flag israel ]
@@ -920,7 +920,7 @@ SUIFlagTest >> testIsrael [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testItaly [
+SUIFlagTagTest >> testItaly [
 	
 		self
 			assert: [:html | html flag italy ]
@@ -928,7 +928,7 @@ SUIFlagTest >> testItaly [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testJamaica [
+SUIFlagTagTest >> testJamaica [
 	
 		self
 			assert: [:html | html flag jamaica ]
@@ -936,7 +936,7 @@ SUIFlagTest >> testJamaica [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testJanMayen [
+SUIFlagTagTest >> testJanMayen [
 	
 		self
 			assert: [:html | html flag janMayen ]
@@ -944,7 +944,7 @@ SUIFlagTest >> testJanMayen [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testJapan [
+SUIFlagTagTest >> testJapan [
 	
 		self
 			assert: [:html | html flag japan ]
@@ -952,7 +952,7 @@ SUIFlagTest >> testJapan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testJordan [
+SUIFlagTagTest >> testJordan [
 	
 		self
 			assert: [:html | html flag jordan ]
@@ -960,7 +960,7 @@ SUIFlagTest >> testJordan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testKazakhstan [
+SUIFlagTagTest >> testKazakhstan [
 	
 		self
 			assert: [:html | html flag kazakhstan ]
@@ -968,7 +968,7 @@ SUIFlagTest >> testKazakhstan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testKenya [
+SUIFlagTagTest >> testKenya [
 	
 		self
 			assert: [:html | html flag kenya ]
@@ -976,7 +976,7 @@ SUIFlagTest >> testKenya [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testKiribati [
+SUIFlagTagTest >> testKiribati [
 	
 		self
 			assert: [:html | html flag kiribati ]
@@ -984,7 +984,7 @@ SUIFlagTest >> testKiribati [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testKuwait [
+SUIFlagTagTest >> testKuwait [
 	
 		self
 			assert: [:html | html flag kuwait ]
@@ -992,7 +992,7 @@ SUIFlagTest >> testKuwait [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testKyrgyzstan [
+SUIFlagTagTest >> testKyrgyzstan [
 	
 		self
 			assert: [:html | html flag kyrgyzstan ]
@@ -1000,7 +1000,7 @@ SUIFlagTest >> testKyrgyzstan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLaos [
+SUIFlagTagTest >> testLaos [
 	
 		self
 			assert: [:html | html flag laos ]
@@ -1008,7 +1008,7 @@ SUIFlagTest >> testLaos [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLatvia [
+SUIFlagTagTest >> testLatvia [
 	
 		self
 			assert: [:html | html flag latvia ]
@@ -1016,7 +1016,7 @@ SUIFlagTest >> testLatvia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLebanon [
+SUIFlagTagTest >> testLebanon [
 	
 		self
 			assert: [:html | html flag lebanon ]
@@ -1024,7 +1024,7 @@ SUIFlagTest >> testLebanon [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLesotho [
+SUIFlagTagTest >> testLesotho [
 	
 		self
 			assert: [:html | html flag lesotho ]
@@ -1032,7 +1032,7 @@ SUIFlagTest >> testLesotho [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLiberia [
+SUIFlagTagTest >> testLiberia [
 	
 		self
 			assert: [:html | html flag liberia ]
@@ -1040,7 +1040,7 @@ SUIFlagTest >> testLiberia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLibya [
+SUIFlagTagTest >> testLibya [
 	
 		self
 			assert: [:html | html flag libya ]
@@ -1048,7 +1048,7 @@ SUIFlagTest >> testLibya [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLiechtenstein [
+SUIFlagTagTest >> testLiechtenstein [
 	
 		self
 			assert: [:html | html flag liechtenstein ]
@@ -1056,7 +1056,7 @@ SUIFlagTest >> testLiechtenstein [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLithuania [
+SUIFlagTagTest >> testLithuania [
 	
 		self
 			assert: [:html | html flag lithuania ]
@@ -1064,7 +1064,7 @@ SUIFlagTest >> testLithuania [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testLuxembourg [
+SUIFlagTagTest >> testLuxembourg [
 	
 		self
 			assert: [:html | html flag luxembourg ]
@@ -1072,7 +1072,7 @@ SUIFlagTest >> testLuxembourg [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMacau [
+SUIFlagTagTest >> testMacau [
 	
 		self
 			assert: [:html | html flag macau ]
@@ -1080,7 +1080,7 @@ SUIFlagTest >> testMacau [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMacedonia [
+SUIFlagTagTest >> testMacedonia [
 	
 		self
 			assert: [:html | html flag macedonia ]
@@ -1088,7 +1088,7 @@ SUIFlagTest >> testMacedonia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMadagascar [
+SUIFlagTagTest >> testMadagascar [
 	
 		self
 			assert: [:html | html flag madagascar ]
@@ -1096,7 +1096,7 @@ SUIFlagTest >> testMadagascar [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMalawi [
+SUIFlagTagTest >> testMalawi [
 	
 		self
 			assert: [:html | html flag malawi ]
@@ -1104,7 +1104,7 @@ SUIFlagTest >> testMalawi [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMalaysia [
+SUIFlagTagTest >> testMalaysia [
 	
 		self
 			assert: [:html | html flag malaysia ]
@@ -1112,7 +1112,7 @@ SUIFlagTest >> testMalaysia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMaldives [
+SUIFlagTagTest >> testMaldives [
 	
 		self
 			assert: [:html | html flag maldives ]
@@ -1120,7 +1120,7 @@ SUIFlagTest >> testMaldives [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMali [
+SUIFlagTagTest >> testMali [
 	
 		self
 			assert: [:html | html flag mali ]
@@ -1128,7 +1128,7 @@ SUIFlagTest >> testMali [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMalta [
+SUIFlagTagTest >> testMalta [
 	
 		self
 			assert: [:html | html flag malta ]
@@ -1136,7 +1136,7 @@ SUIFlagTest >> testMalta [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMarshallIslands [
+SUIFlagTagTest >> testMarshallIslands [
 	
 		self
 			assert: [:html | html flag marshallIslands ]
@@ -1144,7 +1144,7 @@ SUIFlagTest >> testMarshallIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMartinique [
+SUIFlagTagTest >> testMartinique [
 	
 		self
 			assert: [:html | html flag martinique ]
@@ -1152,7 +1152,7 @@ SUIFlagTest >> testMartinique [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMauritania [
+SUIFlagTagTest >> testMauritania [
 	
 		self
 			assert: [:html | html flag mauritania ]
@@ -1160,7 +1160,7 @@ SUIFlagTest >> testMauritania [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMauritius [
+SUIFlagTagTest >> testMauritius [
 	
 		self
 			assert: [:html | html flag mauritius ]
@@ -1168,7 +1168,7 @@ SUIFlagTest >> testMauritius [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMayotte [
+SUIFlagTagTest >> testMayotte [
 	
 		self
 			assert: [:html | html flag mayotte ]
@@ -1176,7 +1176,7 @@ SUIFlagTest >> testMayotte [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMexico [
+SUIFlagTagTest >> testMexico [
 	
 		self
 			assert: [:html | html flag mexico ]
@@ -1184,7 +1184,7 @@ SUIFlagTest >> testMexico [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMicronesia [
+SUIFlagTagTest >> testMicronesia [
 	
 		self
 			assert: [:html | html flag micronesia ]
@@ -1192,7 +1192,7 @@ SUIFlagTest >> testMicronesia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMoldova [
+SUIFlagTagTest >> testMoldova [
 	
 		self
 			assert: [:html | html flag moldova ]
@@ -1200,7 +1200,7 @@ SUIFlagTest >> testMoldova [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMonaco [
+SUIFlagTagTest >> testMonaco [
 	
 		self
 			assert: [:html | html flag monaco ]
@@ -1208,7 +1208,7 @@ SUIFlagTest >> testMonaco [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMongolia [
+SUIFlagTagTest >> testMongolia [
 	
 		self
 			assert: [:html | html flag mongolia ]
@@ -1216,7 +1216,7 @@ SUIFlagTest >> testMongolia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMontenegro [
+SUIFlagTagTest >> testMontenegro [
 	
 		self
 			assert: [:html | html flag montenegro ]
@@ -1224,7 +1224,7 @@ SUIFlagTest >> testMontenegro [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMontserrat [
+SUIFlagTagTest >> testMontserrat [
 	
 		self
 			assert: [:html | html flag montserrat ]
@@ -1232,7 +1232,7 @@ SUIFlagTest >> testMontserrat [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMorocco [
+SUIFlagTagTest >> testMorocco [
 	
 		self
 			assert: [:html | html flag morocco ]
@@ -1240,7 +1240,7 @@ SUIFlagTest >> testMorocco [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMozambique [
+SUIFlagTagTest >> testMozambique [
 	
 		self
 			assert: [:html | html flag mozambique ]
@@ -1248,7 +1248,7 @@ SUIFlagTest >> testMozambique [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testMyanmar [
+SUIFlagTagTest >> testMyanmar [
 	
 		self
 			assert: [:html | html flag myanmar ]
@@ -1256,7 +1256,7 @@ SUIFlagTest >> testMyanmar [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNamibia [
+SUIFlagTagTest >> testNamibia [
 	
 		self
 			assert: [:html | html flag namibia ]
@@ -1264,7 +1264,7 @@ SUIFlagTest >> testNamibia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNauru [
+SUIFlagTagTest >> testNauru [
 	
 		self
 			assert: [:html | html flag nauru ]
@@ -1272,7 +1272,7 @@ SUIFlagTest >> testNauru [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNepal [
+SUIFlagTagTest >> testNepal [
 	
 		self
 			assert: [:html | html flag nepal ]
@@ -1280,7 +1280,7 @@ SUIFlagTest >> testNepal [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNetherlands [
+SUIFlagTagTest >> testNetherlands [
 	
 		self
 			assert: [:html | html flag netherlands ]
@@ -1288,7 +1288,7 @@ SUIFlagTest >> testNetherlands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNetherlandsAntilles [
+SUIFlagTagTest >> testNetherlandsAntilles [
 	
 		self
 			assert: [:html | html flag netherlandsAntilles ]
@@ -1296,7 +1296,7 @@ SUIFlagTest >> testNetherlandsAntilles [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNewCaledonia [
+SUIFlagTagTest >> testNewCaledonia [
 	
 		self
 			assert: [:html | html flag newCaledonia ]
@@ -1304,7 +1304,7 @@ SUIFlagTest >> testNewCaledonia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNewGuinea [
+SUIFlagTagTest >> testNewGuinea [
 	
 		self
 			assert: [:html | html flag newGuinea ]
@@ -1312,7 +1312,7 @@ SUIFlagTest >> testNewGuinea [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNewZealand [
+SUIFlagTagTest >> testNewZealand [
 	
 		self
 			assert: [:html | html flag newZealand ]
@@ -1320,7 +1320,7 @@ SUIFlagTest >> testNewZealand [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNicaragua [
+SUIFlagTagTest >> testNicaragua [
 	
 		self
 			assert: [:html | html flag nicaragua ]
@@ -1328,7 +1328,7 @@ SUIFlagTest >> testNicaragua [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNiger [
+SUIFlagTagTest >> testNiger [
 	
 		self
 			assert: [:html | html flag niger ]
@@ -1336,7 +1336,7 @@ SUIFlagTest >> testNiger [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNigeria [
+SUIFlagTagTest >> testNigeria [
 	
 		self
 			assert: [:html | html flag nigeria ]
@@ -1344,7 +1344,7 @@ SUIFlagTest >> testNigeria [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNiue [
+SUIFlagTagTest >> testNiue [
 	
 		self
 			assert: [:html | html flag niue ]
@@ -1352,7 +1352,7 @@ SUIFlagTest >> testNiue [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNorfolkIsland [
+SUIFlagTagTest >> testNorfolkIsland [
 	
 		self
 			assert: [:html | html flag norfolkIsland ]
@@ -1360,7 +1360,7 @@ SUIFlagTest >> testNorfolkIsland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNorthKorea [
+SUIFlagTagTest >> testNorthKorea [
 	
 		self
 			assert: [:html | html flag northKorea ]
@@ -1368,7 +1368,7 @@ SUIFlagTest >> testNorthKorea [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNorthernMarianaIslands [
+SUIFlagTagTest >> testNorthernMarianaIslands [
 	
 		self
 			assert: [:html | html flag northernMarianaIslands ]
@@ -1376,7 +1376,7 @@ SUIFlagTest >> testNorthernMarianaIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testNorway [
+SUIFlagTagTest >> testNorway [
 	
 		self
 			assert: [:html | html flag norway ]
@@ -1384,7 +1384,7 @@ SUIFlagTest >> testNorway [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testOman [
+SUIFlagTagTest >> testOman [
 	
 		self
 			assert: [:html | html flag oman ]
@@ -1392,7 +1392,7 @@ SUIFlagTest >> testOman [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPakistan [
+SUIFlagTagTest >> testPakistan [
 	
 		self
 			assert: [:html | html flag pakistan ]
@@ -1400,7 +1400,7 @@ SUIFlagTest >> testPakistan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPalau [
+SUIFlagTagTest >> testPalau [
 	
 		self
 			assert: [:html | html flag palau ]
@@ -1408,7 +1408,7 @@ SUIFlagTest >> testPalau [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPalestine [
+SUIFlagTagTest >> testPalestine [
 	
 		self
 			assert: [:html | html flag palestine ]
@@ -1416,7 +1416,7 @@ SUIFlagTest >> testPalestine [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPanama [
+SUIFlagTagTest >> testPanama [
 	
 		self
 			assert: [:html | html flag panama ]
@@ -1424,7 +1424,7 @@ SUIFlagTest >> testPanama [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testParaguay [
+SUIFlagTagTest >> testParaguay [
 	
 		self
 			assert: [:html | html flag paraguay ]
@@ -1432,7 +1432,7 @@ SUIFlagTest >> testParaguay [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPeru [
+SUIFlagTagTest >> testPeru [
 	
 		self
 			assert: [:html | html flag peru ]
@@ -1440,7 +1440,7 @@ SUIFlagTest >> testPeru [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPhilippines [
+SUIFlagTagTest >> testPhilippines [
 	
 		self
 			assert: [:html | html flag philippines ]
@@ -1448,7 +1448,7 @@ SUIFlagTest >> testPhilippines [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPitcairnIslands [
+SUIFlagTagTest >> testPitcairnIslands [
 	
 		self
 			assert: [:html | html flag pitcairnIslands ]
@@ -1456,7 +1456,7 @@ SUIFlagTest >> testPitcairnIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPoland [
+SUIFlagTagTest >> testPoland [
 	
 		self
 			assert: [:html | html flag poland ]
@@ -1464,7 +1464,7 @@ SUIFlagTest >> testPoland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPortugal [
+SUIFlagTagTest >> testPortugal [
 	
 		self
 			assert: [:html | html flag portugal ]
@@ -1472,7 +1472,7 @@ SUIFlagTest >> testPortugal [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testPuertoRico [
+SUIFlagTagTest >> testPuertoRico [
 	
 		self
 			assert: [:html | html flag puertoRico ]
@@ -1480,7 +1480,7 @@ SUIFlagTest >> testPuertoRico [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testQatar [
+SUIFlagTagTest >> testQatar [
 	
 		self
 			assert: [:html | html flag qatar ]
@@ -1488,7 +1488,7 @@ SUIFlagTest >> testQatar [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testReunion [
+SUIFlagTagTest >> testReunion [
 	
 		self
 			assert: [:html | html flag reunion ]
@@ -1496,7 +1496,7 @@ SUIFlagTest >> testReunion [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testRomania [
+SUIFlagTagTest >> testRomania [
 	
 		self
 			assert: [:html | html flag romania ]
@@ -1504,7 +1504,7 @@ SUIFlagTest >> testRomania [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testRussia [
+SUIFlagTagTest >> testRussia [
 	
 		self
 			assert: [:html | html flag russia ]
@@ -1512,7 +1512,7 @@ SUIFlagTest >> testRussia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testRwanda [
+SUIFlagTagTest >> testRwanda [
 	
 		self
 			assert: [:html | html flag rwanda ]
@@ -1520,7 +1520,7 @@ SUIFlagTest >> testRwanda [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSaintHelena [
+SUIFlagTagTest >> testSaintHelena [
 	
 		self
 			assert: [:html | html flag saintHelena ]
@@ -1528,7 +1528,7 @@ SUIFlagTest >> testSaintHelena [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSaintKittsAndNevis [
+SUIFlagTagTest >> testSaintKittsAndNevis [
 	
 		self
 			assert: [:html | html flag saintKittsAndNevis ]
@@ -1536,7 +1536,7 @@ SUIFlagTest >> testSaintKittsAndNevis [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSaintLucia [
+SUIFlagTagTest >> testSaintLucia [
 	
 		self
 			assert: [:html | html flag saintLucia ]
@@ -1544,7 +1544,7 @@ SUIFlagTest >> testSaintLucia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSaintPierre [
+SUIFlagTagTest >> testSaintPierre [
 	
 		self
 			assert: [:html | html flag saintPierre ]
@@ -1552,7 +1552,7 @@ SUIFlagTest >> testSaintPierre [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSaintVincent [
+SUIFlagTagTest >> testSaintVincent [
 	
 		self
 			assert: [:html | html flag saintVincent ]
@@ -1560,7 +1560,7 @@ SUIFlagTest >> testSaintVincent [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSamoa [
+SUIFlagTagTest >> testSamoa [
 	
 		self
 			assert: [:html | html flag samoa ]
@@ -1568,7 +1568,7 @@ SUIFlagTest >> testSamoa [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSanMarino [
+SUIFlagTagTest >> testSanMarino [
 	
 		self
 			assert: [:html | html flag sanMarino ]
@@ -1576,7 +1576,7 @@ SUIFlagTest >> testSanMarino [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSandwichIslands [
+SUIFlagTagTest >> testSandwichIslands [
 	
 		self
 			assert: [:html | html flag sandwichIslands ]
@@ -1584,7 +1584,7 @@ SUIFlagTest >> testSandwichIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSaoTome [
+SUIFlagTagTest >> testSaoTome [
 	
 		self
 			assert: [:html | html flag saoTome ]
@@ -1592,7 +1592,7 @@ SUIFlagTest >> testSaoTome [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSaudiArabia [
+SUIFlagTagTest >> testSaudiArabia [
 	
 		self
 			assert: [:html | html flag saudiArabia ]
@@ -1600,7 +1600,7 @@ SUIFlagTest >> testSaudiArabia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testScotland [
+SUIFlagTagTest >> testScotland [
 	
 		self
 			assert: [:html | html flag scotland ]
@@ -1608,7 +1608,7 @@ SUIFlagTest >> testScotland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSenegal [
+SUIFlagTagTest >> testSenegal [
 	
 		self
 			assert: [:html | html flag senegal ]
@@ -1616,7 +1616,7 @@ SUIFlagTest >> testSenegal [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSerbia [
+SUIFlagTagTest >> testSerbia [
 	
 		self
 			assert: [:html | html flag serbia ]
@@ -1624,7 +1624,7 @@ SUIFlagTest >> testSerbia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSeychelles [
+SUIFlagTagTest >> testSeychelles [
 	
 		self
 			assert: [:html | html flag seychelles ]
@@ -1632,7 +1632,7 @@ SUIFlagTest >> testSeychelles [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSierraLeone [
+SUIFlagTagTest >> testSierraLeone [
 	
 		self
 			assert: [:html | html flag sierraLeone ]
@@ -1640,7 +1640,7 @@ SUIFlagTest >> testSierraLeone [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSingapore [
+SUIFlagTagTest >> testSingapore [
 	
 		self
 			assert: [:html | html flag singapore ]
@@ -1648,7 +1648,7 @@ SUIFlagTest >> testSingapore [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSlovakia [
+SUIFlagTagTest >> testSlovakia [
 	
 		self
 			assert: [:html | html flag slovakia ]
@@ -1656,7 +1656,7 @@ SUIFlagTest >> testSlovakia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSlovenia [
+SUIFlagTagTest >> testSlovenia [
 	
 		self
 			assert: [:html | html flag slovenia ]
@@ -1664,7 +1664,7 @@ SUIFlagTest >> testSlovenia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSolomonIslands [
+SUIFlagTagTest >> testSolomonIslands [
 	
 		self
 			assert: [:html | html flag solomonIslands ]
@@ -1672,7 +1672,7 @@ SUIFlagTest >> testSolomonIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSomalia [
+SUIFlagTagTest >> testSomalia [
 	
 		self
 			assert: [:html | html flag somalia ]
@@ -1680,7 +1680,7 @@ SUIFlagTest >> testSomalia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSouthAfrica [
+SUIFlagTagTest >> testSouthAfrica [
 	
 		self
 			assert: [:html | html flag southAfrica ]
@@ -1688,7 +1688,7 @@ SUIFlagTest >> testSouthAfrica [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSouthKorea [
+SUIFlagTagTest >> testSouthKorea [
 	
 		self
 			assert: [:html | html flag southKorea ]
@@ -1696,7 +1696,7 @@ SUIFlagTest >> testSouthKorea [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSpain [
+SUIFlagTagTest >> testSpain [
 	
 		self
 			assert: [:html | html flag spain ]
@@ -1704,7 +1704,7 @@ SUIFlagTest >> testSpain [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSriLanka [
+SUIFlagTagTest >> testSriLanka [
 	
 		self
 			assert: [:html | html flag sriLanka ]
@@ -1712,7 +1712,7 @@ SUIFlagTest >> testSriLanka [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSudan [
+SUIFlagTagTest >> testSudan [
 	
 		self
 			assert: [:html | html flag sudan ]
@@ -1720,7 +1720,7 @@ SUIFlagTest >> testSudan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSuriname [
+SUIFlagTagTest >> testSuriname [
 	
 		self
 			assert: [:html | html flag suriname ]
@@ -1728,7 +1728,7 @@ SUIFlagTest >> testSuriname [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSvalbard [
+SUIFlagTagTest >> testSvalbard [
 	
 		self
 			assert: [:html | html flag svalbard ]
@@ -1736,7 +1736,7 @@ SUIFlagTest >> testSvalbard [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSwaziland [
+SUIFlagTagTest >> testSwaziland [
 	
 		self
 			assert: [:html | html flag swaziland ]
@@ -1744,7 +1744,7 @@ SUIFlagTest >> testSwaziland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSweden [
+SUIFlagTagTest >> testSweden [
 	
 		self
 			assert: [:html | html flag sweden ]
@@ -1752,7 +1752,7 @@ SUIFlagTest >> testSweden [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSwitzerland [
+SUIFlagTagTest >> testSwitzerland [
 	
 		self
 			assert: [:html | html flag switzerland ]
@@ -1760,7 +1760,7 @@ SUIFlagTest >> testSwitzerland [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testSyria [
+SUIFlagTagTest >> testSyria [
 	
 		self
 			assert: [:html | html flag syria ]
@@ -1768,7 +1768,7 @@ SUIFlagTest >> testSyria [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTaiwan [
+SUIFlagTagTest >> testTaiwan [
 	
 		self
 			assert: [:html | html flag taiwan ]
@@ -1776,7 +1776,7 @@ SUIFlagTest >> testTaiwan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTajikistan [
+SUIFlagTagTest >> testTajikistan [
 	
 		self
 			assert: [:html | html flag tajikistan ]
@@ -1784,7 +1784,7 @@ SUIFlagTest >> testTajikistan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTanzania [
+SUIFlagTagTest >> testTanzania [
 	
 		self
 			assert: [:html | html flag tanzania ]
@@ -1792,7 +1792,7 @@ SUIFlagTest >> testTanzania [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testThailand [
+SUIFlagTagTest >> testThailand [
 	
 		self
 			assert: [:html | html flag thailand ]
@@ -1800,7 +1800,7 @@ SUIFlagTest >> testThailand [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTimorleste [
+SUIFlagTagTest >> testTimorleste [
 	
 		self
 			assert: [:html | html flag timorleste ]
@@ -1808,7 +1808,7 @@ SUIFlagTest >> testTimorleste [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTogo [
+SUIFlagTagTest >> testTogo [
 	
 		self
 			assert: [:html | html flag togo ]
@@ -1816,7 +1816,7 @@ SUIFlagTest >> testTogo [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTokelau [
+SUIFlagTagTest >> testTokelau [
 	
 		self
 			assert: [:html | html flag tokelau ]
@@ -1824,7 +1824,7 @@ SUIFlagTest >> testTokelau [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTonga [
+SUIFlagTagTest >> testTonga [
 	
 		self
 			assert: [:html | html flag tonga ]
@@ -1832,7 +1832,7 @@ SUIFlagTest >> testTonga [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTrinidad [
+SUIFlagTagTest >> testTrinidad [
 	
 		self
 			assert: [:html | html flag trinidad ]
@@ -1840,7 +1840,7 @@ SUIFlagTest >> testTrinidad [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTunisia [
+SUIFlagTagTest >> testTunisia [
 	
 		self
 			assert: [:html | html flag tunisia ]
@@ -1848,7 +1848,7 @@ SUIFlagTest >> testTunisia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTurkey [
+SUIFlagTagTest >> testTurkey [
 	
 		self
 			assert: [:html | html flag turkey ]
@@ -1856,7 +1856,7 @@ SUIFlagTest >> testTurkey [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTurkmenistan [
+SUIFlagTagTest >> testTurkmenistan [
 	
 		self
 			assert: [:html | html flag turkmenistan ]
@@ -1864,7 +1864,7 @@ SUIFlagTest >> testTurkmenistan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testTuvalu [
+SUIFlagTagTest >> testTuvalu [
 	
 		self
 			assert: [:html | html flag tuvalu ]
@@ -1872,7 +1872,7 @@ SUIFlagTest >> testTuvalu [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUAE [
+SUIFlagTagTest >> testUAE [
 	
 		self
 			assert: [:html | html flag uAE ]
@@ -1880,7 +1880,7 @@ SUIFlagTest >> testUAE [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUganda [
+SUIFlagTagTest >> testUganda [
 	
 		self
 			assert: [:html | html flag uganda ]
@@ -1888,7 +1888,7 @@ SUIFlagTest >> testUganda [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUkraine [
+SUIFlagTagTest >> testUkraine [
 	
 		self
 			assert: [:html | html flag ukraine ]
@@ -1896,7 +1896,7 @@ SUIFlagTest >> testUkraine [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUnitedKingdom [
+SUIFlagTagTest >> testUnitedKingdom [
 	
 		self
 			assert: [:html | html flag unitedKingdom ]
@@ -1904,7 +1904,7 @@ SUIFlagTest >> testUnitedKingdom [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUnitedStates [
+SUIFlagTagTest >> testUnitedStates [
 	
 		self
 			assert: [:html | html flag unitedStates ]
@@ -1912,7 +1912,7 @@ SUIFlagTest >> testUnitedStates [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUruguay [
+SUIFlagTagTest >> testUruguay [
 	
 		self
 			assert: [:html | html flag uruguay ]
@@ -1920,7 +1920,7 @@ SUIFlagTest >> testUruguay [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUsMinorIslands [
+SUIFlagTagTest >> testUsMinorIslands [
 	
 		self
 			assert: [:html | html flag usMinorIslands ]
@@ -1928,7 +1928,7 @@ SUIFlagTest >> testUsMinorIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUsVirginIslands [
+SUIFlagTagTest >> testUsVirginIslands [
 	
 		self
 			assert: [:html | html flag usVirginIslands ]
@@ -1936,7 +1936,7 @@ SUIFlagTest >> testUsVirginIslands [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testUzbekistan [
+SUIFlagTagTest >> testUzbekistan [
 	
 		self
 			assert: [:html | html flag uzbekistan ]
@@ -1944,7 +1944,7 @@ SUIFlagTest >> testUzbekistan [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testVanuatu [
+SUIFlagTagTest >> testVanuatu [
 	
 		self
 			assert: [:html | html flag vanuatu ]
@@ -1952,7 +1952,7 @@ SUIFlagTest >> testVanuatu [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testVaticanCity [
+SUIFlagTagTest >> testVaticanCity [
 	
 		self
 			assert: [:html | html flag vaticanCity ]
@@ -1960,7 +1960,7 @@ SUIFlagTest >> testVaticanCity [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testVenezuela [
+SUIFlagTagTest >> testVenezuela [
 	
 		self
 			assert: [:html | html flag venezuela ]
@@ -1968,7 +1968,7 @@ SUIFlagTest >> testVenezuela [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testVietnam [
+SUIFlagTagTest >> testVietnam [
 	
 		self
 			assert: [:html | html flag vietnam ]
@@ -1976,7 +1976,7 @@ SUIFlagTest >> testVietnam [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testWales [
+SUIFlagTagTest >> testWales [
 	
 		self
 			assert: [:html | html flag wales ]
@@ -1984,7 +1984,7 @@ SUIFlagTest >> testWales [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testWallisAndFutuna [
+SUIFlagTagTest >> testWallisAndFutuna [
 	
 		self
 			assert: [:html | html flag wallisAndFutuna ]
@@ -1992,7 +1992,7 @@ SUIFlagTest >> testWallisAndFutuna [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testWesternSahara [
+SUIFlagTagTest >> testWesternSahara [
 	
 		self
 			assert: [:html | html flag westernSahara ]
@@ -2000,7 +2000,7 @@ SUIFlagTest >> testWesternSahara [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testYemen [
+SUIFlagTagTest >> testYemen [
 	
 		self
 			assert: [:html | html flag yemen ]
@@ -2008,7 +2008,7 @@ SUIFlagTest >> testYemen [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testZambia [
+SUIFlagTagTest >> testZambia [
 	
 		self
 			assert: [:html | html flag zambia ]
@@ -2016,7 +2016,7 @@ SUIFlagTest >> testZambia [
 ]
 
 { #category : #'tests - iso - names' }
-SUIFlagTest >> testZimbabwe [
+SUIFlagTagTest >> testZimbabwe [
 	
 		self
 			assert: [:html | html flag zimbabwe ]

@@ -2,13 +2,13 @@
 Unit tests for Semantic UI image groups
 "
 Class {
-	#name : #SUIImageGroupTest,
+	#name : #SUIImageGroupTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUIImageGroupTest >> testImageGroup [ 
+SUIImageGroupTagTest >> testImageGroup [ 
 	
 	self
 		assert: [:html | html imageGroup ]
@@ -17,7 +17,7 @@ SUIImageGroupTest >> testImageGroup [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageGroupTest >> testImageGroupBig [
+SUIImageGroupTagTest >> testImageGroupBig [
 	
 	self
 		assert: [:html | html imageGroup beBig ]
@@ -25,7 +25,7 @@ SUIImageGroupTest >> testImageGroupBig [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageGroupTest >> testImageGroupHuge [
+SUIImageGroupTagTest >> testImageGroupHuge [
 	
 	self
 		assert: [:html | html imageGroup beHuge ]
@@ -33,7 +33,7 @@ SUIImageGroupTest >> testImageGroupHuge [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageGroupTest >> testImageGroupLarge [
+SUIImageGroupTagTest >> testImageGroupLarge [
 	
 	self
 		assert: [:html | html imageGroup beLarge ]
@@ -41,7 +41,7 @@ SUIImageGroupTest >> testImageGroupLarge [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageGroupTest >> testImageGroupMassive [
+SUIImageGroupTagTest >> testImageGroupMassive [
 	
 	self
 		assert: [:html | html imageGroup beMassive ]
@@ -49,7 +49,7 @@ SUIImageGroupTest >> testImageGroupMassive [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageGroupTest >> testImageGroupMedium [
+SUIImageGroupTagTest >> testImageGroupMedium [
 	
 	self
 		assert: [:html | html imageGroup beMedium ]
@@ -57,7 +57,7 @@ SUIImageGroupTest >> testImageGroupMedium [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageGroupTest >> testImageGroupMini [
+SUIImageGroupTagTest >> testImageGroupMini [
 	
 	self
 		assert: [:html | html imageGroup beMini ]
@@ -65,7 +65,7 @@ SUIImageGroupTest >> testImageGroupMini [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageGroupTest >> testImageGroupSmall [
+SUIImageGroupTagTest >> testImageGroupSmall [
 	
 	self
 		assert: [:html | html imageGroup beSmall ]
@@ -73,7 +73,7 @@ SUIImageGroupTest >> testImageGroupSmall [
 ]
 
 { #category : #'tests - sizing' }
-SUIImageGroupTest >> testImageGroupTiny [
+SUIImageGroupTagTest >> testImageGroupTiny [
 	
 	self
 		assert: [:html | html imageGroup beTiny ]

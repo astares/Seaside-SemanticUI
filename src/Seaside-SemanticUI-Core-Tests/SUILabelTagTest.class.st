@@ -2,13 +2,13 @@
 Unit tests for Semantic UI label
 "
 Class {
-	#name : #SUILabelTest,
+	#name : #SUILabelTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUILabelTest >> testLabel [
+SUILabelTagTest >> testLabel [
 	
 	self
 		assert: [:html | html semanticLabel ]
@@ -17,7 +17,7 @@ SUILabelTest >> testLabel [
 ]
 
 { #category : #'tests - positions' }
-SUILabelTest >> testLabelBelow [
+SUILabelTagTest >> testLabelBelow [
 	
 	self
 		assert: [:html | html semanticLabel beBelow ]
@@ -26,7 +26,7 @@ SUILabelTest >> testLabelBelow [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelBlue [
+SUILabelTagTest >> testLabelBlue [
 	
 	self
 		assert: [:html | html semanticLabel beBlue ]
@@ -35,7 +35,7 @@ SUILabelTest >> testLabelBlue [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelBrown [
+SUILabelTagTest >> testLabelBrown [
 	
 	self
 		assert: [:html | html semanticLabel beBrown ]
@@ -44,7 +44,7 @@ SUILabelTest >> testLabelBrown [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelGreen [
+SUILabelTagTest >> testLabelGreen [
 	
 	self
 		assert: [:html | html semanticLabel beGreen ]
@@ -53,7 +53,7 @@ SUILabelTest >> testLabelGreen [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelGrey [
+SUILabelTagTest >> testLabelGrey [
 	
 	self
 		assert: [:html | html semanticLabel beGrey ]
@@ -62,7 +62,7 @@ SUILabelTest >> testLabelGrey [
 ]
 
 { #category : #'tests - options' }
-SUILabelTest >> testLabelImage [
+SUILabelTagTest >> testLabelImage [
 	
 	self
 		assert: [:html | html semanticLabel beImage ]
@@ -71,7 +71,7 @@ SUILabelTest >> testLabelImage [
 ]
 
 { #category : #'tests - positions' }
-SUILabelTest >> testLabelLeft [
+SUILabelTagTest >> testLabelLeft [
 	
 	self
 		assert: [:html | html semanticLabel beLeft ]
@@ -80,7 +80,7 @@ SUILabelTest >> testLabelLeft [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelOlive [
+SUILabelTagTest >> testLabelOlive [
 	
 	self
 		assert: [:html | html semanticLabel beOlive ]
@@ -89,7 +89,7 @@ SUILabelTest >> testLabelOlive [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelOrange [
+SUILabelTagTest >> testLabelOrange [
 	
 	self
 		assert: [:html | html semanticLabel beOrange ]
@@ -98,7 +98,7 @@ SUILabelTest >> testLabelOrange [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelPink [
+SUILabelTagTest >> testLabelPink [
 	
 	self
 		assert: [:html | html semanticLabel bePink ]
@@ -107,7 +107,7 @@ SUILabelTest >> testLabelPink [
 ]
 
 { #category : #'tests - options' }
-SUILabelTest >> testLabelPointing [
+SUILabelTagTest >> testLabelPointing [
 	
 	self
 		assert: [:html | html semanticLabel bePointing ]
@@ -116,7 +116,7 @@ SUILabelTest >> testLabelPointing [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelPurple [
+SUILabelTagTest >> testLabelPurple [
 	
 	self
 		assert: [:html | html semanticLabel bePurple ]
@@ -125,7 +125,7 @@ SUILabelTest >> testLabelPurple [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelRed [
+SUILabelTagTest >> testLabelRed [
 	
 	self
 		assert: [:html | html semanticLabel beRed ]
@@ -134,7 +134,7 @@ SUILabelTest >> testLabelRed [
 ]
 
 { #category : #'tests - positions' }
-SUILabelTest >> testLabelRight [
+SUILabelTagTest >> testLabelRight [
 	
 	self
 		assert: [:html | html semanticLabel beRight ]
@@ -143,7 +143,7 @@ SUILabelTest >> testLabelRight [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelTeal [
+SUILabelTagTest >> testLabelTeal [
 	
 	self
 		assert: [:html | html semanticLabel beTeal ]
@@ -152,7 +152,7 @@ SUILabelTest >> testLabelTeal [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelViolet [
+SUILabelTagTest >> testLabelViolet [
 	
 	self
 		assert: [:html | html semanticLabel beViolet ]
@@ -161,7 +161,7 @@ SUILabelTest >> testLabelViolet [
 ]
 
 { #category : #tests }
-SUILabelTest >> testLabelWithContents [
+SUILabelTagTest >> testLabelWithContents [
 	
 	self
 		assert: [:html | html semanticLabel: 'Semantic UI' ]
@@ -170,7 +170,7 @@ SUILabelTest >> testLabelWithContents [
 ]
 
 { #category : #'tests - coloring' }
-SUILabelTest >> testLabelYellow [
+SUILabelTagTest >> testLabelYellow [
 	
 	self
 		assert: [:html | html semanticLabel beYellow ]
@@ -179,7 +179,7 @@ SUILabelTest >> testLabelYellow [
 ]
 
 { #category : #tests }
-SUILabelTest >> testPointingLabel [
+SUILabelTagTest >> testPointingLabel [
 	
 	self
 		assert: [:html | html pointingLabel ]
@@ -188,7 +188,7 @@ SUILabelTest >> testPointingLabel [
 ]
 
 { #category : #tests }
-SUILabelTest >> testPointingLabelWithContents [
+SUILabelTagTest >> testPointingLabelWithContents [
 	
 	self
 		assert: [:html | html pointingLabel with: 'SemanticUI' ]

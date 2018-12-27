@@ -2,13 +2,13 @@
 Unit tests for Semantic UI standard input
 "
 Class {
-	#name : #SUIStandardInputTest,
+	#name : #SUIStandardInputTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUIStandardInputTest >> testStandardInput [
+SUIStandardInputTagTest >> testStandardInput [
 	
 	self
 		assert: [:html | html standardInput ]
@@ -17,7 +17,7 @@ SUIStandardInputTest >> testStandardInput [
 ]
 
 { #category : #'tests - styles' }
-SUIStandardInputTest >> testStandardInputAction [
+SUIStandardInputTagTest >> testStandardInputAction [
 	
 	self
 		assert: [:html | html standardInput beAction ]
@@ -26,7 +26,7 @@ SUIStandardInputTest >> testStandardInputAction [
 ]
 
 { #category : #'tests - sizing' }
-SUIStandardInputTest >> testStandardInputBig [
+SUIStandardInputTagTest >> testStandardInputBig [
 	
 	self
 		assert: [:html | html standardInput beBig ]
@@ -35,7 +35,7 @@ SUIStandardInputTest >> testStandardInputBig [
 ]
 
 { #category : #tests }
-SUIStandardInputTest >> testStandardInputDisabled [
+SUIStandardInputTagTest >> testStandardInputDisabled [
 	
 	self
 		assert: [:html | html standardInput beDisabled ]
@@ -44,7 +44,7 @@ SUIStandardInputTest >> testStandardInputDisabled [
 ]
 
 { #category : #tests }
-SUIStandardInputTest >> testStandardInputError [
+SUIStandardInputTagTest >> testStandardInputError [
 	
 	self
 		assert: [:html | html standardInput beError ]
@@ -53,7 +53,7 @@ SUIStandardInputTest >> testStandardInputError [
 ]
 
 { #category : #tests }
-SUIStandardInputTest >> testStandardInputFocus [
+SUIStandardInputTagTest >> testStandardInputFocus [
 	
 	self
 		assert: [:html | html standardInput beFocus ]
@@ -62,7 +62,7 @@ SUIStandardInputTest >> testStandardInputFocus [
 ]
 
 { #category : #'tests - sizing' }
-SUIStandardInputTest >> testStandardInputHuge [
+SUIStandardInputTagTest >> testStandardInputHuge [
 	
 	self
 		assert: [:html | html standardInput beHuge ]
@@ -71,7 +71,7 @@ SUIStandardInputTest >> testStandardInputHuge [
 ]
 
 { #category : #'tests - styles' }
-SUIStandardInputTest >> testStandardInputIconic [
+SUIStandardInputTagTest >> testStandardInputIconic [
 	
 	self
 		assert: [:html | html standardInput beIconic ]
@@ -80,7 +80,7 @@ SUIStandardInputTest >> testStandardInputIconic [
 ]
 
 { #category : #'tests - styles' }
-SUIStandardInputTest >> testStandardInputInverted [
+SUIStandardInputTagTest >> testStandardInputInverted [
 	
 	self
 		assert: [:html | html standardInput beInverted ]
@@ -89,7 +89,7 @@ SUIStandardInputTest >> testStandardInputInverted [
 ]
 
 { #category : #'tests - styles' }
-SUIStandardInputTest >> testStandardInputLabeled [
+SUIStandardInputTagTest >> testStandardInputLabeled [
 	
 	self
 		assert: [:html | html standardInput beLabeled ]
@@ -98,7 +98,7 @@ SUIStandardInputTest >> testStandardInputLabeled [
 ]
 
 { #category : #'tests - sizing' }
-SUIStandardInputTest >> testStandardInputLarge [
+SUIStandardInputTagTest >> testStandardInputLarge [
 	
 	self
 		assert: [:html | html standardInput beLarge ]
@@ -107,7 +107,7 @@ SUIStandardInputTest >> testStandardInputLarge [
 ]
 
 { #category : #tests }
-SUIStandardInputTest >> testStandardInputLoading [
+SUIStandardInputTagTest >> testStandardInputLoading [
 	
 	self
 		assert: [:html | html standardInput beLoading ]
@@ -116,7 +116,7 @@ SUIStandardInputTest >> testStandardInputLoading [
 ]
 
 { #category : #'tests - sizing' }
-SUIStandardInputTest >> testStandardInputMassive [
+SUIStandardInputTagTest >> testStandardInputMassive [
 	
 	self
 		assert: [:html | html standardInput beMassive ]
@@ -125,7 +125,7 @@ SUIStandardInputTest >> testStandardInputMassive [
 ]
 
 { #category : #'tests - sizing' }
-SUIStandardInputTest >> testStandardInputMini [
+SUIStandardInputTagTest >> testStandardInputMini [
 	
 	self
 		assert: [:html | html standardInput beMini ]
@@ -134,7 +134,7 @@ SUIStandardInputTest >> testStandardInputMini [
 ]
 
 { #category : #'tests - sizing' }
-SUIStandardInputTest >> testStandardInputSmall [
+SUIStandardInputTagTest >> testStandardInputSmall [
 	
 	self
 		assert: [:html | html standardInput beSmall ]
@@ -143,7 +143,7 @@ SUIStandardInputTest >> testStandardInputSmall [
 ]
 
 { #category : #'tests - styles' }
-SUIStandardInputTest >> testStandardInputTransparent [
+SUIStandardInputTagTest >> testStandardInputTransparent [
 	
 	self
 		assert: [:html | html standardInput beTransparent ]

@@ -2,13 +2,13 @@
 Unit tests for the Semantic UI brushes
 "
 Class {
-	#name : #SUIButtonTest,
+	#name : #SUIButtonTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUIButtonTest >> testButton [ 
+SUIButtonTagTest >> testButton [ 
 	
 	self
 		assert: [:html | html button ]
@@ -17,7 +17,7 @@ SUIButtonTest >> testButton [
 ]
 
 { #category : #'tests - states' }
-SUIButtonTest >> testButtonActive [
+SUIButtonTagTest >> testButtonActive [
 	
 	self
 		assert: [:html | html button beActive ]
@@ -26,7 +26,7 @@ SUIButtonTest >> testButtonActive [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonAnimated [
+SUIButtonTagTest >> testButtonAnimated [
 	
 	self
 		assert: [:html | html button beAnimated ]
@@ -35,7 +35,7 @@ SUIButtonTest >> testButtonAnimated [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonBasic [
+SUIButtonTagTest >> testButtonBasic [
 
 	self
 		assert: [:html | html button beBasic ]
@@ -44,7 +44,7 @@ SUIButtonTest >> testButtonBasic [
 ]
 
 { #category : #'tests - sizing' }
-SUIButtonTest >> testButtonBig [
+SUIButtonTagTest >> testButtonBig [
 	
 	self
 		assert: [:html | html button beBig ]
@@ -53,7 +53,7 @@ SUIButtonTest >> testButtonBig [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonBlack [
+SUIButtonTagTest >> testButtonBlack [
 	
 	self
 		assert: [:html | html button beBlack ]
@@ -62,7 +62,7 @@ SUIButtonTest >> testButtonBlack [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonBlue [
+SUIButtonTagTest >> testButtonBlue [
 	
 	self
 		assert: [:html | html button beBlue ]
@@ -71,7 +71,7 @@ SUIButtonTest >> testButtonBlue [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonBrown [
+SUIButtonTagTest >> testButtonBrown [
 	
 	self
 		assert: [:html | html button beBrown ]
@@ -80,7 +80,7 @@ SUIButtonTest >> testButtonBrown [
 ]
 
 { #category : #'tests - states' }
-SUIButtonTest >> testButtonDisabled [
+SUIButtonTagTest >> testButtonDisabled [
 	
 	self
 		assert: [:html | html button beDisabled ]
@@ -89,7 +89,7 @@ SUIButtonTest >> testButtonDisabled [
 ]
 
 { #category : #'tests - social' }
-SUIButtonTest >> testButtonFacebook [
+SUIButtonTagTest >> testButtonFacebook [
 	
 	self
 		assert: [:html | html button beFacebook ]
@@ -98,7 +98,7 @@ SUIButtonTest >> testButtonFacebook [
 ]
 
 { #category : #'tests - social' }
-SUIButtonTest >> testButtonGooglePlus [
+SUIButtonTagTest >> testButtonGooglePlus [
 	
 	self
 		assert: [:html | html button beGooglePlus ]
@@ -107,7 +107,7 @@ SUIButtonTest >> testButtonGooglePlus [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonGreen [
+SUIButtonTagTest >> testButtonGreen [
 	
 	self
 		assert: [:html | html button beGreen ]
@@ -116,7 +116,7 @@ SUIButtonTest >> testButtonGreen [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonGrey [
+SUIButtonTagTest >> testButtonGrey [
 	
 	self
 		assert: [:html | html button beGrey ]
@@ -125,7 +125,7 @@ SUIButtonTest >> testButtonGrey [
 ]
 
 { #category : #'tests - sizing' }
-SUIButtonTest >> testButtonHuge [
+SUIButtonTagTest >> testButtonHuge [
 	
 	self
 		assert: [:html | html button beHuge ]
@@ -134,7 +134,7 @@ SUIButtonTest >> testButtonHuge [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonIcon [
+SUIButtonTagTest >> testButtonIcon [
 	
 	self
 		assert: [:html | html button beIcon ]
@@ -143,7 +143,7 @@ SUIButtonTest >> testButtonIcon [
 ]
 
 { #category : #'tests - social' }
-SUIButtonTest >> testButtonInstagram [
+SUIButtonTagTest >> testButtonInstagram [
 
 	self
 		assert: [:html | html button beInstagram ]
@@ -152,7 +152,7 @@ SUIButtonTest >> testButtonInstagram [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonInverted [
+SUIButtonTagTest >> testButtonInverted [
 	
 	self
 		assert: [:html | html button beInverted ]
@@ -161,7 +161,7 @@ SUIButtonTest >> testButtonInverted [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonLabeled [
+SUIButtonTagTest >> testButtonLabeled [
 	
 	self
 		assert: [:html | html button beLabeled ]
@@ -170,7 +170,7 @@ SUIButtonTest >> testButtonLabeled [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonLabeledIcon [
+SUIButtonTagTest >> testButtonLabeledIcon [
 	
 	self
 		assert: [:html | html button beLabeledIcon ]
@@ -179,7 +179,7 @@ SUIButtonTest >> testButtonLabeledIcon [
 ]
 
 { #category : #'tests - sizing' }
-SUIButtonTest >> testButtonLarge [
+SUIButtonTagTest >> testButtonLarge [
 	
 	self
 		assert: [:html | html button beLarge ]
@@ -188,7 +188,7 @@ SUIButtonTest >> testButtonLarge [
 ]
 
 { #category : #'tests - social' }
-SUIButtonTest >> testButtonLinkedIn [
+SUIButtonTagTest >> testButtonLinkedIn [
 
 	self
 		assert: [:html | html button beLinkedIn ]
@@ -197,7 +197,7 @@ SUIButtonTest >> testButtonLinkedIn [
 ]
 
 { #category : #'tests - states' }
-SUIButtonTest >> testButtonLoading [
+SUIButtonTagTest >> testButtonLoading [
 
 	self
 		assert: [:html | html button beLoading ]
@@ -206,7 +206,7 @@ SUIButtonTest >> testButtonLoading [
 ]
 
 { #category : #'tests - sizing' }
-SUIButtonTest >> testButtonMassive [
+SUIButtonTagTest >> testButtonMassive [
 	
 	self
 		assert: [:html | html button beMassive ]
@@ -215,7 +215,7 @@ SUIButtonTest >> testButtonMassive [
 ]
 
 { #category : #'tests - sizing' }
-SUIButtonTest >> testButtonMedium [
+SUIButtonTagTest >> testButtonMedium [
 	
 	self
 		assert: [:html | html button beMedium ]
@@ -224,7 +224,7 @@ SUIButtonTest >> testButtonMedium [
 ]
 
 { #category : #'tests - sizing' }
-SUIButtonTest >> testButtonMini [
+SUIButtonTagTest >> testButtonMini [
 	
 	self
 		assert: [:html | html button beMini ]
@@ -233,7 +233,7 @@ SUIButtonTest >> testButtonMini [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonNegative [
+SUIButtonTagTest >> testButtonNegative [
 
 	self
 		assert: [:html | html button beNegative ]
@@ -242,7 +242,7 @@ SUIButtonTest >> testButtonNegative [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonOlive [
+SUIButtonTagTest >> testButtonOlive [
 	
 	self
 		assert: [:html | html button beOlive ]
@@ -251,7 +251,7 @@ SUIButtonTest >> testButtonOlive [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonOrange [
+SUIButtonTagTest >> testButtonOrange [
 	
 	self
 		assert: [:html | html button beOrange ]
@@ -260,7 +260,7 @@ SUIButtonTest >> testButtonOrange [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonPink [
+SUIButtonTagTest >> testButtonPink [
 	
 	self
 		assert: [:html | html button bePink ]
@@ -269,7 +269,7 @@ SUIButtonTest >> testButtonPink [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonPositive [
+SUIButtonTagTest >> testButtonPositive [
 
 	self
 		assert: [:html | html button bePositive ]
@@ -278,7 +278,7 @@ SUIButtonTest >> testButtonPositive [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonPrimary [
+SUIButtonTagTest >> testButtonPrimary [
 	
 	self
 		assert: [:html | html button bePrimary ]
@@ -287,7 +287,7 @@ SUIButtonTest >> testButtonPrimary [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonPurple [
+SUIButtonTagTest >> testButtonPurple [
 	
 	self
 		assert: [:html | html button bePurple ]
@@ -296,7 +296,7 @@ SUIButtonTest >> testButtonPurple [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonRed [
+SUIButtonTagTest >> testButtonRed [
 	
 	self
 		assert: [:html | html button beRed ]
@@ -305,7 +305,7 @@ SUIButtonTest >> testButtonRed [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonSecondary [
+SUIButtonTagTest >> testButtonSecondary [
 	
 	self
 		assert: [:html | html button beSecondary ]
@@ -314,7 +314,7 @@ SUIButtonTest >> testButtonSecondary [
 ]
 
 { #category : #'tests - sizing' }
-SUIButtonTest >> testButtonSmall [
+SUIButtonTagTest >> testButtonSmall [
 	
 	self
 		assert: [:html | html button beSmall ]
@@ -323,7 +323,7 @@ SUIButtonTest >> testButtonSmall [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonTeal [
+SUIButtonTagTest >> testButtonTeal [
 	
 	self
 		assert: [:html | html button beTeal ]
@@ -332,7 +332,7 @@ SUIButtonTest >> testButtonTeal [
 ]
 
 { #category : #'tests - sizing' }
-SUIButtonTest >> testButtonTiny [
+SUIButtonTagTest >> testButtonTiny [
 	
 	self
 		assert: [:html | html button beTiny ]
@@ -341,7 +341,7 @@ SUIButtonTest >> testButtonTiny [
 ]
 
 { #category : #'tests - social' }
-SUIButtonTest >> testButtonTwitter [
+SUIButtonTagTest >> testButtonTwitter [
 	
 	self
 		assert: [:html | html button beTwitter ]
@@ -350,7 +350,7 @@ SUIButtonTest >> testButtonTwitter [
 ]
 
 { #category : #'tests - social' }
-SUIButtonTest >> testButtonVK [
+SUIButtonTagTest >> testButtonVK [
 
 	self
 		assert: [:html | html button beVK ]
@@ -359,7 +359,7 @@ SUIButtonTest >> testButtonVK [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonViolet [
+SUIButtonTagTest >> testButtonViolet [
 	
 	self
 		assert: [:html | html button beViolet ]
@@ -368,7 +368,7 @@ SUIButtonTest >> testButtonViolet [
 ]
 
 { #category : #tests }
-SUIButtonTest >> testButtonWithContent [
+SUIButtonTagTest >> testButtonWithContent [
 	
 	self
 		assert: [:html | html button: 'SemanticUI' ]
@@ -377,7 +377,7 @@ SUIButtonTest >> testButtonWithContent [
 ]
 
 { #category : #'tests - coloring' }
-SUIButtonTest >> testButtonYellow [
+SUIButtonTagTest >> testButtonYellow [
 	
 	self
 		assert: [:html | html button beYellow ]
@@ -386,7 +386,7 @@ SUIButtonTest >> testButtonYellow [
 ]
 
 { #category : #'tests - social' }
-SUIButtonTest >> testButtonYoutube [
+SUIButtonTagTest >> testButtonYoutube [
 
 	self
 		assert: [:html | html button beYoutube ]

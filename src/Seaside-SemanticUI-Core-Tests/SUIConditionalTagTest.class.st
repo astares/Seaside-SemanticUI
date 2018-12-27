@@ -2,13 +2,13 @@
 Unit test for Semantic UI conditionals (see SUIConditionalTag)
 "
 Class {
-	#name : #SUIConditionalTest,
+	#name : #SUIConditionalTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUIConditionalTest >> testConditional [
+SUIConditionalTagTest >> testConditional [
 
 	self
 		assert: [:html | html conditional ]
@@ -17,7 +17,7 @@ SUIConditionalTest >> testConditional [
 ]
 
 { #category : #tests }
-SUIConditionalTest >> testConditionalDataText [
+SUIConditionalTagTest >> testConditionalDataText [
 
 	self
 		assert: [:html | html conditional dataText: 'ou' ]

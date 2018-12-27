@@ -2,13 +2,13 @@
 Unit tests for Semantic UI dividers
 "
 Class {
-	#name : #SUIDividerTest,
+	#name : #SUIDividerTagTest,
 	#superclass : #SUIAbstractCanvasBrushTest,
 	#category : #'Seaside-SemanticUI-Core-Tests-Tags'
 }
 
 { #category : #tests }
-SUIDividerTest >> testClearingDivider [
+SUIDividerTagTest >> testClearingDivider [
 	
 	self
 		assert: [:html | html clearingDivider ]
@@ -17,7 +17,7 @@ SUIDividerTest >> testClearingDivider [
 ]
 
 { #category : #tests }
-SUIDividerTest >> testDivider [
+SUIDividerTagTest >> testDivider [
 	
 	self
 		assert: [:html | html divider ]
@@ -26,7 +26,7 @@ SUIDividerTest >> testDivider [
 ]
 
 { #category : #'tests - layout' }
-SUIDividerTest >> testDividerClearing [
+SUIDividerTagTest >> testDividerClearing [
 	
 	self
 		assert: [:html | html divider beClearing ]
@@ -35,7 +35,7 @@ SUIDividerTest >> testDividerClearing [
 ]
 
 { #category : #'tests - layout' }
-SUIDividerTest >> testDividerFitted [
+SUIDividerTagTest >> testDividerFitted [
 	
 	self
 		assert: [:html | html divider beFitted ]
@@ -44,7 +44,7 @@ SUIDividerTest >> testDividerFitted [
 ]
 
 { #category : #'tests - styling' }
-SUIDividerTest >> testDividerHidden [
+SUIDividerTagTest >> testDividerHidden [
 	
 	self
 		assert: [:html | html divider beHidden ]
@@ -53,7 +53,7 @@ SUIDividerTest >> testDividerHidden [
 ]
 
 { #category : #'tests - layout' }
-SUIDividerTest >> testDividerHorizontal [
+SUIDividerTagTest >> testDividerHorizontal [
 	
 	self
 		assert: [:html | html divider beHorizontal ]
@@ -62,7 +62,7 @@ SUIDividerTest >> testDividerHorizontal [
 ]
 
 { #category : #'tests - styling' }
-SUIDividerTest >> testDividerInverted [
+SUIDividerTagTest >> testDividerInverted [
 	
 	self
 		assert: [:html | html divider beInverted ]
@@ -71,7 +71,7 @@ SUIDividerTest >> testDividerInverted [
 ]
 
 { #category : #'tests - layout' }
-SUIDividerTest >> testDividerSection [
+SUIDividerTagTest >> testDividerSection [
 	
 	self
 		assert: [:html | html divider beSection ]
@@ -80,7 +80,7 @@ SUIDividerTest >> testDividerSection [
 ]
 
 { #category : #'tests - layout' }
-SUIDividerTest >> testDividerVertical [
+SUIDividerTagTest >> testDividerVertical [
 	
 	self
 		assert: [:html | html divider beVertical ]
@@ -89,7 +89,7 @@ SUIDividerTest >> testDividerVertical [
 ]
 
 { #category : #tests }
-SUIDividerTest >> testDividerWithContent [
+SUIDividerTagTest >> testDividerWithContent [
 	
 	self
 		assert: [:html | html divider: 'SemanticUI' ]
@@ -98,7 +98,7 @@ SUIDividerTest >> testDividerWithContent [
 ]
 
 { #category : #tests }
-SUIDividerTest >> testSectionDivider [
+SUIDividerTagTest >> testSectionDivider [
 	
 	self
 		assert: [:html | html sectionDivider ]
