@@ -10,9 +10,27 @@ Class {
 }
 
 { #category : #options }
+SUIAnchorLabelTag >> beCorner [
+
+	self class: 'corner'
+]
+
+{ #category : #options }
 SUIAnchorLabelTag >> beImage [
 
 	self class: 'image'
+]
+
+{ #category : #positioning }
+SUIAnchorLabelTag >> beLeft [
+
+	self class: 'left'
+]
+
+{ #category : #positioning }
+SUIAnchorLabelTag >> beRight [
+
+	self class: 'right'
 ]
 
 { #category : #initialization }

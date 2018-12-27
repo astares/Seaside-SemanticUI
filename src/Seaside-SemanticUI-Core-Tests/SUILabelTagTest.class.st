@@ -16,7 +16,7 @@ SUILabelTagTest >> testLabel [
 
 ]
 
-{ #category : #'tests - positions' }
+{ #category : #'tests - positioning' }
 SUILabelTagTest >> testLabelBelow [
 	
 	self
@@ -70,7 +70,7 @@ SUILabelTagTest >> testLabelImage [
 
 ]
 
-{ #category : #'tests - positions' }
+{ #category : #'tests - positioning' }
 SUILabelTagTest >> testLabelLeft [
 	
 	self
@@ -133,7 +133,7 @@ SUILabelTagTest >> testLabelRed [
 
 ]
 
-{ #category : #'tests - positions' }
+{ #category : #'tests - positioning' }
 SUILabelTagTest >> testLabelRight [
 	
 	self

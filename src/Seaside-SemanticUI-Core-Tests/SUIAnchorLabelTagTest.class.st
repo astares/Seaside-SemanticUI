@@ -34,6 +34,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelBrown [
 
 ]
 
+{ #category : #'tests - options' }
+SUIAnchorLabelTagTest >> testAnchorLabelCorner [
+	
+	self
+		assert: [:html | html anchorLabel beCorner ]
+		gives: '<a class="ui label corner"></a>'
+
+]
+
 { #category : #'tests - coloring' }
 SUIAnchorLabelTagTest >> testAnchorLabelGreen [
 	
@@ -58,6 +67,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelImage [
 	self
 		assert: [:html | html anchorLabel beImage ]
 		gives: '<a class="ui label image"></a>'
+
+]
+
+{ #category : #'tests - positioning' }
+SUIAnchorLabelTagTest >> testAnchorLabelLeft [
+	
+	self
+		assert: [:html | html anchorLabel beLeft ]
+		gives: '<a class="ui label left"></a>'
 
 ]
 
@@ -103,6 +121,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelRed [
 	self
 		assert: [:html | html anchorLabel beRed ]
 		gives: '<a class="ui label red"></a>'
+
+]
+
+{ #category : #'tests - positioning' }
+SUIAnchorLabelTagTest >> testAnchorLabelRight [
+	
+	self
+		assert: [:html | html anchorLabel beRight ]
+		gives: '<a class="ui label right"></a>'
 
 ]
 
