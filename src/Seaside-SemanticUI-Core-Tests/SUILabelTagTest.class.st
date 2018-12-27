@@ -34,12 +34,39 @@ SUILabelTagTest >> testLabelBlue [
 
 ]
 
+{ #category : #'tests - layout - single' }
+SUILabelTagTest >> testLabelBottom [
+	
+	self
+		assert: [:html | html semanticLabel beBottom ]
+		gives: '<div class="ui label bottom"></div>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUILabelTagTest >> testLabelBottomAttached [
+	
+	self
+		assert: [:html | html semanticLabel beBottomAttached ]
+		gives: '<div class="ui label bottom attached"></div>'
+
+]
+
 { #category : #'tests - coloring' }
 SUILabelTagTest >> testLabelBrown [
 	
 	self
 		assert: [:html | html semanticLabel beBrown ]
 		gives: '<div class="ui label brown"></div>'
+
+]
+
+{ #category : #'tests - options' }
+SUILabelTagTest >> testLabelCorner [
+
+	self
+		assert: [:html | html semanticLabel beCorner ]
+		gives: '<div class="ui label corner"></div>'
 
 ]
 
@@ -70,12 +97,21 @@ SUILabelTagTest >> testLabelImage [
 
 ]
 
-{ #category : #'tests - positioning' }
+{ #category : #'tests - layout - single' }
 SUILabelTagTest >> testLabelLeft [
 	
 	self
 		assert: [:html | html semanticLabel beLeft ]
 		gives: '<div class="ui label left"></div>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUILabelTagTest >> testLabelLeftAttached [
+	
+	self
+		assert: [:html | html semanticLabel beLeftAttached ]
+		gives: '<div class="ui label left attached"></div>'
 
 ]
 
@@ -133,12 +169,39 @@ SUILabelTagTest >> testLabelRed [
 
 ]
 
-{ #category : #'tests - positioning' }
+{ #category : #'tests - options' }
+SUILabelTagTest >> testLabelRibbon [
+
+	self
+		assert: [:html | html semanticLabel beRibbon ]
+		gives: '<div class="ui label ribbon"></div>'
+
+]
+
+{ #category : #'tests - layout - single' }
 SUILabelTagTest >> testLabelRight [
 	
 	self
 		assert: [:html | html semanticLabel beRight ]
 		gives: '<div class="ui label right"></div>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUILabelTagTest >> testLabelRightAttached [
+	
+	self
+		assert: [:html | html semanticLabel beRightAttached ]
+		gives: '<div class="ui label right attached"></div>'
+
+]
+
+{ #category : #'tests - options' }
+SUILabelTagTest >> testLabelTag [
+
+	self
+		assert: [:html | html semanticLabel beTag ]
+		gives: '<div class="ui label tag"></div>'
 
 ]
 
@@ -148,6 +211,24 @@ SUILabelTagTest >> testLabelTeal [
 	self
 		assert: [:html | html semanticLabel beTeal ]
 		gives: '<div class="ui label teal"></div>'
+
+]
+
+{ #category : #'tests - layout - single' }
+SUILabelTagTest >> testLabelTop [
+	
+	self
+		assert: [:html | html semanticLabel beTop ]
+		gives: '<div class="ui label top"></div>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUILabelTagTest >> testLabelTopAttached [
+	
+	self
+		assert: [:html | html semanticLabel beTopAttached ]
+		gives: '<div class="ui label top attached"></div>'
 
 ]
 

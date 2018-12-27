@@ -124,12 +124,30 @@ SUIAnchorLabelTagTest >> testAnchorLabelRed [
 
 ]
 
+{ #category : #'tests - options' }
+SUIAnchorLabelTagTest >> testAnchorLabelRibbon [
+	
+	self
+		assert: [:html | html anchorLabel beRibbon ]
+		gives: '<a class="ui label ribbon"></a>'
+
+]
+
 { #category : #'tests - positioning' }
 SUIAnchorLabelTagTest >> testAnchorLabelRight [
 	
 	self
 		assert: [:html | html anchorLabel beRight ]
 		gives: '<a class="ui label right"></a>'
+
+]
+
+{ #category : #'tests - options' }
+SUIAnchorLabelTagTest >> testAnchorLabelTag [
+	
+	self
+		assert: [:html | html anchorLabel beTag ]
+		gives: '<a class="ui label tag"></a>'
 
 ]
 

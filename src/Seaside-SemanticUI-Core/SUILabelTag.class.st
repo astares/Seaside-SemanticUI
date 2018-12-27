@@ -4,8 +4,8 @@ Semantic UI label
 Class {
 	#name : #SUILabelTag,
 	#superclass : #SUIGenericTag,
-	#traits : 'SUIColored',
-	#classTraits : 'SUIColored classTrait',
+	#traits : 'SUIColored + SUIAttached',
+	#classTraits : 'SUIColored classTrait + SUIAttached classTrait',
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
@@ -16,15 +16,15 @@ SUILabelTag >> beBelow [
 ]
 
 { #category : #options }
+SUILabelTag >> beCorner [
+
+	self class: 'corner'
+]
+
+{ #category : #options }
 SUILabelTag >> beImage [
 
 	self class: 'image'
-]
-
-{ #category : #positioning }
-SUILabelTag >> beLeft [
-
-	self class: 'left'
 ]
 
 { #category : #options }
@@ -33,10 +33,16 @@ SUILabelTag >> bePointing [
 	self class: 'pointing'
 ]
 
-{ #category : #positioning }
-SUILabelTag >> beRight [
+{ #category : #options }
+SUILabelTag >> beRibbon [
 
-	self class: 'right'
+	self class: 'ribbon'
+]
+
+{ #category : #options }
+SUILabelTag >> beTag [
+
+	self class: 'tag'
 ]
 
 { #category : #initialization }
