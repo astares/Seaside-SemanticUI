@@ -97,6 +97,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelCorner [
 
 ]
 
+{ #category : #'tests - positioning' }
+SUIAnchorLabelTagTest >> testAnchorLabelFloating [
+	
+	self
+		assert: [:html | html anchorLabel beFloating ]
+		gives: '<a class="ui label floating"></a>'
+
+]
+
 { #category : #'tests - coloring' }
 SUIAnchorLabelTagTest >> testAnchorLabelGreen [
 	
@@ -112,6 +121,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelGrey [
 	self
 		assert: [:html | html anchorLabel beGrey ]
 		gives: '<a class="ui label grey"></a>'
+
+]
+
+{ #category : #'tests - positioning' }
+SUIAnchorLabelTagTest >> testAnchorLabelHorizontal [
+	
+	self
+		assert: [:html | html anchorLabel beHorizontal ]
+		gives: '<a class="ui label horizontal"></a>'
 
 ]
 

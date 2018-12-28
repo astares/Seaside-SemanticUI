@@ -21,6 +21,18 @@ SUILabelTag >> beCorner [
 	self class: 'corner'
 ]
 
+{ #category : #positioning }
+SUILabelTag >> beFloating [
+
+	self class: 'floating'
+]
+
+{ #category : #positioning }
+SUILabelTag >> beHorizontal [
+
+	self class: 'horizontal'
+]
+
 { #category : #options }
 SUILabelTag >> beImage [
 

@@ -97,6 +97,15 @@ SUILabelTagTest >> testLabelCorner [
 
 ]
 
+{ #category : #'tests - positioning' }
+SUILabelTagTest >> testLabelFloating [
+	
+	self
+		assert: [:html | html semanticLabel beFloating ]
+		gives: '<div class="ui label floating"></div>'
+
+]
+
 { #category : #'tests - coloring' }
 SUILabelTagTest >> testLabelGreen [
 	
@@ -112,6 +121,15 @@ SUILabelTagTest >> testLabelGrey [
 	self
 		assert: [:html | html semanticLabel beGrey ]
 		gives: '<div class="ui label grey"></div>'
+
+]
+
+{ #category : #'tests - positioning' }
+SUILabelTagTest >> testLabelHorizontal [
+	
+	self
+		assert: [:html | html semanticLabel beHorizontal ]
+		gives: '<div class="ui label horizontal"></div>'
 
 ]
 

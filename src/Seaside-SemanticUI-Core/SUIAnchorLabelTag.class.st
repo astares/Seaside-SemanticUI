@@ -21,6 +21,18 @@ SUIAnchorLabelTag >> beCorner [
 	self class: 'corner'
 ]
 
+{ #category : #positioning }
+SUIAnchorLabelTag >> beFloating [
+
+	self class: 'floating'
+]
+
+{ #category : #positioning }
+SUIAnchorLabelTag >> beHorizontal [
+
+	self class: 'horizontal'
+]
+
 { #category : #options }
 SUIAnchorLabelTag >> beImage [
 
