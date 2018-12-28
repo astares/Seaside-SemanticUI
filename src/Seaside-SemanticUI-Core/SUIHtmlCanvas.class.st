@@ -221,6 +221,18 @@ SUIHtmlCanvas >> labelGroup: aBlockOrString [
 	^self labelGroup with: aBlockOrString
 ]
 
+{ #category : #lists }
+SUIHtmlCanvas >> list [
+
+	^self brush: SUIListTag new
+]
+
+{ #category : #lists }
+SUIHtmlCanvas >> list: aBlockOrString [
+
+	^self list with: aBlockOrString
+]
+
 { #category : #'form - label' }
 SUIHtmlCanvas >> pointingLabel [
 

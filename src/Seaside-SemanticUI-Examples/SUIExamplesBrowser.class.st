@@ -26,7 +26,14 @@ SUIExamplesBrowser >> renderContentOn: html [
 			html icon: 'archive'.
 			html text: 'Hello World'].
 		
-		html flag lu
+		html flag lu.
+		
+		html break.
+		
+		html breadcrumb: [ 
+			html breadcrumbSection: 'Home'.
+			html breadcrumbDivider: '/'.
+			html breadcrumbSection: 'Settings'. ]
 	 
 ]
 
