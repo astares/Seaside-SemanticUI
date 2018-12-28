@@ -174,6 +174,18 @@ SUIHtmlCanvas >> imageGroup [
 ]
 
 { #category : #'form - label' }
+SUIHtmlCanvas >> labelGroup [
+
+	^self brush: SUILabelGroupTag new
+]
+
+{ #category : #'form - label' }
+SUIHtmlCanvas >> labelGroup: aBlockOrString [
+
+	^self labelGroup with: aBlockOrString
+]
+
+{ #category : #'form - label' }
 SUIHtmlCanvas >> pointingLabel [
 
 	^self semanticLabel bePointing 
