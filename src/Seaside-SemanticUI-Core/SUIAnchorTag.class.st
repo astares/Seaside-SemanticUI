@@ -7,9 +7,15 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
+{ #category : #defaults }
+SUIAnchorTag >> defaultStyleClass [
+
+	^'ui'
+]
+
 { #category : #initialization }
 SUIAnchorTag >> initialize [ 
 
 	super initialize.
-	self class: 'ui'
+	self class: self defaultStyleClass
 ]

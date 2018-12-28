@@ -47,6 +47,42 @@ SUIHtmlCanvas >> blockHeader: aBlockOrString [
 	^self blockHeader with: aBlockOrString 
 ]
 
+{ #category : #breadcrumbs }
+SUIHtmlCanvas >> breadcrumb [
+
+	^self brush: SUIBreadcrumbTag new
+]
+
+{ #category : #breadcrumbs }
+SUIHtmlCanvas >> breadcrumb: aBlockOrString [
+
+	^self breadcrumb with: aBlockOrString
+]
+
+{ #category : #breadcrumbs }
+SUIHtmlCanvas >> breadcrumbDivider [
+
+	^self span class: 'divider'
+]
+
+{ #category : #breadcrumbs }
+SUIHtmlCanvas >> breadcrumbDivider: aBlockOrString [
+
+	^self breadcrumbDivider with: aBlockOrString
+]
+
+{ #category : #breadcrumbs }
+SUIHtmlCanvas >> breadcrumbSection [
+
+	^self brush: SUIBreadcrumbSectionTag new
+]
+
+{ #category : #breadcrumbs }
+SUIHtmlCanvas >> breadcrumbSection: aBlockOrString [
+
+	^self breadcrumbSection with: aBlockOrString
+]
+
 { #category : #'form - buttons' }
 SUIHtmlCanvas >> button [
 
