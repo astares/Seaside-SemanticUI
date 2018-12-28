@@ -16,12 +16,66 @@ SUIAnchorLabelTagTest >> testAnchorLabel [
 
 ]
 
+{ #category : #'tests - options' }
+SUIAnchorLabelTagTest >> testAnchorLabelAttached [
+	
+	self
+		assert: [:html | html anchorLabel beAttached ]
+		gives: '<a class="ui label attached"></a>'
+
+]
+
+{ #category : #'tests - positioning' }
+SUIAnchorLabelTagTest >> testAnchorLabelBelow [
+	
+	self
+		assert: [:html | html anchorLabel beBelow ]
+		gives: '<a class="ui label below"></a>'
+
+]
+
 { #category : #'tests - coloring' }
 SUIAnchorLabelTagTest >> testAnchorLabelBlue [
 	
 	self
 		assert: [:html | html anchorLabel beBlue ]
 		gives: '<a class="ui label blue"></a>'
+
+]
+
+{ #category : #'tests - layout - single' }
+SUIAnchorLabelTagTest >> testAnchorLabelBottom [
+	
+	self
+		assert: [:html | html anchorLabel beBottom ]
+		gives: '<a class="ui label bottom"></a>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUIAnchorLabelTagTest >> testAnchorLabelBottomAttached [
+	
+	self
+		assert: [:html | html anchorLabel beBottomAttached ]
+		gives: '<a class="ui label bottom attached"></a>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUIAnchorLabelTagTest >> testAnchorLabelBottomLeftAttached [
+	
+	self
+		assert: [:html | html anchorLabel beBottomLeftAttached ]
+		gives: '<a class="ui label bottom left attached"></a>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUIAnchorLabelTagTest >> testAnchorLabelBottomRightAttached [
+	
+	self
+		assert: [:html | html anchorLabel beBottomRightAttached ]
+		gives: '<a class="ui label bottom right attached"></a>'
 
 ]
 
@@ -70,12 +124,21 @@ SUIAnchorLabelTagTest >> testAnchorLabelImage [
 
 ]
 
-{ #category : #'tests - positioning' }
+{ #category : #'tests - layout - single' }
 SUIAnchorLabelTagTest >> testAnchorLabelLeft [
 	
 	self
 		assert: [:html | html anchorLabel beLeft ]
 		gives: '<a class="ui label left"></a>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUIAnchorLabelTagTest >> testAnchorLabelLeftAttached [
+	
+	self
+		assert: [:html | html anchorLabel beLeftAttached ]
+		gives: '<a class="ui label left attached"></a>'
 
 ]
 
@@ -133,12 +196,21 @@ SUIAnchorLabelTagTest >> testAnchorLabelRibbon [
 
 ]
 
-{ #category : #'tests - positioning' }
+{ #category : #'tests - layout - single' }
 SUIAnchorLabelTagTest >> testAnchorLabelRight [
 	
 	self
 		assert: [:html | html anchorLabel beRight ]
 		gives: '<a class="ui label right"></a>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUIAnchorLabelTagTest >> testAnchorLabelRightAttached [
+	
+	self
+		assert: [:html | html anchorLabel beRightAttached ]
+		gives: '<a class="ui label right attached"></a>'
 
 ]
 
@@ -157,6 +229,42 @@ SUIAnchorLabelTagTest >> testAnchorLabelTeal [
 	self
 		assert: [:html | html anchorLabel beTeal ]
 		gives: '<a class="ui label teal"></a>'
+
+]
+
+{ #category : #'tests - layout - single' }
+SUIAnchorLabelTagTest >> testAnchorLabelTop [
+	
+	self
+		assert: [:html | html anchorLabel beTop ]
+		gives: '<a class="ui label top"></a>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUIAnchorLabelTagTest >> testAnchorLabelTopAttached [
+	
+	self
+		assert: [:html | html anchorLabel beTopAttached ]
+		gives: '<a class="ui label top attached"></a>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUIAnchorLabelTagTest >> testAnchorLabelTopLeftAttached [
+	
+	self
+		assert: [:html | html anchorLabel beTopLeftAttached ]
+		gives: '<a class="ui label top left attached"></a>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUIAnchorLabelTagTest >> testAnchorLabelTopRightAttached [
+	
+	self
+		assert: [:html | html anchorLabel beTopRightAttached ]
+		gives: '<a class="ui label top right attached"></a>'
 
 ]
 

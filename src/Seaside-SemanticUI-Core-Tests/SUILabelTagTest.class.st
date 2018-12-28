@@ -16,6 +16,15 @@ SUILabelTagTest >> testLabel [
 
 ]
 
+{ #category : #'tests - options' }
+SUILabelTagTest >> testLabelAttached [
+
+	self
+		assert: [:html | html semanticLabel beAttached ]
+		gives: '<div class="ui label attached"></div>'
+
+]
+
 { #category : #'tests - positioning' }
 SUILabelTagTest >> testLabelBelow [
 	
@@ -49,6 +58,24 @@ SUILabelTagTest >> testLabelBottomAttached [
 	self
 		assert: [:html | html semanticLabel beBottomAttached ]
 		gives: '<div class="ui label bottom attached"></div>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUILabelTagTest >> testLabelBottomLeftAttached [
+	
+	self
+		assert: [:html | html semanticLabel beBottomLeftAttached ]
+		gives: '<div class="ui label bottom left attached"></div>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUILabelTagTest >> testLabelBottomRightAttached [
+	
+	self
+		assert: [:html | html semanticLabel beBottomRightAttached ]
+		gives: '<div class="ui label bottom right attached"></div>'
 
 ]
 
@@ -229,6 +256,24 @@ SUILabelTagTest >> testLabelTopAttached [
 	self
 		assert: [:html | html semanticLabel beTopAttached ]
 		gives: '<div class="ui label top attached"></div>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUILabelTagTest >> testLabelTopLeftAttached [
+	
+	self
+		assert: [:html | html semanticLabel beTopLeftAttached ]
+		gives: '<div class="ui label top left attached"></div>'
+
+]
+
+{ #category : #'tests - layout - combined' }
+SUILabelTagTest >> testLabelTopRightAttached [
+	
+	self
+		assert: [:html | html semanticLabel beTopRightAttached ]
+		gives: '<div class="ui label top right attached"></div>'
 
 ]
 

@@ -24,6 +24,18 @@ SUIAttached >> beBottomAttached [
 	self beBottom; beAttached
 ]
 
+{ #category : #'layout - combined' }
+SUIAttached >> beBottomLeftAttached [
+
+	self beBottom; beLeft; beAttached
+]
+
+{ #category : #'layout - combined' }
+SUIAttached >> beBottomRightAttached [
+
+	self beBottom; beRight; beAttached
+]
+
 { #category : #'layout - single' }
 SUIAttached >> beLeft [
 
@@ -58,4 +70,16 @@ SUIAttached >> beTop [
 SUIAttached >> beTopAttached [
 
 	self beTop; beAttached
+]
+
+{ #category : #'layout - combined' }
+SUIAttached >> beTopLeftAttached [
+
+	self beTop; beLeft; beAttached
+]
+
+{ #category : #'layout - combined' }
+SUIAttached >> beTopRightAttached [
+
+	self beTop; beRight; beAttached
 ]

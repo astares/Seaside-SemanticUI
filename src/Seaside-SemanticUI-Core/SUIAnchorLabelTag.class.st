@@ -4,10 +4,16 @@ Anchor based labels in Semantic UI
 Class {
 	#name : #SUIAnchorLabelTag,
 	#superclass : #SUIAnchorTag,
-	#traits : 'SUIColored',
-	#classTraits : 'SUIColored classTrait',
+	#traits : 'SUIColored + SUIAttached',
+	#classTraits : 'SUIColored classTrait + SUIAttached classTrait',
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
+
+{ #category : #positioning }
+SUIAnchorLabelTag >> beBelow [
+
+	self class: 'below'
+]
 
 { #category : #options }
 SUIAnchorLabelTag >> beCorner [
@@ -21,22 +27,10 @@ SUIAnchorLabelTag >> beImage [
 	self class: 'image'
 ]
 
-{ #category : #positioning }
-SUIAnchorLabelTag >> beLeft [
-
-	self class: 'left'
-]
-
 { #category : #options }
 SUIAnchorLabelTag >> beRibbon [
 
 	self class: 'ribbon'
-]
-
-{ #category : #positioning }
-SUIAnchorLabelTag >> beRight [
-
-	self class: 'right'
 ]
 
 { #category : #options }
