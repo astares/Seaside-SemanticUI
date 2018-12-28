@@ -9,10 +9,22 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
+{ #category : #styling }
+SUIAnchorLabelTag >> beBasic [
+
+	self class: 'basic'
+]
+
 { #category : #positioning }
 SUIAnchorLabelTag >> beBelow [
 
 	self class: 'below'
+]
+
+{ #category : #styling }
+SUIAnchorLabelTag >> beCircular [ 
+
+	self class: 'circular'
 ]
 
 { #category : #options }

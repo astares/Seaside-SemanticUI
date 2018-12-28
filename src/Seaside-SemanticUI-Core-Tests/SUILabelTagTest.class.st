@@ -25,6 +25,15 @@ SUILabelTagTest >> testLabelAttached [
 
 ]
 
+{ #category : #'tests - styling' }
+SUILabelTagTest >> testLabelBasic [
+	
+	self
+		assert: [:html | html semanticLabel beBasic ]
+		gives: '<div class="ui label basic"></div>'
+
+]
+
 { #category : #'tests - positioning' }
 SUILabelTagTest >> testLabelBelow [
 	
@@ -85,6 +94,15 @@ SUILabelTagTest >> testLabelBrown [
 	self
 		assert: [:html | html semanticLabel beBrown ]
 		gives: '<div class="ui label brown"></div>'
+
+]
+
+{ #category : #'tests - styling' }
+SUILabelTagTest >> testLabelCircular [
+	
+	self
+		assert: [:html | html semanticLabel beCircular ]
+		gives: '<div class="ui label circular"></div>'
 
 ]
 

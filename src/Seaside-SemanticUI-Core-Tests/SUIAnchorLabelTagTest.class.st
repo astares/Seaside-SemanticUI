@@ -25,6 +25,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelAttached [
 
 ]
 
+{ #category : #'tests - styling' }
+SUIAnchorLabelTagTest >> testAnchorLabelBasic [
+	
+	self
+		assert: [:html | html anchorLabel beBasic ]
+		gives: '<a class="ui label basic"></a>'
+
+]
+
 { #category : #'tests - positioning' }
 SUIAnchorLabelTagTest >> testAnchorLabelBelow [
 	
@@ -85,6 +94,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelBrown [
 	self
 		assert: [:html | html anchorLabel beBrown ]
 		gives: '<a class="ui label brown"></a>'
+
+]
+
+{ #category : #'tests - styling' }
+SUIAnchorLabelTagTest >> testAnchorLabelCircular [
+	
+	self
+		assert: [:html | html anchorLabel beCircular ]
+		gives: '<a class="ui label circular"></a>'
 
 ]
 
