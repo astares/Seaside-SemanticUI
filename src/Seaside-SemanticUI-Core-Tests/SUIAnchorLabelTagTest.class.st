@@ -43,6 +43,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelBelow [
 
 ]
 
+{ #category : #'tests - sizing' }
+SUIAnchorLabelTagTest >> testAnchorLabelBig [
+	
+	self
+		assert: [:html | html anchorLabel beBig ]
+		gives: '<a class="ui label big"></a>'
+
+]
+
 { #category : #'tests - coloring' }
 SUIAnchorLabelTagTest >> testAnchorLabelBlue [
 	
@@ -151,12 +160,30 @@ SUIAnchorLabelTagTest >> testAnchorLabelHorizontal [
 
 ]
 
+{ #category : #'tests - sizing' }
+SUIAnchorLabelTagTest >> testAnchorLabelHuge [
+	
+	self
+		assert: [:html | html anchorLabel beHuge ]
+		gives: '<a class="ui label huge"></a>'
+
+]
+
 { #category : #'tests - options' }
 SUIAnchorLabelTagTest >> testAnchorLabelImage [
 	
 	self
 		assert: [:html | html anchorLabel beImage ]
 		gives: '<a class="ui label image"></a>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIAnchorLabelTagTest >> testAnchorLabelLarge [
+	
+	self
+		assert: [:html | html anchorLabel beLarge ]
+		gives: '<a class="ui label large"></a>'
 
 ]
 
@@ -175,6 +202,33 @@ SUIAnchorLabelTagTest >> testAnchorLabelLeftAttached [
 	self
 		assert: [:html | html anchorLabel beLeftAttached ]
 		gives: '<a class="ui label left attached"></a>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIAnchorLabelTagTest >> testAnchorLabelMassive [
+	
+	self
+		assert: [:html | html anchorLabel beMassive ]
+		gives: '<a class="ui label massive"></a>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIAnchorLabelTagTest >> testAnchorLabelMedium [
+	
+	self
+		assert: [:html | html anchorLabel beMedium ]
+		gives: '<a class="ui label medium"></a>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIAnchorLabelTagTest >> testAnchorLabelMini [
+	
+	self
+		assert: [:html | html anchorLabel beMini ]
+		gives: '<a class="ui label mini"></a>'
 
 ]
 
@@ -250,6 +304,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelRightAttached [
 
 ]
 
+{ #category : #'tests - sizing' }
+SUIAnchorLabelTagTest >> testAnchorLabelSmall [
+	
+	self
+		assert: [:html | html anchorLabel beSmall ]
+		gives: '<a class="ui label small"></a>'
+
+]
+
 { #category : #'tests - options' }
 SUIAnchorLabelTagTest >> testAnchorLabelTag [
 	
@@ -265,6 +328,15 @@ SUIAnchorLabelTagTest >> testAnchorLabelTeal [
 	self
 		assert: [:html | html anchorLabel beTeal ]
 		gives: '<a class="ui label teal"></a>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIAnchorLabelTagTest >> testAnchorLabelTiny [
+	
+	self
+		assert: [:html | html anchorLabel beTiny ]
+		gives: '<a class="ui label tiny"></a>'
 
 ]
 

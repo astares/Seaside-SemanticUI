@@ -4,8 +4,8 @@ Anchor based labels in Semantic UI
 Class {
 	#name : #SUIAnchorLabelTag,
 	#superclass : #SUIAnchorTag,
-	#traits : 'SUIColored + SUIAttached',
-	#classTraits : 'SUIColored classTrait + SUIAttached classTrait',
+	#traits : 'SUIColored + SUIAttached + SUISized',
+	#classTraits : 'SUIColored classTrait + SUIAttached classTrait + SUISized classTrait',
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 

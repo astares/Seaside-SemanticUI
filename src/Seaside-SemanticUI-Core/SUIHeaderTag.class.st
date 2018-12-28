@@ -4,8 +4,8 @@ A tag to provide SemanticUI headers
 Class {
 	#name : #SUIHeaderTag,
 	#superclass : #WAHeadingTag,
-	#traits : 'SUIFloatable + SUIColored',
-	#classTraits : 'SUIFloatable classTrait + SUIColored classTrait',
+	#traits : 'SUIFloatable + SUIColored + SUISized',
+	#classTraits : 'SUIFloatable classTrait + SUIColored classTrait + SUISized classTrait',
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
@@ -51,12 +51,6 @@ SUIHeaderTag >> beDividing [
 	self class: 'dividing'
 ]
 
-{ #category : #sizing }
-SUIHeaderTag >> beHuge [
-
-	self class: 'huge'
-]
-
 { #category : #styling }
 SUIHeaderTag >> beIcon [ 
 
@@ -69,34 +63,10 @@ SUIHeaderTag >> beJustified [
 	self class: 'justified'
 ]
 
-{ #category : #sizing }
-SUIHeaderTag >> beLarge [
-
-	self class: 'large'
-]
-
-{ #category : #sizing }
-SUIHeaderTag >> beMedium [
-
-	self class: 'medium'
-]
-
-{ #category : #sizing }
-SUIHeaderTag >> beSmall [
-
-	self class: 'small'
-]
-
 { #category : #styling }
 SUIHeaderTag >> beSubheader [ 
 
 	self class: 'sub'
-]
-
-{ #category : #sizing }
-SUIHeaderTag >> beTiny [
-
-	self class: 'tiny'
 ]
 
 { #category : #layout }

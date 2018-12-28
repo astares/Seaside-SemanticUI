@@ -43,6 +43,15 @@ SUILabelTagTest >> testLabelBelow [
 
 ]
 
+{ #category : #'tests - sizing' }
+SUILabelTagTest >> testLabelBig [
+	
+	self
+		assert: [:html | html semanticLabel beBig ]
+		gives: '<div class="ui label big"></div>'
+
+]
+
 { #category : #'tests - coloring' }
 SUILabelTagTest >> testLabelBlue [
 	
@@ -151,12 +160,30 @@ SUILabelTagTest >> testLabelHorizontal [
 
 ]
 
+{ #category : #'tests - sizing' }
+SUILabelTagTest >> testLabelHuge [
+	
+	self
+		assert: [:html | html semanticLabel beHuge ]
+		gives: '<div class="ui label huge"></div>'
+
+]
+
 { #category : #'tests - options' }
 SUILabelTagTest >> testLabelImage [
 	
 	self
 		assert: [:html | html semanticLabel beImage ]
 		gives: '<div class="ui label image"></div>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUILabelTagTest >> testLabelLarge [
+	
+	self
+		assert: [:html | html semanticLabel beLarge ]
+		gives: '<div class="ui label large"></div>'
 
 ]
 
@@ -175,6 +202,33 @@ SUILabelTagTest >> testLabelLeftAttached [
 	self
 		assert: [:html | html semanticLabel beLeftAttached ]
 		gives: '<div class="ui label left attached"></div>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUILabelTagTest >> testLabelMassive [
+	
+	self
+		assert: [:html | html semanticLabel beMassive ]
+		gives: '<div class="ui label massive"></div>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUILabelTagTest >> testLabelMedium [
+	
+	self
+		assert: [:html | html semanticLabel beMedium ]
+		gives: '<div class="ui label medium"></div>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUILabelTagTest >> testLabelMini [
+	
+	self
+		assert: [:html | html semanticLabel beMini ]
+		gives: '<div class="ui label mini"></div>'
 
 ]
 
@@ -259,6 +313,15 @@ SUILabelTagTest >> testLabelRightAttached [
 
 ]
 
+{ #category : #'tests - sizing' }
+SUILabelTagTest >> testLabelSmall [
+	
+	self
+		assert: [:html | html semanticLabel beSmall ]
+		gives: '<div class="ui label small"></div>'
+
+]
+
 { #category : #'tests - options' }
 SUILabelTagTest >> testLabelTag [
 
@@ -274,6 +337,15 @@ SUILabelTagTest >> testLabelTeal [
 	self
 		assert: [:html | html semanticLabel beTeal ]
 		gives: '<div class="ui label teal"></div>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUILabelTagTest >> testLabelTiny [
+	
+	self
+		assert: [:html | html semanticLabel beTiny ]
+		gives: '<div class="ui label tiny"></div>'
 
 ]
 

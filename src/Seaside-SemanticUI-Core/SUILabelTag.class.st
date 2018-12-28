@@ -4,8 +4,8 @@ Semantic UI label
 Class {
 	#name : #SUILabelTag,
 	#superclass : #SUIGenericTag,
-	#traits : 'SUIColored + SUIAttached',
-	#classTraits : 'SUIColored classTrait + SUIAttached classTrait',
+	#traits : 'SUIColored + SUIAttached + SUISized',
+	#classTraits : 'SUIColored classTrait + SUIAttached classTrait + SUISized classTrait',
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 

@@ -133,6 +133,15 @@ SUIHeaderTagTest >> testHeaderAttached [
 
 ]
 
+{ #category : #'tests - sizing' }
+SUIHeaderTagTest >> testHeaderBig [
+	
+	self
+		assert: [:html | html header beBig ]
+		gives: '<h1 class="ui header big"></h1>'
+
+]
+
 { #category : #'tests - coloring' }
 SUIHeaderTagTest >> testHeaderBlue [
 	
@@ -296,11 +305,29 @@ SUIHeaderTagTest >> testHeaderLevel6 [
 ]
 
 { #category : #'tests - sizing' }
+SUIHeaderTagTest >> testHeaderMassive [
+	
+	self
+		assert: [:html | html header beMassive ]
+		gives: '<h1 class="ui header massive"></h1>'
+
+]
+
+{ #category : #'tests - sizing' }
 SUIHeaderTagTest >> testHeaderMedium [
 	
 	self
 		assert: [:html | html header beMedium ]
 		gives: '<h1 class="ui header medium"></h1>'
+
+]
+
+{ #category : #'tests - sizing' }
+SUIHeaderTagTest >> testHeaderMini [
+	
+	self
+		assert: [:html | html header beMini ]
+		gives: '<h1 class="ui header mini"></h1>'
 
 ]
 
