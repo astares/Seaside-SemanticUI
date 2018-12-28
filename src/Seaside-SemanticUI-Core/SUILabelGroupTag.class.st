@@ -9,6 +9,18 @@ Class {
 	#category : #'Seaside-SemanticUI-Core-Tags'
 }
 
+{ #category : #styling }
+SUILabelGroupTag >> beCircular [
+
+	self class: 'circular'
+]
+
+{ #category : #options }
+SUILabelGroupTag >> beTag [
+
+	self class: 'tag'
+]
+
 { #category : #initialization }
 SUILabelGroupTag >> initialize [
 	super initialize.

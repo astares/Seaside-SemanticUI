@@ -43,6 +43,15 @@ SUILabelGroupTagTest >> testLabelGroupBrown [
 
 ]
 
+{ #category : #'tests - styling' }
+SUILabelGroupTagTest >> testLabelGroupCircular [
+	
+	self
+		assert: [:html | html labelGroup beCircular ]
+		gives: '<div class="ui labels circular"></div>'
+
+]
+
 { #category : #'tests - coloring' }
 SUILabelGroupTagTest >> testLabelGroupGreen [
 	
@@ -148,6 +157,15 @@ SUILabelGroupTagTest >> testLabelGroupSmall [
 	self
 		assert: [:html | html labelGroup beSmall ]
 		gives: '<div class="ui labels small"></div>'
+
+]
+
+{ #category : #'tests - options' }
+SUILabelGroupTagTest >> testLabelGroupTag [
+	
+	self
+		assert: [:html | html labelGroup beTag ]
+		gives: '<div class="ui labels tag"></div>'
 
 ]
 
